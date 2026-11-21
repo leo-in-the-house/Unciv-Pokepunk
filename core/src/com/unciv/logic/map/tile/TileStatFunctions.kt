@@ -68,6 +68,19 @@ class TileStatFunctions(val tile: Tile) {
             else tile.getUnpillagedRoadImprovement()
         @LocalState val roadStats = road?.cloneStats() ?: Stats.ZERO
 
+
+        @LocalState val adjacentImprovementStats = Stats()
+        //Check for adjacent improvements that provide stats
+        for (adjacentTile in tile.neighbors) {
+            if (adjacentTile.getOwner() != tile.getOwner() || adjacentTile.isPillaged()) continue
+            adjacentTile.tileImprovement?.forEachMatchingUnique(UniqueType.ImprovementStatsInAdjacentTiles, gameContext) { unique ->
+                val adjacent = unique.params[1]
+                if (tile.matchesFilter(adjacent, observingCiv)) {
+                    adjacentImprovementStats.add(unique.stats)
+                }
+            }
+        }
+
         if (city != null) {
             val addStats: (Unique) -> Unit = { unique: Unique ->
                 val tileType = unique.params[1]
@@ -121,6 +134,7 @@ class TileStatFunctions(val tile: Tile) {
 
         if (road != null) listOfStats.add(road.name to roadStats)
         if (improvement != null) listOfStats.add(improvement.name to improvementStats)
+        listOfStats.add("Adjacent Improvements" to adjacentImprovementStats)
 
         val statsFromMinimum = missingFromMinimum(listOfStats.toStats(), minimumStats)
         listOfStats.add("Minimum" to statsFromMinimum)
@@ -145,7 +159,7 @@ class TileStatFunctions(val tile: Tile) {
         return missingStats
     }
 
-    /** Gets stats of a single Terrain, unifying the Stats class a Terrain inherits and the Stats Unique
+    /** Gets stats of a single Terrain, unifying the Stats class a Terrain inherits and the Stats Unique, as well as neighboring improvements
      *  @return A Stats reference, must not be mutated
      */
     @Readonly
@@ -324,17 +338,6 @@ class TileStatFunctions(val tile: Tile) {
                 || unique.params[1] == "non-fresh water" && !tile.isAdjacentTo(Constants.freshWater)
             )
                 stats.add(unique.stats)
-        }
-        
-        //Get stats from adjacent tiles
-        for (adjacentTile in tile.neighbors) {
-            if (adjacentTile.getOwner() != tile.getOwner() || adjacentTile.isPillaged()) continue
-            adjacentTile.tileImprovement?.forEachMatchingUnique(UniqueType.ImprovementStatsInAdjacentTiles, conditionalState) { unique ->
-                val adjacent = unique.params[1]
-                if (tile.matchesFilter(adjacent, observingCiv)) {
-                    stats.add(unique.stats)
-                }
-            }
         }
 
         return stats

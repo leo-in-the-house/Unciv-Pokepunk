@@ -362,6 +362,8 @@ class ImprovementPickerScreen(
                 for ((resourceName, amount) in unit.getStockpiledResourceRequirements(improvement))
                     proposeMissingResource(resourceName, amount)
             }
+            if (ImprovementBuildingProblem.MustRemoveResourceBeforeFeature in unbuildableBecause)
+                proposedSolutions.add("Remove the resource on this tile first" to null)
         }
         return report
     }

@@ -118,22 +118,24 @@
         ]
 	},
 	{
-		"name": "Merchant",
+		"name": "Traveler",
 		"unitType": "Civilian",
 		"secondaryUnitType": "Human",
-		"charges": 1,
-		"movement": 2,
+		"charges": 2,
+		"movement": 3,
 		"hurryCostModifier": 20,
-		"selectSound":"merchant",
+		"selectSound":"traveler",
         "requiredTech": "Calendar",
 		"uniques": [
+            "[+1] Sight",
 			"Can build [Commercial] improvements on tiles",
+            "Can build [All Road] improvements on tiles",
 			"Automation is a primary action"
 		],
-		"cost": 30,
+		"cost": 40,
 		 "civilopediaText": [
             {
-                "text": "Builder unit that can generate Gold and purchase stockpiled resources over a Market.  Can build Plantations on Plant resources (use Gardeners to remove Plant resources instead)."
+                "text": "Builder unit that can build Plantations on Plant resources (use Gardeners to remove Plant resources instead), and build Roads.  Has a high movement rate and line of sight, allowing it to become an impromptu scout."
             }
         ]
 	},
@@ -273,6 +275,28 @@
 		 "civilopediaText": [
             {
                 "text": "Knowledge-based Great Person that can attempt to generate a free technology or Magic Card through a Eureka (not guaranteed) over an Archive, or build Knowledge improvements."
+            }
+        ]
+	},
+	{
+		"name": "Merchant",
+		"unitType": "Civilian",
+		"secondaryUnitType": "Human",
+		"charges": 1,
+		"movement": 2,
+		"hurryCostModifier": 20,
+		"selectSound":"merchant",
+		"uniques": [
+            "Great Economist",
+			"Unbuildable",
+			"Can build [Trade] improvements on tiles",
+            "Can undertake a trade mission with City-State, giving a large sum of gold and [20] Influence",
+			"Automation is a primary action"
+		],
+		"cost": 30,
+		 "civilopediaText": [
+            {
+                "text": "Economic Great Person that can build Trade improvements.  Can conduct a Trade Mission at a City-State, providing Gold and influence."
             }
         ]
 	},
@@ -528,6 +552,56 @@
         ]
 	},
     {
+		"name": "Rapidashman",
+		"unitType": "Cavalry",
+		"secondaryUnitType": "Human",
+        "supplyCost": 2,
+		"movement": 2,
+		"attackStrength": 20,
+		"defenseStrength": 50,
+		"cost": 100,
+		"selectSound": "rapidashman",
+		"attackSound": "maiden_rapidash_attack",
+        "requiredTech": "Pokémon Riding",
+        "uniques": [
+            "[This Unit] gains the [Fire-Type] promotion",
+			"Can only be built <with improved [Ponytas] in this city>",
+            "Never appears as a Barbarian unit",
+            "No damage penalty for wounded units"
+        ],
+		"civilopediaText": [
+            {
+                "text": "Melee cavalry riding a Rapidash, that hits hard and fast for an affordable price.  Does not cost strategic resources, but requires Ponytas to train."
+            }
+        ]
+	},
+    {
+		"name": "War Copperajah",
+		"unitType": "Cavalry",
+		"secondaryUnitType": "Human",
+        "supplyCost": 4,
+		"movement": 1,
+		"attackStrength": 30,
+		"defenseStrength": 100,
+		"cost": 180,
+		"selectSound": "war_copperajah",
+		"attackSound": "copperajah_arrow_attack",
+        "requiredTech": "Pokémon Riding",
+        "uniques": [
+            "[This Unit] gains the [Steel-Type] promotion",
+            "No defensive terrain bonus",
+            "Before engaging in combat performs an extra ranged attack with [66]% of melee combat strength",
+			"Can only be built <with improved [Cufants] in this city>",
+            "Never appears as a Barbarian unit",
+            "No damage penalty for wounded units"
+        ],
+		"civilopediaText": [
+            {
+                "text": "Copperajah trained to bash down foes and to serve as a platform for archers.  Expensive and slow, but has very high defense and attack, and hits enemies with a ranged attack from its mahout before attacking.  It's large profile negates any defensive bonuses from the terrain."
+            }
+        ]
+	},
+    {
 		"name": "Battering Gogoat",
 		"unitType": "Vehicle",
         "supplyCost": 1,
@@ -543,7 +617,7 @@
             "[This Unit] gains the [Grass-Type] promotion",
             "[+100]% Strength <vs [City]>",
             "Can only attack [City] units",
-			"Can only be built <with [Skiddos]>",
+			"Can only be built <with improved [Skiddos] in this city>",
             "Never appears as a Barbarian unit",
             "No damage penalty for wounded units"
         ],
@@ -561,7 +635,7 @@
 		"movement": 2,
 		"attackStrength": 30,
 		"defenseStrength": 80,
-		"cost": 120,
+		"cost": 150,
 		"selectSound": "mudsdale_chariot",
 		"attackSound": "maiden_mudsdale",
         "requiredTech": "Wheel",
@@ -571,7 +645,7 @@
             "[-50]% Strength <when fighting in [Rough terrain] tiles>",
             "Rough terrain penalty",
             "[-50]% Strength <vs cities> <when attacking>",
-			"Can only be built <with [Mudbrays]>",
+			"Can only be built <with improved [Mudbrays] in this city>",
             "Never appears as a Barbarian unit",
             "No damage penalty for wounded units"
         ],
@@ -596,7 +670,7 @@
             "[This Unit] gains the [Dark-Type] promotion",
             "[+1] Sight",
 			"Can only attack [Military] units",
-			"Can only be built <with [Poochyenas]>",
+			"Can only be built <with improved [Poochyenas] in this city>",
             "Never appears as a Barbarian unit",
             "No damage penalty for wounded units"
 		],
@@ -623,7 +697,7 @@
             "[+1] Sight",
             "Cannot enter ocean tiles",
             "Can see invisible [Water] units",
-			"Can only be built <with [Goldeens]>",
+			"Can only be built <with improved [Goldeens] in this city>",
             "Never appears as a Barbarian unit",
             "No damage penalty for wounded units"
         ],

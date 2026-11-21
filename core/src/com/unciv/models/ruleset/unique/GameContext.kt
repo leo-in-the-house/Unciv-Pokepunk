@@ -37,6 +37,8 @@ data class GameContext(
 
     val ignoreConditionals: Boolean = false,
 ) {
+    constructor(gameContext: GameContext, city: City? = null, civInfo: Civilization? = null, unit: MapUnit? = null, tile: Tile? = null, gameInfo: GameInfo? = null) 
+        : this(civInfo ?: gameContext.civInfo, city = city ?: gameContext.city, unit = unit ?: gameContext.unit, tile = tile ?: gameContext.tile, gameInfo = gameInfo ?: gameContext.gameInfo)
     constructor(city: City) : this(city.civ, city, tile = city.getCenterTileOrNull(), gameInfo = city.civ.gameInfo)
     constructor(unit: MapUnit) : this(unit.civ, unit = unit, tile = if (unit.hasTile()) unit.getTile() else null, gameInfo = unit.civ.gameInfo)
     constructor(civ: Civilization, civ2: Civilization?=null) : this(civ, otherCiv = civ2, gameInfo = civ.gameInfo)

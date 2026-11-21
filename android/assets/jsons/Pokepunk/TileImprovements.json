@@ -159,7 +159,7 @@
 		"shortcutKey": "F",
 		 "civilopediaText": [
             {
-                "text": "Can be built over Plant resources, mainly by Merchants.  Provides Gold and improves the resource."
+                "text": "Can be built over Plant resources, mainly by Travelers.  Provides Gold and improves the resource."
             }
         ]
 	},
@@ -181,7 +181,7 @@
 		"shortcutKey": "F",
 		 "civilopediaText": [
             {
-                "text": "Plant-based resource upgrade operated by forced labor, mainly by Merchants.  Provides Gold without needing assigned population and improves the resource.  Disabled after abolition."
+                "text": "Plant-based resource upgrade operated by forced labor, mainly built by Travelers.  Provides Gold without needing assigned population and improves the resource.  Disabled after abolition."
             }
         ]
 	},
@@ -738,6 +738,45 @@
 		 "civilopediaText": [
             {
                 "text": "Urban building that must be built in flat land.  Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
+	{
+		"name": "Mirrorsmith",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"buildSound": "mirrorsmith",
+		"uniques": [
+			"Urban Improvement",
+			"Irremovable",
+			"Provides [3] [Mirrors]",
+			"Will not be replaced by automated units",
+			"Turn this tile into a [Urban] tile",
+			"Pillaging this improvement yields approximately [+50 Gold]",
+			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in flat land.  Provides the Mirrors luxury resource.  Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
+	{
+		"name": "Lighthouse",
+		"terrainsCanBeBuiltOn": ["Land","Water"],
+		"buildSound": "lighthouse",
+		"uniques": [
+			"Urban Improvement",
+			"Irremovable",
+			"Consumes [1] [Mirrors]",
+			"[+2 Food, +2 Gold] in each adjacent [Coast] <when above [-1] [Mirrors]>",
+			"Will not be replaced by automated units",
+			"Turn this tile into a [Urban] tile",
+			"Pillaging this improvement yields approximately [+10 Gold]",
+			"Can only be built <in [{Water} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Land] tiles>"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in coastal Water adjacent to land.  Provides +2 Food, +2 Gold to all adjacent tiles.  Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
             }
         ]
 	},

@@ -620,7 +620,7 @@ class Civilization : IsPartOfGameInfoSerialization {
     ): Sequence<Unique> = sequence {
         yieldAll(nation.getMatchingUniques(uniqueType, gameContext))
         yieldAll(cities.asSequence()
-            .flatMap { city -> city.getMatchingUniquesWithNonLocalEffects(uniqueType, gameContext) }
+            .flatMap { city -> city.getMatchingUniquesWithNonLocalEffects(uniqueType, GameContext(gameContext, city = city)) }
         )
         yieldAll(policies.policyUniques.getMatchingUniques(uniqueType, gameContext))
         yieldAll(tech.techUniques.getMatchingUniques(uniqueType, gameContext))

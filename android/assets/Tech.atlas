@@ -487,212 +487,233 @@ TechIcons/Pokémon Pisciculture
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Pokémon Taming
+TechIcons/Pokémon Riding
   rotate: false
   xy: 652, 298
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Pokémon Trapping
+TechIcons/Pokémon Taming
   rotate: false
   xy: 760, 406
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Pottery
+TechIcons/Pokémon Trapping
   rotate: false
   xy: 868, 514
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Prehistory
+TechIcons/Pottery
   rotate: false
   xy: 976, 622
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Printing Press
+TechIcons/Prehistory
   rotate: false
   xy: 1084, 730
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Radar
+TechIcons/Printing Press
   rotate: false
   xy: 544, 82
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Radio
+TechIcons/Radar
   rotate: false
   xy: 652, 190
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Railroads
+TechIcons/Radio
   rotate: false
   xy: 760, 298
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Refrigeration
+TechIcons/Railroads
   rotate: false
   xy: 868, 406
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Replaceable Parts
+TechIcons/Refraction
   rotate: false
   xy: 976, 514
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Rifling
+TechIcons/Refrigeration
   rotate: false
   xy: 1084, 622
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Robotics
+TechIcons/Replaceable Parts
   rotate: false
   xy: 1192, 730
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Rocketry
+TechIcons/Rifling
   rotate: false
   xy: 652, 82
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Sailing
+TechIcons/Robotics
   rotate: false
   xy: 760, 190
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Satellites
+TechIcons/Rocketry
   rotate: false
   xy: 868, 298
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Scientific Theory
+TechIcons/Sailing
   rotate: false
   xy: 976, 406
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Shipbuilding
+TechIcons/Satellites
   rotate: false
   xy: 1084, 514
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Slavery
+TechIcons/Scientific Theory
   rotate: false
   xy: 1192, 622
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Stealth
+TechIcons/Shipbuilding
   rotate: false
   xy: 1300, 730
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Steam Power
+TechIcons/Slavery
   rotate: false
   xy: 760, 82
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Steel
+TechIcons/Stealth
   rotate: false
   xy: 868, 190
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Stonecutting
+TechIcons/Steam Power
   rotate: false
   xy: 976, 298
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Telecommunications
+TechIcons/Steel
   rotate: false
   xy: 1084, 406
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Telegraph
+TechIcons/Stonecutting
   rotate: false
   xy: 1192, 514
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/The Wheel
+TechIcons/Telecommunications
   rotate: false
   xy: 1300, 622
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Theology
+TechIcons/Telegraph
   rotate: false
   xy: 1408, 730
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Toolmaking
+TechIcons/Textiles
   rotate: false
   xy: 868, 82
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Trapping
+TechIcons/The Wheel
   rotate: false
   xy: 976, 190
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Wheel
+TechIcons/Theology
   rotate: false
   xy: 1084, 298
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-TechIcons/Writing
+TechIcons/Toolmaking
   rotate: false
   xy: 1192, 406
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Trapping
+  rotate: false
+  xy: 1300, 514
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Wheel
+  rotate: false
+  xy: 1408, 622
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TechIcons/Writing
+  rotate: false
+  xy: 1516, 730
   size: 100, 100
   orig: 100, 100
   offset: 0, 0

@@ -19,7 +19,7 @@
 		"introduction": "If I am cut, Do I not bleed?",
 		"tradeRequest": "I am not always this generous, but we hope you take this rare opportunity we give you.",
 		"outerColor": [0,0,0],
-		"innerColor": [142,22,0],
+		"innerColor": [160,0,0],
 		"startBias": ["Grassland"],
 		"uniqueName": "Word of Nod",
 		"uniques": ["[+2] Movement <for [Armored] units>"],
@@ -39,8 +39,8 @@
 		"defeated": "I see for the black hand has been unworthy to serve Kane.",
 		"introduction": "If you would stay out of our way then you might live to tell your tale.",
 		"tradeRequest": "I would be grateful if you agreed on the following proposal.",
-		"outerColor": [139,0,0],
-		"innerColor": [0,0,0],
+		"outerColor": [240,150,50],
+		"innerColor": [255,255,255],
 		"startBias": ["Tropical"],
 		"uniqueName": "Purification",
 		"uniques": ["[+30]% Strength <vs [Barbarians|City-States]>","No damage penalty for wounded units <for [non-air] units>"],
@@ -70,8 +70,8 @@
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "We never fully trusted you from the start.",
-		"outerColor": [50, 50, 50],
-		"innerColor": [252,219,3],
+		"outerColor": [0, 150, 0],
+		"innerColor": [230,230,255],
 		"cities": ["Garden City"]
 	},
 	{
@@ -83,14 +83,14 @@
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "We never fully trusted you from the start.",
-		"outerColor": [50, 50, 50],
-		"innerColor": [252,219,3],
+		"outerColor": [90, 40, 0],
+		"innerColor": [180,50,230],
 		"cities": ["Dodge City"]
 	},
 	{
 		"name": "Barbarians",
-		"outerColor": [0,0,0],
-		"innerColor": [185,12,12],
+		"outerColor": [255,25,25],
+		"innerColor": [255,255,255],
 		"uniques": ["Excluded from map editor"]
 	}
 ]

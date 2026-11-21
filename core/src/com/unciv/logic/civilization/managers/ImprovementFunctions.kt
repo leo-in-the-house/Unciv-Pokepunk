@@ -67,7 +67,7 @@ object ImprovementFunctions {
                     }
 
                 if (improvement.name.startsWith(Constants.remove) && tile.terrainFeatures.any { improvement.name.removePrefix(Constants.remove) == it }
-                    && tile.resource != null)
+                    && (tile.resource != null || tile.tileResource != null))
                     yield(ImprovementBuildingProblem.MustRemoveResourceBeforeFeature)
                 
                 if (!tile.improvementFunctions.canImprovementBeBuiltHere(improvement, civInfo.canSeeResource(tile.tileResource), knownFeatureRemovals, gameContext))

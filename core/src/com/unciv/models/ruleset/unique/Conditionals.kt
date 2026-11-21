@@ -7,6 +7,7 @@ import com.unciv.logic.battle.CombatAction
 import com.unciv.logic.city.City
 import com.unciv.logic.civilization.Civilization
 import com.unciv.logic.civilization.managers.ReligionState
+import com.unciv.models.ruleset.tile.ResourceType
 import com.unciv.models.ruleset.validation.ModCompatibility
 import com.unciv.models.stats.Stat
 import com.unciv.utils.hashOf
@@ -61,6 +62,25 @@ object Conditionals {
             if (state.gameInfo == null) return false
             val era = state.gameInfo.ruleset.eras[eraParam] ?: return false
             return compare(state.relevantCiv!!.getEraNumber(), era.eraNumber)
+        }
+
+
+        @Readonly
+        fun checkIfResourceImprovedInCity(resourceName: String): Boolean  {
+            val city = state.city ?: state.tile?.getCity()
+            val cityConstructions = city?.cityConstructions
+            val civ = state.civInfo
+            if (cityConstructions == null || civ == null) return false
+            return cityConstructions.city.getWorkableTiles()
+                .any {
+                    val tileResource = it.tileResource ?: return@any false
+                    val improvement = it.getUnpillagedTileImprovement() ?: return@any false
+                    resourceName == tileResource.name &&
+                        it.getOwner() == civ &&
+                        (tileResource.isImprovedBy(improvement) ||
+                            it.isCityCenter() ||
+                            (improvement.isGreatImprovement() && tileResource.resourceType == ResourceType.Strategic))
+                }
         }
 
         /** Helper for ConditionalWhenAboveAmountStatResource and its below counterpart */
@@ -127,6 +147,7 @@ object Conditionals {
             UniqueType.ConditionalNotWar -> checkOnCiv { !isAtWar() }
             UniqueType.ConditionalWithResource -> state.getResourceAmount(conditional.params[0]) > 0
             UniqueType.ConditionalWithoutResource -> state.getResourceAmount(conditional.params[0]) <= 0
+            UniqueType.ConditionalWithImprovedResourceInCity -> checkIfResourceImprovedInCity(conditional.params[0])
 
             UniqueType.ConditionalWhenAboveAmountStatResource ->
                 checkResourceOrStatAmount(conditional.params[1], conditional.params[0].toFloat(), Float.MAX_VALUE, unique?.isModifiedByGameSpeed() == true)
@@ -260,6 +281,9 @@ object Conditionals {
             UniqueType.ConditionalVsUnits,  UniqueType.ConditionalVsCombatant -> state.theirCombatant?.matchesFilter(conditional.params[0]) == true
             UniqueType.ConditionalOurUnit, UniqueType.ConditionalOurUnitOnUnit ->
                 state.relevantUnit?.matchesFilter(conditional.params[0]) == true
+            UniqueType.ConditionalOurUnitInCity ->
+                state.relevantUnit?.matchesFilter(conditional.params[0]) == true && state.relevantUnit!!.getTile().getCity() != null 
+                    && state.relevantUnit!!.getTile().getCity()!! == state.city
             UniqueType.ConditionalUnitWithPromotion -> state.relevantUnit != null &&
                     (state.relevantUnit!!.promotions.promotions.contains(conditional.params[0])
                     || state.relevantUnit!!.hasStatus(conditional.params[0]) )

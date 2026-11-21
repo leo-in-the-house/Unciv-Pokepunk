@@ -1835,6 +1835,19 @@
         ]
 	},
 	{
+		"name": "Mirrors",
+		"resourceType": "Luxury",
+		"resourceCategory": "Crafts",
+		"uniques": [
+					"Doesn't generate naturally"
+				],
+		 "civilopediaText": [
+            {
+                "text": "Whether by glass or obsidian, these reflective surfaces can be used for both consumer cosmetics and light refraction."
+            }
+        ]
+	},
+	{
 		"name": "Bread",
 		"resourceType": "Luxury",
 		"resourceCategory": "Cuisine",

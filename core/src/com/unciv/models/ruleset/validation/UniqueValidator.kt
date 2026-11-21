@@ -225,6 +225,7 @@ class UniqueValidator(val ruleset: Ruleset, private val tryFixUnknownUniques: Bo
     private val resourceConditionals = setOf(
         UniqueType.ConditionalWithResource,
         UniqueType.ConditionalWithoutResource,
+        UniqueType.ConditionalWithImprovedResourceInCity,
         UniqueType.ConditionalWhenBetweenStatResource,
         UniqueType.ConditionalWhenAboveAmountStatResource,
         UniqueType.ConditionalWhenBelowAmountStatResource,

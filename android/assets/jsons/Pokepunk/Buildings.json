@@ -14,7 +14,8 @@
 		"cost": 0,
 		"uniques": [
 			"Is shown",
-			"Indicates the capital city"
+			"Indicates the capital city",
+			"[+100]% Strength for cities <when defending> <for [Major] Civilizations>"
 		],
 		 "civilopediaText": [
             {
@@ -194,6 +195,48 @@
 		 "civilopediaText": [
             {
                 "text": "Urban building that must be built in flat land, in a city with at least one Weavable resource.  Provides +2 Fiber per turn for each of these resources that are improved (+3 Fiber for Vines)."
+            }
+        ]
+	},
+	{
+		"name": "Lighthouse",
+		"buildSound": "lighthouse",
+		"cost": 30,
+		"hurryCostModifier": 25,
+		"requiredTech": "Refraction",
+		"maintenance": 1,
+		"uniques": [
+			"Crafting",
+			"Creates a [Lighthouse] improvement on a specific tile",
+			"[+2] Sight <for [Water] units in this city> <when above [-1] [Mirrors]>",
+			"[+2] Movement <for [Water] units in this city> <when above [-1] [Mirrors]>",
+			"Only available <with [Mirrors]>",
+			"Comment [Must be built adjacent to Land on a Water tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in Water tiles, adjacent to Land, consuming 1 Mirrors, but not necessarily adjacent to Urban tiles.  Provides +2 Line of Sight and +2 Movement to water units in this city and gives adjacent Water tiles +2 Food and +2 Gold."
+            }
+        ]
+	},
+	{
+		"name": "Mirrorsmith",
+		"requiredNearbyImprovedResources": ["Glass","Obsidian"],
+		"buildSound": "mirrorsmith",
+		"cost": 80,
+		"hurryCostModifier": 25,
+		"requiredTech": "Refraction",
+		"specialistSlots": { "Smith": 3 },
+		"maintenance": 3,
+		"uniques": [
+			"Crafting",
+			"Costs [5] [Stone]",
+			"Creates a [Mirrorsmith] improvement on a specific tile",
+			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in flat tiles, in a city with at least one improved Glass or Obsidian resource.  Provides 3 copies of the Mirrors luxury resource."
             }
         ]
 	},

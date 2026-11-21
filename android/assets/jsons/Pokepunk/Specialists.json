@@ -18,6 +18,12 @@
 		"color": [255,255,125]
 	},
 	{
+		"name":"Smith",
+		"gold": 4,
+		"greatPersonPoints": {"Engineer": 2},
+		"color": [255,255,125]
+	},
+	{
 		"name":"Scribe",
 		"science": 2,
 		"greatPersonPoints": {"Philosopher": 5},

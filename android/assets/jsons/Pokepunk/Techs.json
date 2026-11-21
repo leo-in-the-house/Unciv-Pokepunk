@@ -164,10 +164,22 @@
 		"wonderCost": 220,
 		"techs": [
 			{
+				"name": "Refraction",
+				"row": 3,
+				"quote": "We discovered that certain materials can be used and glazed in order to reflect and project light.  This should make it easier for us to navigate around hazards, especially at sea.",
+				"prerequisites": ["Music","Bronze Working"]
+			},
+			{
 				"name": "Wheel",
 				"row": 4,
 				"quote": "The wheel and axle, with the help of loyal Pokémon, allowing for true long distance travel and transportation.  Roads popped up, and military leaders quickly adopted the new technology.",
 				"prerequisites": ["Pokémon Taming"]
+			},
+			{
+				"name": "Pokémon Riding",
+				"row": 5,
+				"quote": "With new innovations such as the saddle, we can now safely and comfortably ride many of the species of Pokémon we have tamed, such as Rapidash or Copperajah.  Charge!",
+				"prerequisites": ["Slavery","Pokémon Taming"]
 			},
 			{
 				"name": "Construction",

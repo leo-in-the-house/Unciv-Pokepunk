@@ -859,6 +859,7 @@ enum class UniqueType(
 
     ConditionalWithResource("with [resource]", UniqueTarget.Conditional),
     ConditionalWithoutResource("without [resource]", UniqueTarget.Conditional),
+    ConditionalWithImprovedResourceInCity("with improved [resource] in this city", UniqueTarget.Conditional),
 
     // Supports also stockpileable resources (Gold, Faith, Culture, Science)
     ConditionalWhenAboveAmountStatResource("when above [amount] [stat/resource]", UniqueTarget.Conditional, flags = setOf(UniqueFlag.AcceptsSpeedModifier)),
@@ -886,6 +887,7 @@ enum class UniqueType(
 
     /////// unit conditionals
     ConditionalOurUnit("for [mapUnitFilter] units", UniqueTarget.Conditional),
+    ConditionalOurUnitInCity("for [mapUnitFilter] units in this city", UniqueTarget.Conditional),
     ConditionalOurUnitOnUnit("when [mapUnitFilter]", UniqueTarget.Conditional), // Same but for the unit itself
     ConditionalUnitWithPromotion("for units with [promotion]", UniqueTarget.Conditional, docDescription = "Also applies to units with temporary status"),
     ConditionalUnitWithoutPromotion("for units without [promotion]", UniqueTarget.Conditional, docDescription = "Also applies to units with temporary status"),
