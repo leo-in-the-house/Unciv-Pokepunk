@@ -262,6 +262,7 @@
 		"secondaryUnitType": "Human",
         "charges": 1,
 		"movement": 3,
+		"selectSound":"general",
 		"uniques": [
             "[+20]% Strength bonus for [{Military} {Land}] units within [2] tiles",
             "Unbuildable",  
