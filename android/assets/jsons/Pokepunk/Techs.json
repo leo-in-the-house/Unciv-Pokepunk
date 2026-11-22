@@ -165,9 +165,15 @@
 		"techs": [
 			{
 				"name": "Refraction",
-				"row": 3,
+				"row": 2,
 				"quote": "We discovered that certain materials can be used and glazed in order to reflect and project light.  This should make it easier for us to navigate around hazards, especially at sea.",
 				"prerequisites": ["Music","Bronze Working"]
+			},
+			{
+				"name": "Drama and Poetry",
+				"row": 3,
+				"quote": "With song and dance already popular among our people, many creatives have stepped up to create meaningful works of art to entertain the masses and spread our culture.",
+				"prerequisites": ["Music"]
 			},
 			{
 				"name": "Wheel",

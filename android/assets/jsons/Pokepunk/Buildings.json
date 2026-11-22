@@ -49,6 +49,7 @@
 		"hurryCostModifier": 25,
 		"requiredTech": "Masonry",
 		"uniques": [
+			"Costs [10] [Wood]",
 			"Is shown",
 			"Destroyed when the city is captured"
 		]
@@ -62,6 +63,7 @@
 		"requiredTech": "Bronze Working",
 		"uniques": [
 			"Military",
+			"Costs [10] [Wood]",
 			"Creates a [Barracks] improvement on a specific tile",
 			"[+100]% Production when constructing [Infantry] units [in this city]",
 			"[+100]% Production when constructing [Missile Infantry] units [in this city]",
@@ -85,7 +87,6 @@
 		"maintenance": 2,
 		"uniques": [
 			"Crafting",
-			"Costs [5] [Stone]",
 			"Creates a [Potter] improvement on a specific tile",
 			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
 		],
@@ -106,7 +107,6 @@
 		"maintenance": 2,
 		"uniques": [
 			"Crafting",
-			"Costs [5] [Wood]",
 			"Creates a [Scrollmaker] improvement on a specific tile",
 			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
 		],
@@ -149,7 +149,6 @@
 		"maintenance": 2,
 		"uniques": [
 			"Cooking",
-			"Costs [5] [Wood]",
 			"Creates a [Bakery] improvement on a specific tile",
 			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
 		],
@@ -168,6 +167,7 @@
 		"specialistSlots": { "Worshipper": 2 },
 		"maintenance": 1,
 		"uniques": [
+			"Costs [5] [Stone]",
 			"Creates a [Shrine] improvement on a specific tile",
 			"Comment [Must be built on a flat, featureless land tile.]"
 		],
@@ -230,13 +230,53 @@
 		"maintenance": 3,
 		"uniques": [
 			"Crafting",
-			"Costs [5] [Stone]",
 			"Creates a [Mirrorsmith] improvement on a specific tile",
 			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
 		],
 		 "civilopediaText": [
             {
                 "text": "Urban building that must be built in flat tiles, in a city with at least one improved Glass or Obsidian resource.  Provides 3 copies of the Mirrors luxury resource."
+            }
+        ]
+	},
+	{
+		"name": "Maskmaker",
+		"buildSound": "maskmaker",
+		"requiredNearbyImprovedResources": ["Clay","Copper","Glass","Obsidian"],
+		"cost": 60,
+		"hurryCostModifier": 25,
+		"requiredTech": "Drama and Poetry",
+		"specialistSlots": { "Craftsman": 2 },
+		"maintenance": 2,
+		"uniques": [
+			"Crafting",
+			"Creates a [Maskmaker] improvement on a specific tile",
+			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in flat tiles, in a city with at least one improved Clay, Coper, Glass, or Obsidian resource.  Provides 3 copies of the Masks luxury resource."
+            }
+        ]
+	},
+	{
+		"name": "Theatre",
+		"buildSound": "theatre",
+		"cost": 60,
+		"hurryCostModifier": 25,
+		"requiredTech": "Drama and Poetry",
+		"specialistSlots": { "Actor": 3 },
+		"maintenance": 3,
+		"uniques": [
+			"Artistic",
+			"Costs [5] [Stone]",
+			"Creates a [Theatre] improvement on a specific tile",
+			"Only available <with [Masks]>",
+			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban Art building that must be built in flat tiles, in a city with at least one improved Clay, Coper, Glass, or Obsidian resource.  Provides the Plays luxury resource."
             }
         ]
 	},
@@ -251,7 +291,6 @@
 		"maintenance": 2,
 		"uniques": [
 			"Crafting",
-			"Costs [5] [Wood]",
 			"Creates a [Drumcrafter] improvement on a specific tile",
 			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
 		],
@@ -270,6 +309,7 @@
 		"specialistSlots": { "Craftsman": 3 },
 		"maintenance": 4,
 		"uniques": [
+			"Costs [10] [Wood]",
 			"Creates a [Carpenter] improvement on a specific tile",
 			"[+50]% [Wood] resource production <in this city>",
 			"Comment [Must be built on a flat, featureless land tile.]"
@@ -289,6 +329,7 @@
 		"specialistSlots": { "Mason": 3 },
 		"maintenance": 4,
 		"uniques": [
+			"Costs [20] [Stone]",
 			"Creates a [Brickyard] improvement on a specific tile",
 			"[+50]% Production when constructing [All] buildings [in this city]",
 			"Comment [Must be built on a flat, featureless land tile.]"

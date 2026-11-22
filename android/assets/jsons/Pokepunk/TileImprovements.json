@@ -761,6 +761,46 @@
         ]
 	},
 	{
+		"name": "Maskmaker",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"buildSound": "maskmaker",
+		"uniques": [
+			"Urban Improvement",
+			"Irremovable",
+			"Provides [3] [Masks]",
+			"Will not be replaced by automated units",
+			"Turn this tile into a [Urban] tile",
+			"Pillaging this improvement yields approximately [+50 Gold]",
+			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in flat land.  Provides the Masks luxury resource.  Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
+	{
+		"name": "Theatre",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"buildSound": "theatre",
+		"uniques": [
+			"Urban Improvement",
+			"Art Improvement",
+			"Irremovable",
+			"Consumes [1] [Masks]",
+			"Provides [1] [Plays] <when above [-1] [Masks]>",
+			"Will not be replaced by automated units",
+			"Turn this tile into a [Urban] tile",
+			"Pillaging this improvement yields approximately [+50 Culture]",
+			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban Art building that must be built in flat land.  Provides the Plays luxury resource.  Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
+	{
 		"name": "Lighthouse",
 		"terrainsCanBeBuiltOn": ["Land","Water"],
 		"buildSound": "lighthouse",

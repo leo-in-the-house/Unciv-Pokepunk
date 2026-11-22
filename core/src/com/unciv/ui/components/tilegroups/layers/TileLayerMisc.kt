@@ -134,7 +134,7 @@ class TileLayerResource(tileGroup: TileGroup, size: Float) : TileLayer(tileGroup
         val effectiveVisible = showResourceIcon && (tileView.isForceVisible() || tileView.getViewableResource(viewingCiv) != null || tileImprovementProvidesResource)
 
         // If resource has changed (e.g. tech researched) - force new icon next time it's needed
-        if (resourceName != tileView.resource || resourceAmount != tileView.resourceAmount) {
+        if (tileView.resource != null && resourceName != tileView.resource || resourceAmount != tileView.resourceAmount) {
             resourceName = tileView.resource
             resourceAmount = tileView.resourceAmount
             resourceIcon?.let { removeOwnedActor(it) }
@@ -145,10 +145,10 @@ class TileLayerResource(tileGroup: TileGroup, size: Float) : TileLayer(tileGroup
         //However, this implementation so far will only support one type of resource being produced by each building, for UI limits.
         //It will use the resource of the last Provides [amount] [resourceType] unique.
         //Used for urban buildings.
-        if (resourceName == null && tileImprovementProvidesResource) {
+        if (tileView.resource == null && tileImprovementProvidesResource) {
              tileView.tileImprovement?.getMatchingUniques(UniqueType.ProvidesResources, gameContext)!!.forEach {
                  resourceName = it.params[1]
-                 resourceAmount += it.params[0].toInt()
+                 resourceAmount = it.params[0].toInt()
              }
         }
 

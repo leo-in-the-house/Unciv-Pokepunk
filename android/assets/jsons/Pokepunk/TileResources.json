@@ -1848,6 +1848,19 @@
         ]
 	},
 	{
+		"name": "Masks",
+		"resourceType": "Luxury",
+		"resourceCategory": "Crafts",
+		"uniques": [
+					"Doesn't generate naturally"
+				],
+		 "civilopediaText": [
+            {
+                "text": "These hard facial coverings are the key to providing expressiveness to works of performing art."
+            }
+        ]
+	},
+	{
 		"name": "Bread",
 		"resourceType": "Luxury",
 		"resourceCategory": "Cuisine",
@@ -1871,6 +1884,20 @@
 		 "civilopediaText": [
             {
                 "text": "These percussion instruments produce strong, thumping noises when their leather is hit.  A staple for providing beat to any musical composition."
+            }
+        ]
+	},
+	{
+		"name": "Plays",
+		"resourceType": "Luxury",
+		"resourceCategory": "Art",
+		"uniques": [
+					"Cannot be traded", //TODO: Allow trading with Printing
+					"Doesn't generate naturally"
+				],
+		 "civilopediaText": [
+            {
+                "text": "'O Romeo, Romeo, wherefore art thou Romeo?' -Romeo and Juliet, by William Shakesphere."
             }
         ]
 	},

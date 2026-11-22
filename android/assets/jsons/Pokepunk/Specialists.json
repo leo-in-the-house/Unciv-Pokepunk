@@ -30,6 +30,12 @@
 		"color": [0,125,255]
 	},
 	{
+		"name":"Actor",
+		"culture": 4,
+		"greatPersonPoints": {"Entertainer": 2},
+		"color": [190,80,190]
+	},
+	{
 		"name":"Tailor",
 		"gold": 3,
 		"greatPersonPoints": {"Aristocrat": 3},

@@ -279,6 +279,29 @@
         ]
 	},
 	{
+		"name": "Entertainer",
+		"unitType": "Civilian",
+		"secondaryUnitType": "Human",
+        "charges": 4,
+		"movement": 2,
+		"hurryCostModifier": 20,
+		"selectSound":"entertainer",
+		"uniques": [
+            "Great Creative",
+			"Unbuildable",
+            "[+10 Happiness] <for [5] turns> <by consuming this unit> <AI will always use when number of [Happiness] is less than [0]>",
+            "Empire enters a [8]-turn Golden Age <costs [+200 Faith] stats> <by consuming this unit> <AI will always use when number of [[Entertainer] Units] is more than [1]>",
+            "Can build [Leisure] improvements on tiles",
+			"Automation is a primary action"
+		],
+		"cost": 300,
+		 "civilopediaText": [
+            {
+                "text": "Entertainment-based Great Person that can provide a burst of temporary happiness or trigger a short Golden Age for 200 Faith.  Can build Leisure improvements in the late game."
+            }
+        ]
+	},
+	{
 		"name": "Merchant",
 		"unitType": "Civilian",
 		"secondaryUnitType": "Human",
