@@ -1226,6 +1226,11 @@ Simple unique parameters are explained by mouseover. Complex parameters are expl
 
 	Applicable to: Global, Unit
 
+??? example  "[amount] Charges"
+	Example: "[3] Charges"
+
+	Applicable to: Global, Unit
+
 ??? example  "[relativeAmount] Air Interception Range"
 	Example: "[+20] Air Interception Range"
 
@@ -2431,6 +2436,11 @@ Simple unique parameters are explained by mouseover. Complex parameters are expl
 
 ??? example  "[amount] Range"
 	Example: "[3] Range"
+
+	Applicable to: Global, Unit
+
+??? example  "[amount] Charges"
+	Example: "[3] Charges"
 
 	Applicable to: Global, Unit
 

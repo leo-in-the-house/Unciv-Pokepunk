@@ -138,6 +138,7 @@ class BaseUnit : RulesetObject(), INonPerpetualConstruction {
     @Readonly @Suppress("purity") // technically DOES increase gameInfo.lastUnitId...
     fun newMapUnit(civInfo: Civilization, unitId: Int? = null): MapUnit {
         @LocalState val unit = MapUnit()
+        
         unit.name = name
         unit.civ = civInfo
         unit.owner = civInfo.civID
@@ -148,6 +149,10 @@ class BaseUnit : RulesetObject(), INonPerpetualConstruction {
         // and the civInfo is required for using `hasUnique` when determining its movement options
         unit.setTransients(civInfo.gameInfo.ruleset)
 
+        //Add additional charges
+        unit.curCharges += getMatchingUniques(UniqueType.Charges, GameContext(civInfo, unit = unit)).sumOf { it.params[0].toInt() } +
+            civInfo.getMatchingUniques(UniqueType.Charges, GameContext(civInfo, unit = unit)).sumOf { it.params[0].toInt() }
+        
         return unit
     }
 

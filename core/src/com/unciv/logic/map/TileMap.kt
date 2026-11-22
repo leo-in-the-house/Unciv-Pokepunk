@@ -681,7 +681,7 @@ class TileMap(initialCapacity: Int = 10) : IsPartOfGameInfoSerialization {
             baseUnit: BaseUnit,
             civInfo: Civilization,
             unitId: Int? = null
-    ): MapUnit? {
+    ): MapUnit? {        
         val unit = baseUnit.newMapUnit(civInfo, unitId)
 
         fun getPassableNeighbours(tile: Tile) =
