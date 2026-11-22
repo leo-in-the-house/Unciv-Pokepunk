@@ -85,6 +85,28 @@
         ]
 	},
 	{
+		"name": "Garden",
+		"terrainsCanBeBuiltOn": ["Rich Soil"],
+		"faith": 2,
+		"culture": 2,
+		"happiness": 2,
+		"turnsToBuild": 0,
+		"buildSound": "garden",
+	 	"techRequired": "Hedonism",
+		"uniques": [
+			"Horticulture",
+			"Unavailable <in tiles adjacent to [Garden] tiles>",
+			"Tile provides yield without assigned population",
+			"Pillaging this improvement yields approximately [+30 Faith]"
+		],
+		"shortcutKey": "F",
+		 "civilopediaText": [
+            {
+                "text": "Can be built over Rich Soil, mainly by Gardeners, but not adjacent to another Garden.  Provides faith, culture, and happiness, even when not worked."
+            }
+        ]
+	},
+	{
 		"name": "Reedshack",
 		"terrainsCanBeBuiltOn": ["Marsh"],
 		"food": 1,
@@ -408,6 +430,23 @@
             }
         ]
 	},
+	{
+		"name": "Town Center",
+		"terrainsCanBeBuiltOn": ["Fertile","Arid","Urban"],
+		"buildSound": "city_center",
+		"turnsToBuild": 0,
+	 	"techRequired": "Empire",
+		"uniques": ["Ensures a minimum tile yield of [+2 Food, +5 Production]",
+			"Cannot be built within [2] tiles of a [Town Center] tile",
+			"Cannot be built within [2] tiles of a [City center] tile",
+			"Tile provides yield without assigned population",
+			"Turn this tile into a [Urban] tile",
+			"Can only be built <in [{non-[Hazardous]} {Flat}] tiles> <in cities connected to the capital>",
+            "Unpillagable", "Irremovable", "Excluded from map editor"],
+        "civilopediaText": [
+			{"text":"Town that provides additional food and production, and turns the tile into an Urban tile, allowing for Urban buildings to be built nearby.  Can only be built 2 tiles away from other Town Centers and City Centers, on non-Hazardous Flat Fertile or Arid tiles."}
+		]
+	},
 	//Water Improvements
 	{
 		"name": "Fishing Boats",
@@ -607,6 +646,27 @@
         ]
 	},
 	{
+		"name": "Scriptorium",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"buildSound": "scriptorium",
+		"uniques": [
+			"Urban Improvement",
+			"Art Improvement",
+			"Irremovable",
+			"Consumes [1] [Scrolls]",
+			"Provides [1] [Poems] <when above [-1] [Scrolls]>",
+			"Will not be replaced by automated units",
+			"Turn this tile into a [Urban] tile",
+			"Pillaging this improvement yields approximately [+50 Culture]",
+			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban Art building that must be built in flat land.  Provides the Poems luxury resource.  Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
+	{
 		"name": "Smokehouse",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"buildSound": "smokehouse",
@@ -657,6 +717,24 @@
 		 "civilopediaText": [
             {
                 "text": "Rural building that must be built in flat land, but not necessarily adjacent to Urban tiles.   Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
+	{
+		"name": "Pokémon Colosseum",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"buildSound": "pokemon_colosseum",
+		"uniques": [
+			"Urban Improvement",
+			"Irremovable",
+			"Will not be replaced by automated units",
+			"Turn this tile into a [Urban] tile",
+			"Pillaging this improvement yields approximately [+100 Gold]",
+			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in flat land.  Provides a high amount of Happiness.  Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
             }
         ]
 	},

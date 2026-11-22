@@ -139,7 +139,7 @@ class TileImprovementFunctions(val tile: Tile) {
 
             // Can't build if an improvement is within a certain distance of a specific tile
             improvement.getMatchingUniques(UniqueType.CannotBuildWithTileNearby, gameContext).let { uniqueSequence ->
-                uniqueSequence.any() && uniqueSequence.any { unique -> tile.getTilesInDistance(unique.params[0].toInt()).any { tile -> tile.matchesFilter(unique.params[1], gameContext.civInfo) } }
+                uniqueSequence.any() && uniqueSequence.any { unique -> tile.getTilesInDistance(unique.params[0].toInt()).any { checkedTile -> checkedTile != tile && checkedTile.matchesFilter(unique.params[1], gameContext.civInfo) } }
             } -> false
 
             // Can't build if an improvement is only allowed to be built on specific tiles and this is not one of them

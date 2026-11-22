@@ -316,8 +316,8 @@ class CityScreen(
                 updateAsync()
             }
             if (!canChangeState) annexCityButton.disable()
-            razeCityButtonHolder.add(annexCityButton) //.colspan(cityPickerTable.columns)
-        } else if (!cityView.isBeingRazed()) {
+            razeCityButtonHolder.add(annexCityButton) //.colspan(cityPickerTable.columns) 
+        } else if (!cityView.viewingCiv().hasUnique(UniqueType.MayNotManuallyRazeCities) && !cityView.viewingCiv().hasUnique(UniqueType.MayNotRazeCities) && !cityView.isBeingRazed()) {
             val razeCityButton = "Raze city".toTextButton()
             razeCityButton.labelCell.pad(10f)
             razeCityButton.onClick { cityView.trySetRazing(true); updateAsync() }
@@ -326,7 +326,7 @@ class CityScreen(
             }
 
             razeCityButtonHolder.add(razeCityButton) //.colspan(cityPickerTable.columns)
-        } else {
+        } else if (!cityView.viewingCiv().hasUnique(UniqueType.MayNotManuallyRazeCities) && !cityView.viewingCiv().hasUnique(UniqueType.MayNotRazeCities)) {
             val stopRazingCityButton = "Stop razing city".toTextButton()
             stopRazingCityButton.labelCell.pad(10f)
             stopRazingCityButton.onClick { cityView.trySetRazing(false); updateAsync() }

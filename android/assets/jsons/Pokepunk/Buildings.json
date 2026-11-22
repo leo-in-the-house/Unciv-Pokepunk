@@ -178,6 +178,28 @@
         ]
 	},
 	{
+		"name": "Pokémon Colosseum",
+		"buildSound": "pokemon_colosseum",
+		"cost": 120,
+		"happiness": 8,
+		"hurryCostModifier": 25,
+		"requiredTech": "Hedonism",
+		"specialistSlots": { "Gladiator": 2 },
+		"maintenance": 1,
+		"uniques": [
+			"Entertainment",
+			"Costs [15] [Stone]",
+			"Only available <when number of [[Pasture|Hunting Camp|Kennel] Tiles in this city] is more than [2]>",
+			"Creates a [Pokémon Colosseum] improvement on a specific tile",
+			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in flat land, in a city with at least 3 Bonus Pokémon improvements.  Provides Happiness and allow Gladiators that generate more happiness and spawn Generals."
+            }
+        ]
+	},
+	{
 		"name": "Weaver",
 		"requiredNearbyImprovedResources": ["Vines","Resin","Cotton","Wooloos","Bouffalants","Bidoofs","Scatterbugs","Joltiks"],
 		"buildSound": "weaver",
@@ -256,6 +278,25 @@
 		 "civilopediaText": [
             {
                 "text": "Urban building that must be built in flat tiles, in a city with at least one improved Clay, Coper, Glass, or Obsidian resource.  Provides 3 copies of the Masks luxury resource."
+            }
+        ]
+	},
+	{
+		"name": "Scriptorium",
+		"buildSound": "scriptorium",
+		"cost": 60,
+		"hurryCostModifier": 25,
+		"requiredTech": "Drama and Poetry",
+		"specialistSlots": { "Poet": 3 },
+		"maintenance": 2,
+		"uniques": [
+			"Crafting",
+			"Creates a [Scriptorium] improvement on a specific tile",
+			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in flat tiles.  Consumes 1 Scroll to provide the Poems luxury resource."
             }
         ]
 	},

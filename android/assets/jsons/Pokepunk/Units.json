@@ -257,6 +257,29 @@
 	},
     //Great Civilians
 	{
+		"name": "General",
+		"unitType": "Civilian",
+		"secondaryUnitType": "Human",
+        "charges": 1,
+		"movement": 3,
+		"uniques": [
+            "[+20]% Strength bonus for [{Military} {Land}] units within [2] tiles",
+            "Unbuildable",  
+            "Uncapturable",
+            "Can build [Defensive] improvements on tiles",
+			"Can be earned through combat <for [Land] units>",
+            "Is part of Great Person group [General]",
+			"Great Person - [Warfare]",
+			"Automation is a primary action"
+        ],
+		"cost": 300,
+		 "civilopediaText": [
+            {
+                "text": "Warfare-based Great Person that boosts the combat strength of adjacent units, and can build defensive buildings such as Castles, Forts, and Trenches later on.  Can be earned passively through combat!"
+            }
+        ]
+	},
+	{
 		"name": "Philosopher",
 		"unitType": "Civilian",
 		"secondaryUnitType": "Human",
@@ -265,10 +288,11 @@
 		"hurryCostModifier": 20,
 		"selectSound":"philosopher",
 		"uniques": [
-            "Great Thinker",
 			"Unbuildable",
             "Triggers a [Eureka] event <in [Archive] tiles> <for [1] charges> <AI will always use when number of [[Science] Per Turn] is less than [40]>",
 			"Can build [Knowledge] improvements on tiles",
+            "Is part of Great Person group [Philosopher]",
+			"Great Person - [Thinker]",
 			"Automation is a primary action"
 		],
 		"cost": 300,
@@ -287,11 +311,12 @@
 		"hurryCostModifier": 20,
 		"selectSound":"entertainer",
 		"uniques": [
-            "Great Creative",
 			"Unbuildable",
             "[+10 Happiness] <for [5] turns> <by consuming this unit> <AI will always use when number of [Happiness] is less than [0]>",
             "Empire enters a [8]-turn Golden Age <costs [+200 Faith] stats> <by consuming this unit> <AI will always use when number of [[Entertainer] Units] is more than [1]>",
             "Can build [Leisure] improvements on tiles",
+            "Is part of Great Person group [Entertainer]",
+			"Great Person - [Creative]",
 			"Automation is a primary action"
 		],
 		"cost": 300,
@@ -310,10 +335,11 @@
 		"hurryCostModifier": 20,
 		"selectSound":"merchant",
 		"uniques": [
-            "Great Economist",
 			"Unbuildable",
 			"Can build [Trade] improvements on tiles",
             "Can undertake a trade mission with City-State, giving a large sum of gold and [20] Influence",
+            "Is part of Great Person group [Merchant]",
+			"Great Person - [Economist]",
 			"Automation is a primary action"
 		],
 		"cost": 30,
@@ -332,13 +358,14 @@
 		"hurryCostModifier": 20,
 		"selectSound":"engineer",
 		"uniques": [
-            "Great Professional",
 			"Unbuildable",
             "Turn this tile into a [Urban] tile <in [{Flat} {unimproved}] tiles> <in tiles adjacent to [Urban] tiles> <for [1] charges> <AI will always use in [Hill] tiles>",
             "Can build [All Road] improvements on tiles",
             "Can build [Repair] improvements on tiles",
             "Remove [non-[Irremovable]] improvements from this tile <for all movement>",
             "Can speed up construction of a building",
+            "Is part of Great Person group [Engineer]",
+			"Great Person - [Professional]",
 			"Automation is a primary action"
 		],
 		"cost": 300,
@@ -361,10 +388,11 @@
 		"hurryCostModifier": 20,
 		"selectSound":"priestess",
 		"uniques": [
-            "Great Mage",
 			"Unbuildable",
             "[This Unit] heals [50] HP <in all [All] tiles in [1] radius> <for [1] charges>",
-            "Gain [300]-[700] [Faith] <in Sacred Terrain tiles for your Pantheon> <after founding a Pantheon> <for [1] charges>"
+            "Gain [300]-[700] [Faith] <in Sacred Terrain tiles for your Pantheon> <after founding a Pantheon> <for [1] charges>",
+            "Is part of Great Person group [Priestess]",
+			"Great Person - [Mage]"
 		],
 		"cost": 300,
 		 "civilopediaText": [
@@ -382,11 +410,12 @@
 		"hurryCostModifier": 20,
 		"selectSound":"aristocrat",
 		"uniques": [
-            "Great Noble",
 			"Unbuildable",
             "Can build [Luxury] improvements on tiles",
             "Triggers a [Tax Collection] event <in [{Friendly} {City center}] tiles> <for [1] charges> <AI will always use when number of [Gold] is less than [100]>",
             "Instantly gain [4] [Slaves] <costs [+500 Gold] stats> <for [1] charges>",
+            "Is part of Great Person group [Aristocrat]",
+			"Great Person - [Noble]",
             "Automation is a primary action"
 		],
 		"cost": 300,
@@ -409,11 +438,12 @@
 		"hurryCostModifier": 20,
 		"selectSound":"dryad",
 		"uniques": [
-            "Great Mage",
 			"Unbuildable",
             "Turn this tile into a [Rich Soil] tile <in [{non-[Hazardous]} {Fertile}] tiles> <for [1] charges> <AI will always use when number of [Owned [Rich Soil] Tiles] is less than [3]>",
 			"Triggers a [Miracle Blossom] event <in [Forest|Marsh|Rich Soil] tiles> <for [2] charges> <AI will always use>",
-            "[+3] population [in this city] <for [4] charges>"
+            "[+3] population [in this city] <for [4] charges>",
+            "Is part of Great Person group [Dryad]",
+			"Great Person - [Mage]"
 		],
 		"cost": 300,
 		 "civilopediaText": [

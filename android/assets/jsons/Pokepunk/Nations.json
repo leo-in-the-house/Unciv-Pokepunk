@@ -89,7 +89,7 @@
 	},
 	{
 		"name": "Barbarians",
-		"outerColor": [255,25,25],
+		"outerColor": [255,0,0],
 		"innerColor": [255,255,255],
 		"uniques": ["Excluded from map editor"]
 	}

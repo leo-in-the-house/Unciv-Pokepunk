@@ -1901,6 +1901,20 @@
             }
         ]
 	},
+	{
+		"name": "Poems",
+		"resourceType": "Luxury",
+		"resourceCategory": "Art",
+		"uniques": [
+					"Cannot be traded", //TODO: Allow trading with Printing
+					"Doesn't generate naturally"
+				],
+		 "civilopediaText": [
+            {
+                "text": "'You're looking at the stars, my star; Would that I could become the sky; So that with many eyes I could look upon you.' -Socrates."
+            }
+        ]
+	},
 	// Spawned Luxury resources
 	{
 		"name": "Apples",

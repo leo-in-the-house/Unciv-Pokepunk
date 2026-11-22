@@ -1,5 +1,11 @@
 [
 	{
+		"name":"Gladiator",
+		"happiness": 3,
+		"greatPersonPoints": {"General": 3},
+		"color": [125,25,25]
+	},
+	{
 		"name":"Stoneworker",
 		"gold": 3,
 		"greatPersonPoints": {"Builder": 3},
@@ -25,6 +31,12 @@
 	},
 	{
 		"name":"Scribe",
+		"science": 3,
+		"greatPersonPoints": {"Philosopher": 3},
+		"color": [0,125,255]
+	},
+	{
+		"name":"Poet",
 		"science": 2,
 		"greatPersonPoints": {"Philosopher": 5},
 		"color": [0,125,255]

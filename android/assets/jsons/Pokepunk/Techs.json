@@ -164,6 +164,12 @@
 		"wonderCost": 220,
 		"techs": [
 			{
+				"name": "Hedonism",
+				"row": 1,
+				"quote": "As the basic needs of mankind become more attainable, people new attempt to fulfill their wants of beauty, joy and decadence.",
+				"prerequisites": ["Slavery","Herbalism"]
+			},
+			{
 				"name": "Refraction",
 				"row": 2,
 				"quote": "We discovered that certain materials can be used and glazed in order to reflect and project light.  This should make it easier for us to navigate around hazards, especially at sea.",
@@ -200,10 +206,23 @@
 				"prerequisites": ["Bronze Working","Writing"]
 			},
 			{
+				"name": "Heroism",
+				"row": 8,
+				"quote": "As our civilization faces greater threats from wild Pokémon and from other people, certain exceptional characters may rise up to protect the land and bring glory to the people.",
+				"prerequisites": ["Writing"]
+			},
+			{
 				"name": "Cooking",
 				"row": 9,
 				"quote": "Basic means of food preservation and preparing meat included salting, smoking, and grilling.  This improved the quality and amount of food, allowing for larger populations.",
 				"prerequisites": ["Calendar"]
+			},
+			{
+				"name": "Empire",
+				"row": 10,
+				"uniques": ["Comment [Enables manually razing cities]"],
+				"quote": "As our civilization grows in size, it becomes necessary to increase our administrative capacity to handle a growing population.  Imperial institutions will provide us with the power to manage new towns and raze cities.",
+				"prerequisites": ["Writing","Code of Laws"]
 			}
 		]
 	},

@@ -5,6 +5,8 @@
         
         // General Uniques
         "Requires establishing embassies to conduct advanced diplomacy",
+        "May not manually raze cities <before discovering [Empire]>",
+        //"May not annex cities <before discovering [Empire]>",
         "[-75]% growth [in all cities] <when between [-10] and [-1] [Happiness]>",
         "Nullifies Growth [in all cities] <when below [-10] [Happiness]>",
         "[-50]% [Production] [in all cities] <when below [-10] [Happiness]>",

@@ -228,7 +228,8 @@ class AlertPopup(
             }
             addSeparator()
 
-            addRazeOption(city, mayAnnex = mayAnnex, conqueringCiv)
+            val mayRaze = !conqueringCiv.hasUnique(UniqueType.MayNotRazeCities)
+            addRazeOption(city, mayAnnex = mayAnnex, mayRaze = mayRaze,conqueringCiv)
         }
     }
 
@@ -623,8 +624,8 @@ class AlertPopup(
         addGoodSizedLabel("Liberating a city returns it to its original owner, giving you a massive relationship boost with them!")
     }
 
-    private fun addRazeOption(city: City, mayAnnex: Boolean, conqueringCiv: Civilization) {
-        val canRaze = city.canBeDestroyed(justCaptured = true)
+    private fun addRazeOption(city: City, mayAnnex: Boolean, mayRaze: Boolean, conqueringCiv: Civilization) {
+        val canRaze = mayRaze && city.canBeDestroyed(justCaptured = true)
         val button = "Raze".toTextButton()
         button.apply {
             if (!canRaze) disable()

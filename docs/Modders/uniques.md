@@ -1111,6 +1111,12 @@ Simple unique parameters are explained by mouseover. Complex parameters are expl
 ??? example  "May not annex cities"
 	Applicable to: Global
 
+??? example  "May not manually raze cities"
+	Applicable to: Global
+
+??? example  "May not raze cities"
+	Applicable to: Global
+
 ??? example  ""Borrows" city names from other civilizations in the game"
 	Applicable to: Global
 
