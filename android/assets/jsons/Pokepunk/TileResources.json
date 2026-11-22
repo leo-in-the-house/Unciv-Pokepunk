@@ -81,7 +81,7 @@
 		"uniques": [
 					"Edible",
 					"Provides a one-time bonus of [+30 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [5] tiles <in [Alpine] tiles> <in [Alpine] Regions>",
+					"Generated on every [10] tiles <in [Alpine] tiles> <in [Alpine] Regions>",
 					"Generated on every [15] tiles <in [Alpine] tiles> <within [5] tiles of a [Mountain]>",
 					"Generated on every [40] tiles <in [Tropical] tiles> <within [5] tiles of a [Mountain]>",
 					"Generated on every [40] tiles <in [Plains] tiles> <within [5] tiles of a [Mountain]>",
@@ -147,9 +147,9 @@
 		"terrainsCanBeFoundOn": ["Tropical", "Savannah", "Desert", "Forest"],
 		"uniques": [
 					"Provides a one-time bonus of [+30 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [25] tiles <in [{Tropical} {Forest}] tiles>",
-					"Generated on every [40] tiles <in [{Savannah} {Forest}] tiles>",
-					"Generated on every [40] tiles <in [{Desert} {Forest}] tiles>",
+					"Generated on every [35] tiles <in [{Tropical} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [{Savannah} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [{Desert} {Forest}] tiles>",
 					"Must not be on [2] largest landmasses"
 				],
 		 "civilopediaText": [
@@ -166,13 +166,13 @@
 		"terrainsCanBeFoundOn": ["Grassland", "Tropical", "Ashlands", "Marsh", "Enchanted", "Haunted", "Hill"],
 		"uniques": [
 					"Provides a one-time bonus of [+30 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [25] tiles <in [Grassland] tiles>",
-					"Generated on every [25] tiles <in [Tropical] tiles>",
-					"Generated on every [30] tiles <in [Ashlands] tiles>",
-					"Generated on every [30] tiles <in [Enchanted] tiles>",
-					"Generated on every [30] tiles <in [Haunted] tiles>",
-					"Generated on every [35] tiles <in [Marsh] tiles>",
-					"Generated on every [40] tiles <in [Hill] tiles>",
+					"Generated on every [30] tiles <in [Grassland] tiles>",
+					"Generated on every [35] tiles <in [Tropical] tiles>",
+					"Generated on every [45] tiles <in [Ashlands] tiles>",
+					"Generated on every [50] tiles <in [Enchanted] tiles>",
+					"Generated on every [50] tiles <in [Haunted] tiles>",
+					"Generated on every [70] tiles <in [Marsh] tiles>",
+					"Generated on every [70] tiles <in [Hill] tiles>",
 					"Doesn't generate naturally <in [non-[Fertile]] tiles>",
 					"Must not be on [3] largest landmasses"
 				],
@@ -190,12 +190,12 @@
 		"terrainsCanBeFoundOn": ["Grassland", "Tropical", "Ashlands", "Marsh", "Forest"],
 		"uniques": [
 					"Provides a one-time bonus of [+30 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [{Tropical} {Forest}] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [30] tiles <in [Marsh] tiles>",
-					"Generated on every [40] tiles <in [{Grassland} {Forest}] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [40] tiles <in [Ashlands] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [45] tiles <in [Tropical] tiles>",
-					"Generated on every [50] tiles <in [Hill] tiles>",
+					"Generated on every [40] tiles <in [{Tropical} {Forest}] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [40] tiles <in [Marsh] tiles>",
+					"Generated on every [60] tiles <in [{Grassland} {Forest}] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [60] tiles <in [Ashlands] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [70] tiles <in [Tropical] tiles>",
+					"Generated on every [70] tiles <in [Hill] tiles>",
 					"Must not be on [1] largest landmasses"
 				],
 		 "civilopediaText": [
@@ -212,11 +212,11 @@
 		"terrainsCanBeFoundOn": ["Tropical", "Ashlands", "Savannah", "Desert", "Rich Soil"],
 		"uniques": [
 					"Provides a one-time bonus of [+30 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [10] tiles <in [{Savannah} {Rich Soil}] tiles>",
-					"Generated on every [25] tiles <in [Savannah] tiles>",
-					"Generated on every [25] tiles <in [Tropical] tiles>",
-					"Generated on every [30] tiles <in [{Desert} {Rich Soil}] tiles>",
-					"Generated on every [40] tiles <in [Ashlands] tiles>",
+					"Generated on every [40] tiles <in [{Savannah} {Rich Soil}] tiles>",
+					"Generated on every [40] tiles <in [Savannah] tiles>",
+					"Generated on every [50] tiles <in [Tropical] tiles>",
+					"Generated on every [60] tiles <in [{Desert} {Rich Soil}] tiles>",
+					"Generated on every [70] tiles <in [Ashlands] tiles>",
 					"Must be on [1] largest landmasses"
 				],
 		 "civilopediaText": [
@@ -233,10 +233,10 @@
 		"uniques": [
 					"Weavable",
 					"Provides a one-time bonus of [+10 Production] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [15] tiles <in [{Tropical} {Forest}] tiles>",
-					"Generated on every [15] tiles <in [{Haunted} {Forest}] tiles>",
-					"Generated on every [20] tiles <in [{Grassland} {Forest}] tiles>",
-					"Generated on every [20] tiles <in [{Enchanted} {Forest}] tiles>",
+					"Generated on every [30] tiles <in [{Tropical} {Forest}] tiles>",
+					"Generated on every [50] tiles <in [{Haunted} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [{Grassland} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [{Enchanted} {Forest}] tiles>",
 					"Doesn't generate naturally <with [0] to [1] neighboring [Forest] tiles>",
 					"Doesn't generate naturally <in [non-[Forest]] tiles>",
 					"Doesn't generate naturally <in [Cold] tiles>"
@@ -255,13 +255,13 @@
 		"terrainsCanBeFoundOn": ["Tropical", "Grassland", "Enchanted", "Haunted", "Marsh", "Savannah", "Desert", "Forest"],
 		"uniques": [
 					"Provides a one-time bonus of [+30 Culture] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [10] tiles <in [Enchanted] tiles>",
-					"Generated on every [20] tiles <in [{Tropical} {Forest}] tiles>",
-					"Generated on every [20] tiles <in [{Grassland} {Forest}] tiles>",
-					"Generated on every [20] tiles <in [Desert] tiles>",
-					"Generated on every [25] tiles <in [Marsh] tiles>",
-					"Generated on every [40] tiles <in [{Haunted} {Forest}] tiles>",
-					"Generated on every [40] tiles <in [Savannah] tiles>",
+					"Generated on every [50] tiles <in [Enchanted] tiles>",
+					"Generated on every [60] tiles <in [{Tropical} {Forest}] tiles>",
+					"Generated on every [60] tiles <in [{Grassland} {Forest}] tiles>",
+					"Generated on every [60] tiles <in [Desert] tiles>",
+					"Generated on every [70] tiles <in [Marsh] tiles>",
+					"Generated on every [70] tiles <in [{Haunted} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [Savannah] tiles>",
 					"Doesn't generate naturally <in tiles not adjacent to [Coast] tiles>"
 				],
 		 "civilopediaText": [
@@ -293,12 +293,12 @@
 		"terrainsCanBeFoundOn": ["Enchanted", "Haunted", "Tundra", "Grassland", "Ashlands", "Marsh", "Forest"],
 		"uniques": [
 					"Provides a one-time bonus of [+20 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [10] tiles <in [Marsh] tiles>",
-					"Generated on every [15] tiles <in [{Tundra} {Forest}] tiles>",
-					"Generated on every [15] tiles <in [{Haunted} {Forest}] tiles>",
-					"Generated on every [15] tiles <in [{Grassland} {Forest}] tiles>",
-					"Generated on every [20] tiles <in [{Ashlands} {Forest}] tiles>",
-					"Generated on every [35] tiles <in [{Enchanted} {Forest}] tiles>",
+					"Generated on every [40] tiles <in [Marsh] tiles>",
+					"Generated on every [50] tiles <in [{Tundra} {Forest}] tiles>",
+					"Generated on every [50] tiles <in [{Haunted} {Forest}] tiles>",
+					"Generated on every [60] tiles <in [{Grassland} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [{Ashlands} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [{Enchanted} {Forest}] tiles>",
 					"Doesn't generate naturally <in tiles without [Forest|Marsh]>",
 					"Doesn't generate naturally <not within [5] tiles of a [Marsh|Enchanted|Haunted]>"
 				],
@@ -316,11 +316,11 @@
 		"terrainsCanBeFoundOn": ["Tundra", "Enchanted", "Haunted", "Alpine", "Tropical", "Forest"],
 		"uniques": [
 					"Provides a one-time bonus of [+20 Faith] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [25] tiles <in [Haunted] tiles>",
-					"Generated on every [35] tiles <in [Enchanted] tiles>",
-					"Generated on every [35] tiles <in [Tundra] tiles>",
-					"Generated on every [35] tiles <in [Alpine] tiles>",
-					"Generated on every [45] tiles <in [Tropical] tiles>",
+					"Generated on every [50] tiles <in [Haunted] tiles>",
+					"Generated on every [60] tiles <in [Enchanted] tiles>",
+					"Generated on every [60] tiles <in [Tundra] tiles>",
+					"Generated on every [60] tiles <in [Alpine] tiles>",
+					"Generated on every [70] tiles <in [Tropical] tiles>",
 					"Doesn't generate naturally <in tiles without [Forest]>"
 				],
 		 "civilopediaText": [
@@ -338,10 +338,10 @@
 		"uniques": [
 					"Weavable",
 					"Provides a one-time bonus of [+30 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [25] tiles <in [Enchanted] tiles>",
-					"Generated on every [30] tiles <in [Tundra] tiles>",
-					"Generated on every [45] tiles <in [Alpine] tiles>",
-					"Generated on every [45] tiles <in [Grassland] tiles>",
+					"Generated on every [50] tiles <in [Enchanted] tiles>",
+					"Generated on every [55] tiles <in [Tundra] tiles>",
+					"Generated on every [70] tiles <in [Alpine] tiles>",
+					"Generated on every [70] tiles <in [Grassland] tiles>",
 					"Doesn't generate naturally <in tiles without [Forest]>",
 					"Doesn't generate naturally <not within [2] tiles of a [Cold]>"
 				],
@@ -359,9 +359,9 @@
 		"improvementStats": { "production": 5 },
 		"uniques": [
 					"Provides a one-time bonus of [+50 Production] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [{Grassland} {Hill}] tiles> <within [2] tiles of a [Coast]>",
-					"Generated on every [50] tiles <in [{Grassland} {Hill}] tiles> <not within [2] tiles of a [Coast]>",
-					"Generated on every [60] tiles <in [{non-[Grassland]} {Hill}] tiles>",
+					"Generated on every [50] tiles <in [{Grassland} {Hill}] tiles> <within [2] tiles of a [Coast]>",
+					"Generated on every [60] tiles <in [{Grassland} {Hill}] tiles> <not within [2] tiles of a [Coast]>",
+					"Generated on every [70] tiles <in [{non-[Grassland]} {Hill}] tiles>",
 					"Doesn't generate naturally <in [Permafrost|Tundra|Wasteland|Crystallic|Tropical] tiles>"
 				],
 		 "civilopediaText": [
@@ -378,11 +378,11 @@
 		"improvementStats": { "production": 5 },
 		"uniques": [
 					"Provides a one-time bonus of [+30 Production] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [10] tiles <in [{Desert} {Hill}] tiles> <within [2] tiles of a [River]>",
-					"Generated on every [15] tiles <in [{Desert} {Hill}] tiles> <within [2] tiles of a [Coast]>",
-					"Generated on every [20] tiles <in [{Savannah} {Hill}] tiles> <within [3] tiles of a [River]>",
-					"Generated on every [25] tiles <in [Desert] tiles> <within [3] tiles of a [River]>",
-					"Generated on every [45] tiles <in [Hill] tiles> <within [3] tiles of a [River]>",
+					"Generated on every [30] tiles <in [{Desert} {Hill}] tiles> <within [2] tiles of a [River]>",
+					"Generated on every [40] tiles <in [{Desert} {Hill}] tiles> <within [2] tiles of a [Coast]>",
+					"Generated on every [50] tiles <in [{Savannah} {Hill}] tiles> <within [3] tiles of a [River]>",
+					"Generated on every [60] tiles <in [Desert] tiles> <within [3] tiles of a [River]>",
+					"Generated on every [90] tiles <in [Hill] tiles> <within [3] tiles of a [River]>",
 					"Doesn't generate naturally <in [Cold|Tropical] tiles>",
 					"Doesn't generate naturally <not within [3] tiles of a [River]>"
 				],
@@ -400,8 +400,8 @@
 		"improvementStats": { "gold": 3 },
 		"uniques": [
 					"Provides a one-time bonus of [+30 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [10] tiles <in [Volcanic] tiles>",
-					"Generated on every [10] tiles <in [Ashlands] tiles>",
+					"Generated on every [20] tiles <in [Volcanic] tiles>",
+					"Generated on every [30] tiles <in [Ashlands] tiles>",
 					"Doesn't generate naturally <not within [6] tiles of a [Volcanic]>"
 				],
 		 "civilopediaText": [
@@ -418,9 +418,9 @@
 		"improvementStats": { "gold": 3 },
 		"uniques": [
 					"Provides a one-time bonus of [+30 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [Crystallic] tiles>",
-					"Generated on every [30] tiles <in [Grassland] tiles>",
-					"Generated on every [40] tiles <in [Plains] tiles>"
+					"Generated on every [30] tiles <in [Crystallic] tiles>",
+					"Generated on every [40] tiles <in [Grassland] tiles>",
+					"Generated on every [50] tiles <in [Plains] tiles>"
 				],
 		 "civilopediaText": [
             {"text": "A common, bright material that can be blown from sand or found naturally in common biomes.  Needed to create many advanced objects and structures."}
@@ -435,8 +435,8 @@
 		"improvementStats": { "gold": 2, "food":2 },
 		"uniques": [
 					"Provides a one-time bonus of [+15 Gold, +15 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [40] tiles <in [Desert] tiles>",
-					"Generated on every [40] tiles <in [Lakes] tiles>"
+					"Generated on every [50] tiles <in [Desert] tiles>",
+					"Generated on every [50] tiles <in [Lakes] tiles>"
 				],
 		 "civilopediaText": [
             {"text": "An electrolyte that can be processed from seawater or found rarely in Lakes and Deserts.  Has culinary and preservation uses."}
@@ -476,9 +476,9 @@
 		"improvementStats": { "gold": 5 },
 		"uniques": [
 					"Provides a one-time bonus of [+100 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [30] tiles <in [Crystallic] tiles>",
-					"Generated on every [40] tiles <in [Desert] tiles>",
-					"Generated on every [60] tiles <in [Alpine] tiles>",
+					"Generated on every [40] tiles <in [Crystallic] tiles>",
+					"Generated on every [50] tiles <in [Desert] tiles>",
+					"Generated on every [70] tiles <in [Alpine] tiles>",
 					"Generated on every [100] tiles <in [Plains] tiles>",
 					"Generated on every [120] tiles <in [Tundra] tiles>",
 					"Generated on every [240] tiles <in [Hill] tiles>",
@@ -529,10 +529,10 @@
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+25 Food] to the closest city when removed <(modified by game speed)>",
 					"Generated on every [30] tiles <in [{Featureless} {Plains}] tiles>",
-					"Generated on every [30] tiles <in [Volcanic] tiles>",
-					"Generated on every [30] tiles <in [{Featureless} {Ashlands}] tiles>",
 					"Generated on every [40] tiles <in [Savannah] tiles>",
-					"Generated on every [40] tiles <in [{Featureless} {Grassland}] tiles>",
+					"Generated on every [40] tiles <in [{Featureless} {Ashlands}] tiles>",
+					"Generated on every [40] tiles <in [Volcanic] tiles>",
+					"Generated on every [50] tiles <in [{Featureless} {Grassland}] tiles>",
 					"Generated on every [50] tiles <in [{Featureless} {Tundra}] tiles>",
 					"Generated on every [70] tiles <in [Tundra] tiles>"
 				],
@@ -556,7 +556,7 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+25 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [Enchanted] tiles>",
+					"Generated on every [30] tiles <in [Enchanted] tiles>",
 					"Generated on every [100] tiles <in [Haunted] tiles>",
 					"Must be on [1] largest landmasses"
 				],
@@ -580,11 +580,11 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+25 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [35] tiles <in [{Featureless} {Grassland}] tiles>",
-					"Generated on every [35] tiles <in [Marsh] tiles>",
-					"Generated on every [40] tiles <in [Savannah] tiles>",
-					"Generated on every [40] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [45] tiles <in [Plains] tiles>",
+					"Generated on every [40] tiles <in [{Featureless} {Grassland}] tiles>",
+					"Generated on every [45] tiles <in [Marsh] tiles>",
+					"Generated on every [45] tiles <in [Savannah] tiles>",
+					"Generated on every [45] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [50] tiles <in [Plains] tiles>",
 					"Generated on every [50] tiles <in [Wasteland] tiles>",
 					"Generated on every [55] tiles <in [Tundra] tiles>",
 					"Generated on every [60] tiles <in [Ashlands] tiles>",
@@ -610,12 +610,12 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+25 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [25] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [25] tiles <in [Volcanic] tiles>",
-					"Generated on every [30] tiles <in [Ashlands] tiles>",
-					"Generated on every [40] tiles <in [Savannah] tiles>",
-					"Generated on every [40] tiles <in [Desert] tiles>",
-					"Generated on every [50] tiles <in [Hill] tiles>",
+					"Generated on every [40] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [40] tiles <in [Volcanic] tiles>",
+					"Generated on every [50] tiles <in [Ashlands] tiles>",
+					"Generated on every [60] tiles <in [Savannah] tiles>",
+					"Generated on every [60] tiles <in [Desert] tiles>",
+					"Generated on every [70] tiles <in [Hill] tiles>",
 					"Doesn't generate naturally <in tiles without [Desert|Volcanic|Ashlands|Savannah]>",
 					"Must be on [1] largest landmasses"
 				],
@@ -641,10 +641,10 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+40 Production] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [{Tropical} {Forest}] tiles>",
-					"Generated on every [25] tiles <in [Savannah] tiles>",
-					"Generated on every [40] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [50] tiles <in [Tropical] tiles>",
+					"Generated on every [40] tiles <in [Savannah] tiles>",
+					"Generated on every [50] tiles <in [{Tropical} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [80] tiles <in [Tropical] tiles>",
 					"Doesn't generate naturally <in tiles without [Desert|Tropical|Savannah]>",
 					"Must be on [1] largest landmasses"
 				],
@@ -668,7 +668,7 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+25 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [Savannah] tiles>"
+					"Generated on every [25] tiles <in [Savannah] tiles>"
 				],
 		 "civilopediaText": [
             {
@@ -691,12 +691,12 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+10 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [30] tiles <in [Enchanted] tiles>",
-					"Generated on every [30] tiles <in [Grassland] tiles>",
-					"Generated on every [40] tiles <in [Ashlands] tiles>",
-					"Generated on every [40] tiles <in [Tundra] tiles>",
-					"Generated on every [65] tiles <in [Haunted] tiles>",
-					"Generated on every [65] tiles <in [Tropical] tiles>",
+					"Generated on every [45] tiles <in [Enchanted] tiles>",
+					"Generated on every [45] tiles <in [Grassland] tiles>",
+					"Generated on every [50] tiles <in [Ashlands] tiles>",
+					"Generated on every [65] tiles <in [Tundra] tiles>",
+					"Generated on every [75] tiles <in [Haunted] tiles>",
+					"Generated on every [75] tiles <in [Tropical] tiles>",
 					"Doesn't generate naturally <in tiles without [Forest]>"
 				],
 		 "civilopediaText": [
@@ -720,10 +720,10 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+30 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [25] tiles <in [Plains] tiles>",
-					"Generated on every [30] tiles <in [Grassland] tiles>",
-					"Generated on every [40] tiles <in [Ashlands] tiles>",
-					"Generated on every [40] tiles <in [Savannah] tiles>"
+					"Generated on every [40] tiles <in [Plains] tiles>",
+					"Generated on every [50] tiles <in [Grassland] tiles>",
+					"Generated on every [60] tiles <in [Ashlands] tiles>",
+					"Generated on every [60] tiles <in [Savannah] tiles>"
 				],
 		 "civilopediaText": [
             {
@@ -747,12 +747,12 @@
 					"Bonus Pokémon",
 					"Weavable",
 					"Provides a one-time bonus of [+25 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [25] tiles <in [{Enchanted} {Hill}] tiles>",
-					"Generated on every [25] tiles <in [{Plains} {Hill}] tiles>",
-					"Generated on every [35] tiles <in [{Grassland} {Hill}] tiles>",
-					"Generated on every [40] tiles <in [{Haunted} {Hill}] tiles>",
-					"Generated on every [40] tiles <in [Alpine] tiles>",
-					"Generated on every [50] tiles <in [{Tundra} {Hill}] tiles>",
+					"Generated on every [35] tiles <in [{Enchanted} {Hill}] tiles>",
+					"Generated on every [35] tiles <in [{Plains} {Hill}] tiles>",
+					"Generated on every [40] tiles <in [{Grassland} {Hill}] tiles>",
+					"Generated on every [50] tiles <in [{Haunted} {Hill}] tiles>",
+					"Generated on every [60] tiles <in [Alpine] tiles>",
+					"Generated on every [70] tiles <in [{Tundra} {Hill}] tiles>",
 					"Doesn't generate naturally <in tiles without [Grassland|Plains|Enchanted|Haunted|Alpine|Tundra]>",
 					"Doesn't generate naturally <in tiles without [Hill|Alpine]>"
 				],
@@ -778,11 +778,11 @@
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+50 Food] to the closest city when removed <(modified by game speed)>",
 					"Generated on every [20] tiles <in [Plains] tiles>",
-					"Generated on every [25] tiles <in [Grassland] tiles>",
-					"Generated on every [25] tiles <in [Savannah] tiles>",
-					"Generated on every [25] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [40] tiles <in [Ashlands] tiles>",
-					"Generated on every [55] tiles <in [Haunted] tiles>",
+					"Generated on every [40] tiles <in [Grassland] tiles>",
+					"Generated on every [40] tiles <in [Savannah] tiles>",
+					"Generated on every [50] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [50] tiles <in [Ashlands] tiles>",
+					"Generated on every [70] tiles <in [Haunted] tiles>",
 					"Must be on [1] largest landmasses"
 				],
 		 "civilopediaText": [
@@ -807,10 +807,10 @@
 					"Bonus Pokémon",
 					"Weavable",
 					"Provides a one-time bonus of [+50 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [15] tiles <in [Plains] tiles>",
-					"Generated on every [15] tiles <in [Savannah] tiles>",
-					"Generated on every [25] tiles <in [Grassland] tiles>",
-					"Generated on every [35] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [20] tiles <in [Plains] tiles>",
+					"Generated on every [20] tiles <in [Savannah] tiles>",
+					"Generated on every [40] tiles <in [Grassland] tiles>",
+					"Generated on every [60] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
 					"Must not be on [1] largest landmasses"
 				],
 		 "civilopediaText": [
@@ -833,8 +833,8 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+25 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [30] tiles <in [Hill] tiles>",
-					"Generated on every [40] tiles <in [Alpine] tiles>",
+					"Generated on every [40] tiles <in [Hill] tiles>",
+					"Generated on every [50] tiles <in [Alpine] tiles>",
 					"Doesn't generate naturally <not within [4] tiles of a [Alpine]>",
 					"Doesn't generate naturally <in tiles without [Fertile]>",
 					"Must not be on [1] largest landmasses"
@@ -859,10 +859,10 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+10 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [10] tiles <in [Ruins] tiles>",
-					"Generated on every [10] tiles <in [Wasteland] tiles>",
-					"Generated on every [25] tiles <in [{Haunted} {Forest}] tiles>",
-					"Generated on every [35] tiles <in [Savannah] tiles>",
+					"Generated on every [15] tiles <in [Ruins] tiles>",
+					"Generated on every [20] tiles <in [Wasteland] tiles>",
+					"Generated on every [50] tiles <in [{Haunted} {Forest}] tiles>",
+					"Generated on every [50] tiles <in [Savannah] tiles>",
 					"Doesn't generate naturally <in tiles without [Haunted|Savannah|Wasteland]>"
 				],
 		 "civilopediaText": [
@@ -887,7 +887,7 @@
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+10 Food] to the closest city when removed <(modified by game speed)>",
 					"Generated on every [30] tiles <in [{Enchanted} {Forest}] tiles>",
-					"Generated on every [35] tiles <in [Forest] tiles>",
+					"Generated on every [70] tiles <in [Forest] tiles>",
 					"Doesn't generate naturally <not within [5] tiles of a [Enchanted]>",
 					"Doesn't generate naturally <in tiles without [Fertile]>"
 				],
@@ -911,11 +911,11 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+10 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [30] tiles <in [{Enchanted} {Forest}] tiles>",
-					"Generated on every [35] tiles <in [Desert] tiles>",
-					"Generated on every [45] tiles <in [Grassland] tiles>",
-					"Generated on every [50] tiles <in [Plains] tiles>",
-					"Generated on every [55] tiles <in [Hill] tiles>",
+					"Generated on every [40] tiles <in [{Enchanted} {Forest}] tiles>",
+					"Generated on every [40] tiles <in [Desert] tiles>",
+					"Generated on every [55] tiles <in [Grassland] tiles>",
+					"Generated on every [60] tiles <in [Plains] tiles>",
+					"Generated on every [90] tiles <in [Hill] tiles>",
 					"Doesn't generate naturally <in tiles not adjacent to [Fresh Water] tiles>",
 					"Doesn't generate naturally <in tiles without [Grassland|Plains|Desert|Enchanted]>"
 				],
@@ -940,13 +940,12 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+50 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [15] tiles <in [Desert] tiles>",
-					"Generated on every [30] tiles <in [Tropical] tiles>",
-					"Generated on every [35] tiles <in [Enchanted] tiles>",
-					"Generated on every [40] tiles <in [Grassland] tiles>",
-					"Generated on every [40] tiles <in [Ashlands] tiles>",
-					"Generated on every [40] tiles <in [Tundra] tiles>",
-					"Generated on every [55] tiles <in [Ashlands] tiles>",
+					"Generated on every [50] tiles <in [Desert] tiles>",
+					"Generated on every [60] tiles <in [Tropical] tiles>",
+					"Generated on every [70] tiles <in [Enchanted] tiles>",
+					"Generated on every [80] tiles <in [Grassland] tiles>",
+					"Generated on every [80] tiles <in [Tundra] tiles>",
+					"Generated on every [100] tiles <in [Ashlands] tiles>",
 					"Doesn't generate naturally <in tiles not adjacent to [Coast] tiles>"
 				],
 		 "civilopediaText": [
@@ -970,9 +969,9 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+50 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [{Tundra} {Forest}] tiles>",
-					"Generated on every [30] tiles <in [{Grassland} {Forest}] tiles>",
+					"Generated on every [25] tiles <in [{Tundra} {Forest}] tiles>",
 					"Generated on every [40] tiles <in [Tundra] tiles>",
+					"Generated on every [55] tiles <in [{Grassland} {Forest}] tiles>",
 					"Doesn't generate naturally <not within [3] tiles of a [Tundra]>"
 				],
 		 "civilopediaText": [
@@ -997,8 +996,8 @@
 					"Bonus Pokémon",
 					"Weavable",
 					"Provides a one-time bonus of [+50 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [15] tiles <in [{Tundra} {Forest}] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [40] tiles <in [Tundra] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [40] tiles <in [{Tundra} {Forest}] tiles> <in [Fresh Water] tiles>",
+					"Generated on every [50] tiles <in [Tundra] tiles> <in [Fresh Water] tiles>",
 					"Doesn't generate naturally <in tiles without [Tundra]>",
 					"Must not be on [1] largest landmasses"
 				],
@@ -1022,11 +1021,11 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+15 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [{Plains} {Hill}] tiles>",
-					"Generated on every [30] tiles <in [{Volcanic} {Hill}] tiles>",
-					"Generated on every [40] tiles <in [{Ashlands} {Hill}] tiles>",
-					"Generated on every [40] tiles <in [{Desert} {Hill}] tiles>",
-					"Generated on every [45] tiles <in [{Savannah} {Hill}] tiles>",
+					"Generated on every [50] tiles <in [{Plains} {Hill}] tiles>",
+					"Generated on every [60] tiles <in [{Volcanic} {Hill}] tiles>",
+					"Generated on every [70] tiles <in [{Ashlands} {Hill}] tiles>",
+					"Generated on every [70] tiles <in [{Desert} {Hill}] tiles>",
+					"Generated on every [85] tiles <in [{Savannah} {Hill}] tiles>",
 					"Doesn't generate naturally <in tiles without [Plains|Desert|Savannah|Ashlands|Volcanic]>",
 					"Must not be on [1] largest landmasses"
 				],
@@ -1050,16 +1049,16 @@
 		"uniques": [
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+10 Gold] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [30] tiles <in [Grassland] tiles>",
-					"Generated on every [30] tiles <in [Plains] tiles>",
-					"Generated on every [40] tiles <in [Enchanted] tiles>",
-					"Generated on every [40] tiles <in [Savannah] tiles>",
-					"Generated on every [40] tiles <in [Desert] tiles>",
-					"Generated on every [40] tiles <in [Marsh] tiles>",
-					"Generated on every [40] tiles <in [Tundra] tiles>",
-					"Generated on every [40] tiles <in [Ashlands] tiles>",
-					"Generated on every [40] tiles <in [Alpine] tiles>",
-					"Generated on every [50] tiles <in [Hill] tiles>",
+					"Generated on every [50] tiles <in [Grassland] tiles>",
+					"Generated on every [50] tiles <in [Plains] tiles>",
+					"Generated on every [65] tiles <in [Enchanted] tiles>",
+					"Generated on every [65] tiles <in [Savannah] tiles>",
+					"Generated on every [65] tiles <in [Desert] tiles>",
+					"Generated on every [65] tiles <in [Marsh] tiles>",
+					"Generated on every [65] tiles <in [Tundra] tiles>",
+					"Generated on every [65] tiles <in [Ashlands] tiles>",
+					"Generated on every [65] tiles <in [Alpine] tiles>",
+					"Generated on every [105] tiles <in [Hill] tiles>",
 					"Doesn't generate naturally <not within [3] tiles of a [Grassland]>",
 					"Must not be on [1] largest landmasses"
 				],
@@ -1085,8 +1084,8 @@
 					"Bonus Pokémon",
 					"Weavable",
 					"Provides a one-time bonus of [+25 Faith] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [35] tiles <in [{Grassland} {Forest}] tiles>",
-					"Generated on every [45] tiles <in [{Enchanted} {Forest}] tiles>",
+					"Generated on every [40] tiles <in [{Grassland} {Forest}] tiles>",
+					"Generated on every [40] tiles <in [{Enchanted} {Forest}] tiles>",
 					"Doesn't generate naturally <in tiles without [Forest]>",
 					"Doesn't generate naturally <not within [5] tiles of a [Bamboo]>"
 				],
@@ -1111,9 +1110,9 @@
 					"Bonus Pokémon",
 					"Weavable",
 					"Provides a one-time bonus of [+25 Faith] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [{Haunted} {Forest}] tiles>",
-					"Generated on every [25] tiles <in [{Enchanted} {Forest}] tiles>",
-					"Generated on every [40] tiles <in [{Grassland} {Forest}] tiles>",
+					"Generated on every [55] tiles <in [{Haunted} {Forest}] tiles>",
+					"Generated on every [70] tiles <in [{Enchanted} {Forest}] tiles>",
+					"Generated on every [80] tiles <in [{Grassland} {Forest}] tiles>",
 					"Doesn't generate naturally <in tiles without [Forest|Marsh]>",
 					"Doesn't generate naturally <in tiles without [Temperate]>",
 					"Must not be on [1] largest landmasses"
@@ -1452,8 +1451,8 @@
 			"Guaranteed with Strategic Balance resource option",
 			"Provides a one-time bonus of [+80 Production] to the closest city when removed <(modified by game speed)>",
 			"Not shown on world screen <when number of [Iron] is less than [1]> <hidden from users>",
-			"Generated with weight [35] <in [Hill] tiles>",
-			"Generated on every [35] tiles <in [Hill] tiles>",
+			"Generated on every [40] tiles <in [Hill] tiles>",
+			"Generated with weight [50] <in [Hill] tiles>",
 			"Generated with weight [35] <in [Crystallic] tiles>",
 			"Generated with weight [20] <in [Wasteland] tiles> <in tiles without [Hill]>",
 			"Generated with weight [20] <in [Tundra] tiles> <in tiles without [Hill]>",
@@ -1520,8 +1519,8 @@
 			"Guaranteed with Strategic Balance resource option",
 			"Provides a one-time bonus of [+100 Production] to the closest city when removed <(modified by game speed)>",
 			"Not shown on world screen <when number of [Powder] is less than [1]> <hidden from users>",
-			"Generated with weight [40] <in [Alpine] tiles> <in tiles adjacent to [Mountain] tiles>",
 			"Generated on every [5] tiles <in [Alpine] tiles>",
+			"Generated with weight [40] <in [Alpine] tiles> <in tiles adjacent to [Mountain] tiles>",
 			"Generated with weight [35] <in [Hill] tiles> <in tiles adjacent to [Mountain] tiles>",
 			"Generated with weight [30] <in [Volcanic] tiles>",
 			"Generated with weight [25] <in [Crystallic] tiles>",
@@ -1564,10 +1563,10 @@
 			"Guaranteed with Strategic Balance resource option",
 			"Provides a one-time bonus of [+150 Production] to the closest city when removed <(modified by game speed)>",
 			"Not shown on world screen <when number of [Coal] is less than [1]> <hidden from users>",
-			"Generated on every [40] tiles <in [Tundra] tiles> <in tiles without [Hill]>",
+			"Generated on every [60] tiles <in [Tundra] tiles> <in tiles without [Hill]>",
+			"Generated on every [70] tiles <in [Grassland] tiles> <in tiles without [Hill]>",
 			"Generated with weight [30] <in [Haunted] tiles> <in tiles without [Hill]>",
 			"Generated with weight [25] <in [Grassland] tiles> <in tiles without [Hill]>",
-			"Generated on every [40] tiles <in [Grassland] tiles> <in tiles without [Hill]>",
 			"Generated with weight [20] <in [Plains] tiles> <in tiles without [Hill]>",
 			"Generated with weight [20] <in [Savannah] tiles>",
 			"Generated with weight [20] <in [Marsh] tiles>",
@@ -1604,9 +1603,9 @@
 		"uniques": [
 			"Not shown on world screen <when number of [Rubber] is less than [1]> <hidden from users>",
 			"Provides a one-time bonus of [+50 Gold] to the closest city when removed <(modified by game speed)>",
+			"Generated on every [50] tiles <in [{Tropical} {Forest}] tiles>",
 			"Generated with weight [45] <in [{Tropical} {Forest}] tiles> <in [Tropical] Regions>",
 			"Generated with weight [50] <in [{Tropical} {Forest}] tiles>",
-			"Generated on every [30] tiles <in [{Tropical} {Forest}] tiles>",
 			"Minor deposits generated with weight [10] <in [{Hot} {Forest}] tiles>",
 			"Minor deposits generated with weight [10] <in [Marsh] tiles>",
 			"Doesn't generate naturally <in [{non-[Hot]} {non-[Marsh]}] tiles>"
@@ -1702,11 +1701,11 @@
 		"uniques": [
 			"Not shown on world screen <when number of [Uranium] is less than [1]> <hidden from users>",
 			"Provides a one-time bonus of [+100 Production, +100 Science] to the closest city when removed <(modified by game speed)>",
+			"Generated on every [10] tiles <in [Wasteland] tiles>",
 			"Generated with weight [45] <in [Wasteland] tiles> <in [Wasteland] Regions>",
 			"Generated with weight [50] <in [Wasteland] tiles>",
 			"Generated with weight [40] <in [Permafrost] tiles>",
 			"Generated with weight [20] <in [Crystallic] tiles>",
-			"Generated on every [10] tiles <in [Wasteland] tiles>",
 			"Minor deposits generated with weight [20] <in [Tundra] tiles>",
 			"Minor deposits generated with weight [10] <in [Crystallic] tiles>",
 			"Minor deposits generated with weight [10] <in [Hill] tiles>",
@@ -1742,12 +1741,12 @@
 		"uniques": ["Metallic",
 			"Not shown on world screen <when number of [Alloys] is less than [1]> <hidden from users>",
 			"Provides a one-time bonus of [+150 Production] to the closest city when removed <(modified by game speed)>",
+			"Generated on every [5] tiles <in [{Crystallic} {Crystals}] tiles>",
 			"Generated with weight [45] <in [{Crystallic} {Crystals}] tiles> <in [Crystallic] Regions>",
 			"Generated with weight [50] <in [{Crystallic} {Crystals}] tiles>",
 			"Generated with weight [30] <in [Enchanted] tiles>",
 			"Generated with weight [30] <in [Permafrost] tiles>",
 			"Generated with weight [30] <in [Desert] tiles>",
-			"Generated on every [5] tiles <in [{Crystallic} {Crystals}] tiles>",
 			"Minor deposits generated with weight [20] <in [Tundra] tiles>",
 			"Minor deposits generated with weight [10] <in [Alpine] tiles>",
 			"Minor deposits generated with weight [10] <in [Hill] tiles>",
@@ -1927,11 +1926,11 @@
 		"uniques": [
 					"Edible",
 					"Provides a one-time bonus of [+100 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [{Plains} {Hill}] tiles> <within [2] tiles of a [Mountain]>",
-					"Generated on every [20] tiles <in [{Grassland} {Forest}] tiles> <within [2] tiles of a [Mountain]>",
-					"Generated on every [35] tiles <in [Enchanted] tiles>",
-					"Generated on every [40] tiles <in [Alpine] tiles>",
-					"Generated on every [60] tiles <in [{Grassland} {Hill}] tiles>",
+					"Generated on every [50] tiles <in [{Plains} {Hill}] tiles> <within [2] tiles of a [Mountain]>",
+					"Generated on every [50] tiles <in [{Grassland} {Forest}] tiles> <within [2] tiles of a [Mountain]>",
+					"Generated on every [65] tiles <in [Enchanted] tiles>",
+					"Generated on every [80] tiles <in [Alpine] tiles>",
+					"Generated on every [100] tiles <in [{Grassland} {Hill}] tiles>",
 					"Doesn't generate naturally <in [non-[Fertile]] tiles>",
 					"Doesn't generate naturally <not within [5] tiles of a [Mountain]>"
 				],
@@ -1954,12 +1953,12 @@
 					"Edible",
 					"Plant",
 					"Provides a one-time bonus of [+100 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [15] tiles <in [{Tropical} {Forest}] tiles> <within [2] tiles of a [Mountain]>",
-					"Generated on every [20] tiles <in [{Savannah} {Rich Soil}] tiles>",
-					"Generated on every [40] tiles <in [{Tropical} {Forest}] tiles>",
-					"Generated on every [40] tiles <in [Savannah] tiles>",
-					"Generated on every [40] tiles <in [Ashlands] tiles>",
-					"Generated on every [40] tiles <in [{Grassland} {Forest}] tiles>",
+					"Generated on every [45] tiles <in [{Tropical} {Forest}] tiles> <within [2] tiles of a [Mountain]>",
+					"Generated on every [55] tiles <in [{Savannah} {Rich Soil}] tiles>",
+					"Generated on every [80] tiles <in [{Tropical} {Forest}] tiles>",
+					"Generated on every [80] tiles <in [Savannah] tiles>",
+					"Generated on every [80] tiles <in [Ashlands] tiles>",
+					"Generated on every [100] tiles <in [{Grassland} {Forest}] tiles>",
 					"Doesn't generate naturally <not within [3] tiles of a [Tropical]>"
 				],
 		 "civilopediaText": [
@@ -1980,12 +1979,12 @@
 					"Edible",
 					"Plant",
 					"Provides a one-time bonus of [+100 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [10] tiles <in [{Tropical} {Forest} {Hill}] tiles>",
-					"Generated on every [25] tiles <in [{Tropical} {Hill}] tiles>",
-					"Generated on every [30] tiles <in [Savannah] tiles>",
-					"Generated on every [40] tiles <in [{Grassland} {Hill}] tiles> <within [2] tiles of a [Hot]>",
-					"Generated on every [40] tiles <in [Plains] tiles> <within [2] tiles of a [Hot]>",
-					"Generated on every [60] tiles <in [{Ashlands} {Hill}] tiles>",
+					"Generated on every [40] tiles <in [{Tropical} {Forest} {Hill}] tiles>",
+					"Generated on every [55] tiles <in [{Tropical} {Hill}] tiles>",
+					"Generated on every [70] tiles <in [Savannah] tiles>",
+					"Generated on every [80] tiles <in [{Grassland} {Hill}] tiles> <within [2] tiles of a [Hot]>",
+					"Generated on every [80] tiles <in [Plains] tiles> <within [2] tiles of a [Hot]>",
+					"Generated on every [100] tiles <in [{Ashlands} {Hill}] tiles>",
 					"Doesn't generate naturally <in [non-[Fertile]] tiles>",
 					"Doesn't generate naturally <not within [3] tiles of a [Hill]>"
 				],
@@ -2005,9 +2004,9 @@
 		"uniques": [
 					"Plant",
 					"Provides a one-time bonus of [+100 Faith] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [20] tiles <in [Enchanted] tiles>",
-					"Generated on every [20] tiles <in [{Enchanted} {Forest}] tiles>",
-					"Generated on every [50] tiles <in [Rich Soil] tiles>",
+					"Generated on every [30] tiles <in [Enchanted] tiles>",
+					"Generated on every [50] tiles <in [{Enchanted} {Forest}] tiles>",
+					"Generated on every [80] tiles <in [Rich Soil] tiles>",
 					"Doesn't generate naturally <in tiles without [Rich Soil]> <in tiles without [Enchanted]>"
 				],
 		 "civilopediaText": [
@@ -2028,10 +2027,10 @@
 					"Edible",
 					"Plant",
 					"Provides a one-time bonus of [+100 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [15] tiles <in [{Grassland} {Hill}] tiles>",
-					"Generated on every [25] tiles <in [{Enchanted} {Hill}] tiles>",
-					"Generated on every [35] tiles <in [{Haunted} {Hill}] tiles>",
-					"Generated on every [50] tiles <in [Grassland] tiles>",
+					"Generated on every [45] tiles <in [{Grassland} {Hill}] tiles>",
+					"Generated on every [65] tiles <in [{Enchanted} {Hill}] tiles>",
+					"Generated on every [85] tiles <in [{Haunted} {Hill}] tiles>",
+					"Generated on every [100] tiles <in [Grassland] tiles>",
 					"Must be on [1] largest landmasses",
 					"Doesn't generate naturally <in [non-[Fertile]] tiles>",
 					"Doesn't generate naturally <not within [2] tiles of a [Coast]>"
@@ -2054,10 +2053,10 @@
 					"Edible",
 					"Plant",
 					"Provides a one-time bonus of [+100 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [10] tiles <in [{Grassland} {Forest} {Hill}] tiles>",
-					"Generated on every [15] tiles <in [{Grassland} {Forest}] tiles>",
-					"Generated on every [15] tiles <in [Alpine] tiles>",
-					"Generated on every [30] tiles <in [{Tropical} {Forest}] tiles>",
+					"Generated on every [40] tiles <in [{Grassland} {Forest} {Hill}] tiles>",
+					"Generated on every [45] tiles <in [{Grassland} {Forest}] tiles>",
+					"Generated on every [45] tiles <in [Alpine] tiles>",
+					"Generated on every [75] tiles <in [{Tropical} {Forest}] tiles>",
 					"Doesn't generate naturally <in [non-[Fertile]] tiles>",
 					"Doesn't generate naturally <not within [9] tiles of a [Bamboo]>",
 					"Must be on [1] largest landmasses"
