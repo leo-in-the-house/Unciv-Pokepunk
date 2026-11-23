@@ -161,11 +161,12 @@ object BaseUnitDescriptions {
                 add("Replaces [$replaces]", link = "Unit/$replaces", indent = 1)
         }
 
+
         if (requiredTech != null || upgradesTo != null || obsoleteTech != null)
             space()
         if (requiredTech != null)
             add("Required tech: [$requiredTech]", link = "Technology/$requiredTech")
-
+        
         val canUpgradeFrom = ruleset.units
             .filterValues {
                 (it.upgradesTo == name || it.upgradesTo != null && it.upgradesTo == replaces)

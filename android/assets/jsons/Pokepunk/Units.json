@@ -7,7 +7,7 @@
 		"selectSound":"settler",
         "uniques": [
 			"Unbuildable",
-            "Founds a new city <by consuming this unit> <in [Fertile|Arid] tiles>",
+            "Founds a new city <by consuming this unit> <in [Fertile|Arid] tiles> <in [{non-[Bamboo]} {non-[Hazardous]}] tiles>",
             "Founds a new city <by consuming this unit> <in [Desert] tiles> <in tiles adjacent to [Fresh Water] tiles>",
             "Requires at least [2] population"
         ],
@@ -619,13 +619,14 @@
         "requiredTech": "Pokémon Riding",
         "uniques": [
             "[This Unit] gains the [Fire-Type] promotion",
+            "[100]% Defense Strength <vs [Missile Infantry] units>",
 			"Can only be built <with improved [Ponytas] in this city>",
             "Never appears as a Barbarian unit",
             "No damage penalty for wounded units"
         ],
 		"civilopediaText": [
             {
-                "text": "Melee cavalry riding a Rapidash, that hits hard and fast for an affordable price.  Does not cost strategic resources, but requires Ponytas to train."
+                "text": "Melee cavalry riding a Rapidash, that hits hard and fast for an affordable price, while resisting missile infantry.  Does not cost strategic resources, but requires Ponytas to train."
             }
         ]
 	},
@@ -798,6 +799,7 @@
 		"attackSound": "maiden_archer",
         "range": 2,
 		"uniques": [
+            "Only available <after adopting [Hunter's Strength]>",
             "Never appears as a Barbarian unit",
             "Ranged attacks may be performed over obstacles",
             "No damage penalty for wounded units",

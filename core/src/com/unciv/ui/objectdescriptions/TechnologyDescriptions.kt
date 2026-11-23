@@ -165,6 +165,8 @@ object TechnologyDescriptions {
                 when {
                     unique.type == UniqueType.EnablesStatProduction ->
                         ImageGetter.getConstructionPortrait(unique.params[0], techIconSize)
+                    unique.type == UniqueType.EnablesResourceProduction ->
+                        ImageGetter.getConstructionPortrait(unique.params[0], techIconSize)
                     else ->
                         ImageGetter.getUniquePortrait(unique.text, techIconSize)
                 }

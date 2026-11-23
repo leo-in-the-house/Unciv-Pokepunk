@@ -108,7 +108,8 @@ class CityView(city: City,
         construction.getProductionCost(city.civ, city)
     @Readonly fun getUnitDescription(unit: BaseUnit): String = unit.getDescription(city)
     @Readonly fun getBuildingDescription(building: Building): String = building.getDescription(city, true)
-    @Readonly fun getConversionRate(statConversion: PerpetualConstruction.StatConversion): Int = statConversion.getConversionRate(city)
+    @Readonly fun getStatConversionRate(statConversion: PerpetualConstruction.StatConversion): Int = statConversion.getConversionRate(city)
+    @Readonly fun getResourceConversionRate(resourceConversion: PerpetualConstruction.ResourceConversion): Int = (city.getResourceConversionRate(resourceConversion.resource) * 100).toInt()
     @Readonly fun getGoldForSellingBuilding(buildingName: String): Int = city.getGoldForSellingBuilding(buildingName)
     @Readonly fun hasSoldBuildingThisTurn(): Boolean = city.hasSoldBuildingThisTurn
     @Readonly fun isGodModeEnabled(): Boolean = city.civ.gameInfo.gameParameters.godMode

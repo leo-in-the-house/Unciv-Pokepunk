@@ -176,7 +176,8 @@ class CityConstructions : IsPartOfGameInfoSerialization {
             else -> ""
         }
         var label = "{$currentConstructionSnapshot}"
-        if (!PerpetualConstruction.perpetualConstructionsMap.containsKey(currentConstructionSnapshot)) {
+        if (!PerpetualConstruction.perpetualStatConstructionsMap.containsKey(currentConstructionSnapshot) && !PerpetualConstruction.perpetualResourceConstructionsMap
+                .containsKey(currentConstructionSnapshot)) {
             val turnsLeft = turnsToConstruction(currentConstructionSnapshot)
             label += " - $turnsLeft${Fonts.turn}"
         }
@@ -233,7 +234,7 @@ class CityConstructions : IsPartOfGameInfoSerialization {
             gameBasics.buildings.containsKey(constructionName) -> return gameBasics.buildings[constructionName]!!
             gameBasics.units.containsKey(constructionName) -> return gameBasics.units[constructionName]!!
             else -> {
-                val special = PerpetualConstruction.perpetualConstructionsMap[constructionName]
+                val special = PerpetualConstruction.perpetualStatConstructionsMap[constructionName] ?: PerpetualConstruction.perpetualResourceConstructionsMap[constructionName]
                 if (special != null) return special
             }
         }
@@ -925,7 +926,9 @@ class CityConstructions : IsPartOfGameInfoSerialization {
         when {
             isQueueEmptyOrIdle() ->
                  setCurrentConstruction(constructionName)
-            addToTop && construction is PerpetualConstruction && PerpetualConstruction.isNamePerpetual( currentConstructionName()) ->
+            addToTop && construction is PerpetualConstruction && PerpetualConstruction.isNamePerpetual(
+                currentConstructionName()
+            ) ->
                  setCurrentConstruction(constructionName) // perpetual constructions will replace each other
             addToTop ->
                 editQueue { add(0, constructionName) }

@@ -1,8 +1,8 @@
 [
     {
-        "name": "discover cultural artifacts",
-        "notification": "We have discovered cultural artifacts in the treasure chest! (+20 culture)",
-        "uniques": ["Gain [20] [Culture]"],
-        "color": "#cf8ff7"
+        "name": "discover lost relics",
+        "notification": "We have discovered lost technology from an ancient civilization in the treasure chest! (+20 science)",
+        "uniques": ["Gain [20] [Science]"],
+        "color": "#4f4ff7"
     }
 ]

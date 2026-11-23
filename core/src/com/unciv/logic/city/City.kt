@@ -31,6 +31,7 @@ import com.unciv.models.stats.GameResource
 import com.unciv.models.stats.INamed
 import com.unciv.models.stats.Stat
 import com.unciv.models.stats.SubStat
+import com.unciv.ui.components.extensions.toPercent
 import com.unciv.utils.pseudoRandomUuid
 import com.unciv.utils.withItem
 import com.unciv.utils.withoutItem
@@ -301,6 +302,16 @@ class City : IsPartOfGameInfoSerialization, INamed {
     @Readonly fun getResourcesGeneratedByCity() = CityResources.getResourcesGeneratedByCity(this)
     @Readonly fun getAvailableResourceAmount(resourceName: String) = CityResources.getAvailableResourceAmount(this, resourceName)
     @Readonly fun getAvailableResourceAmount(resource: TileResource) = CityResources.getAvailableResourceAmount(this, resource)
+
+    @Readonly
+    fun getResourceConversionRate(resource: TileResource): Float {
+        var conversionRate = 1 / 10f
+        val conversionUnique = civ.getMatchingUniques(UniqueType.ProductionToResourceConversionBonus).firstOrNull { it.params[0] == resource.name }
+        if (conversionUnique != null) {
+            conversionRate *= conversionUnique.params[1].toPercent()
+        }
+        return conversionRate
+    }
 
     @Readonly fun isGrowing() = foodForNextTurn() > 0
     @Readonly fun isStarving() = foodForNextTurn() < 0

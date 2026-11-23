@@ -121,7 +121,8 @@ object BackwardCompatibility {
             fun isInvalidConstruction(construction: String) =
                 !ruleset.buildings.containsKey(construction)
                     && !ruleset.units.containsKey(construction)
-                    && !PerpetualConstruction.perpetualConstructionsMap.containsKey(construction)
+                    && !PerpetualConstruction.perpetualStatConstructionsMap.containsKey(construction)
+                    && !PerpetualConstruction.perpetualResourceConstructionsMap.containsKey(construction)
 
             // Remove invalid buildings or units from the queue - don't just check buildings and units because it might be a special construction as well
             city.cityConstructions.editQueue { removeAll { isInvalidConstruction(it) } }

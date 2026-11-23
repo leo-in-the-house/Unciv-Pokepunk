@@ -74,7 +74,7 @@ class ConstructionInfoTable(val cityScreen: CityScreen) : Table() {
             }).pad(5f)
 
             var buildingText = construction.name.tr(hideIcons = true)
-            val specialConstruction = PerpetualConstruction.perpetualConstructionsMap[construction.name]
+            val specialConstruction = PerpetualConstruction.perpetualStatConstructionsMap[construction.name] ?: PerpetualConstruction.perpetualResourceConstructionsMap[construction.name]
 
             buildingText += specialConstruction?.let { cityView.getProductionTooltip(it) }
                     ?: cityConstructions.getTurnsToConstructionString(construction)
@@ -84,7 +84,8 @@ class ConstructionInfoTable(val cityScreen: CityScreen) : Table() {
             val description = when (construction) {
                 is BaseUnit -> cityView.getUnitDescription(construction)
                 is Building -> cityView.getBuildingDescription(construction)
-                is StatConversion -> construction.description.replace("[rate]", "[${cityView.getConversionRate(construction)}]").tr()
+                is StatConversion -> construction.description.replace("[rate]", "[${cityView.getStatConversionRate(construction)}]").tr()
+                is PerpetualConstruction.ResourceConversion -> construction.description.replace("[rate]", "[${cityView.getResourceConversionRate(construction)}]").tr()
                 is PerpetualConstruction -> construction.description.tr()
                 else -> ""  // Should never happen
             }

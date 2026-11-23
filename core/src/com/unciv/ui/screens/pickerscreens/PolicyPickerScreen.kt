@@ -268,7 +268,7 @@ class PolicyPickerScreen(
         selectedPolicyButton = button
         selectedPolicyButton?.isSelected = true
 
-        descriptionLabel.setText(policy.getDescription())
+        descriptionLabel.setText(policy.getDescription(viewingCiv))
         descriptionLabel.clearListeners()
         descriptionLabel.onActivation {
             openCivilopedia(policy.makeLink())
@@ -305,8 +305,8 @@ class PolicyPickerScreen(
             add(header).growX().row()
 
             // Description
-            val onAdoption = branch.getDescription()
-            val onCompletion = branch.policies.last().getDescription()
+            val onAdoption = branch.getDescription(viewingCiv)
+            val onCompletion = branch.policies.last().getDescription(viewingCiv)
             var text = ""
             if (viewingCiv.gameInfo.ruleset.eras[branch.era]!!.eraNumber > viewingCiv.getEraNumber())
                 text += "{Unlocked at} {${branch.era}}" + "\n\n"

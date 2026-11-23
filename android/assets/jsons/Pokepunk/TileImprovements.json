@@ -10,7 +10,7 @@
 			"Agricultural",
 			"Cannot be built on [Marsh] tiles",
 			"Cannot be built on [Alpine] tiles",
-			"Cannot be built on [Arid] tiles <before discovering [Printing]>"
+			"Cannot be built on [{non-[Rich Soil]}{Arid}] tiles <before discovering [Printing]>"
 		],
 		"shortcutKey": "F",
 		 "civilopediaText": [

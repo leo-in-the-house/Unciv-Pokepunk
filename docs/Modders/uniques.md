@@ -735,8 +735,18 @@ Simple unique parameters are explained by mouseover. Complex parameters are expl
 
 	Applicable to: Global
 
+??? example  "Enables conversion of city production to [stockpiledResource] resource"
+	Example: "Enables conversion of city production to [Mana] resource"
+
+	Applicable to: Global
+
 ??? example  "Production to [stat] conversion in cities changed by [relativeAmount]%"
 	Example: "Production to [Culture] conversion in cities changed by [+20]%"
+
+	Applicable to: Global
+
+??? example  "Production to [stockpiledResource] resource conversion in cities changed by [relativeAmount]%"
+	Example: "Production to [Mana] resource conversion in cities changed by [+20]%"
 
 	Applicable to: Global
 

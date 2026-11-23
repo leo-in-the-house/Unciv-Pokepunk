@@ -1,6 +1,7 @@
 package com.unciv.logic.city
 
 import com.unciv.logic.map.tile.Tile
+import com.unciv.models.ruleset.PerpetualConstruction
 import com.unciv.models.stats.Stat
 import com.unciv.models.ruleset.tile.ResourceSupplyList
 import com.unciv.models.ruleset.tile.ResourceType
@@ -10,6 +11,9 @@ import com.unciv.models.ruleset.unique.UniqueType
 import yairm210.purity.annotations.LocalState
 import yairm210.purity.annotations.Readonly
 import com.unciv.models.ruleset.unique.UniqueParameterType
+import com.unciv.models.stats.StatMap
+import com.unciv.ui.components.extensions.toPercent
+import kotlin.collections.set
 
 object CityResources {
 
@@ -63,6 +67,7 @@ object CityResources {
         cityResources.add(getResourcesFromTiles(city, modifiers))
         cityResources.add(getWorkedResourcesFromTiles(city, modifiers))
         cityResources.add(getResourceFromUniqueImprovedTiles(city, modifiers))
+        cityResources.add(getResourcesFromPerpetualConstructions(city, modifiers))
         cityResources.add(getNegativeCityResourcesRequiredByBuildings(city))
 
         if (city.civ.isCityState && city.isCapital() && city.civ.cityStateResource != null) {
@@ -176,7 +181,41 @@ object CityResources {
         }
         return resourceSupplyList
     }
+    
+    @Readonly
+    private fun getResourcesFromPerpetualConstructions(city: City, modifiers: Map<String, Float>): ResourceSupplyList {
+        val resourceSupplyList = ResourceSupplyList()
+        @LocalState val newFinalStatList = StatMap() // again, we don't edit the existing currentCityStats directly, in order to avoid concurrency exceptions
 
+        for ((key, value) in city.cityStats.baseStatTree.children)
+            newFinalStatList[key] = value.totalStats.clone()
+
+        val statPercentBonusesSum = city.cityStats.statPercentBonusTree.totalStats
+
+        for (@LocalState entry in newFinalStatList.values)
+            entry.production *= statPercentBonusesSum.production.toPercent()
+        
+        val production = newFinalStatList.values.map { it.production }.sum()
+        
+        if (production > 0) {
+            val currentConstruction = city.cityConstructions.getCurrentConstruction()
+            if (currentConstruction is PerpetualConstruction) {
+                if (city.getRuleset().tileResources[currentConstruction.name] != null) {
+                    val resourceToAdd = city.getRuleset().tileResources[currentConstruction.name]!!
+                    val amountResourcesToAdd = (production * city.getResourceConversionRate(resourceToAdd)).toInt()
+
+                    resourceSupplyList.add(
+                        resourceToAdd, "Production",
+                        amountResourcesToAdd
+                    )
+                }
+            }
+        }
+        
+        resourceSupplyList.applyModifiers(modifiers)
+        
+        return resourceSupplyList
+    }
     @Readonly
     private fun getCityResourcesGeneratedFromUniques(city: City, modifiers: Map<String, Float>, includeCivUniques: Boolean = true): ResourceSupplyList {
         val buildingResources = ResourceSupplyList()

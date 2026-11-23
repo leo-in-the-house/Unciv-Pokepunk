@@ -281,7 +281,10 @@ object ImageGetter {
         if (ruleset.units.containsKey(construction)) {
             return PortraitUnit(construction, size)
         }
-        if (PerpetualConstruction.perpetualConstructionsMap.containsKey(construction))
+        if (ruleset.tileResources.containsKey(construction)) {
+            return PortraitResource(construction, size)
+        }
+        if (PerpetualConstruction.perpetualStatConstructionsMap.containsKey(construction))
             return getImage("OtherIcons/Convert$construction").toGroup(size)
         return getStatIcon(construction).surroundWithCircle(size).surroundWithThinCircle()
     }

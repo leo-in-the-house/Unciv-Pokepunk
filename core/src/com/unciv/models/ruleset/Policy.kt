@@ -2,6 +2,7 @@ package com.unciv.models.ruleset
 
 import com.unciv.Constants
 import com.unciv.logic.MultiFilter
+import com.unciv.logic.civilization.Civilization
 import com.unciv.models.ruleset.unique.GameContext
 import com.unciv.models.ruleset.unique.UniqueTarget
 import com.unciv.models.ruleset.unique.UniqueType
@@ -59,14 +60,30 @@ open class Policy : RulesetObject() {
     }
 
     /** Used in PolicyPickerScreen to display Policy properties */
-    fun getDescription(): String {
-        return (if (policyBranchType == PolicyBranchType.Member) name.tr() + "\n" else "") +
+    fun getDescription(viewingCiv: Civilization): String {
+        val ruleset = viewingCiv.gameInfo.ruleset
+        val enabledBuildings = ruleset.buildings.values.filter { isEnabledByPolicy(it) }
+        val enabledUnits = ruleset.units.values.filter { isEnabledByPolicy(it) }
+
+        var lineList = (if (policyBranchType == PolicyBranchType.Member) name.tr() + "\n" else "") +
             uniqueObjects.filterNot {
                 it.isHiddenToUsers()
                     || it.type == UniqueType.OnlyAvailable
                     || it.type == UniqueType.OneTimeGlobalAlert
-            }
-            .joinToString("\n") { "• ${it.getDisplayText().tr()}" }
+            }.joinToString("\n") { "• ${it.getDisplayText().tr()}" }
+
+        if (enabledBuildings.isNotEmpty()) {
+            lineList += "Buildings enabled: \n"
+            for (building in enabledBuildings)
+                lineList += building.name + " • ${building.name.tr()} (${building.getShortDescription()})\n"
+        }
+        if (enabledUnits.isNotEmpty()) {
+            lineList += "Units enabled: \n"
+            for (unit in enabledUnits)
+                lineList += " • ${unit.name.tr()} (${unit.getShortDescription()})\n"
+        }
+        
+        return lineList
     }
 
     override fun makeLink() = "Policy/$name"
@@ -115,23 +132,23 @@ open class Policy : RulesetObject() {
                 }
             }
         }
-
-        fun isEnabledByPolicy(rulesetObject: IRulesetObject) =
-                rulesetObject.getMatchingUniques(UniqueType.OnlyAvailable, GameContext.IgnoreConditionals).any {
-                    it.getModifiers(UniqueType.ConditionalAfterPolicyOrBelief).any { it.params[0] == name } }
-                || rulesetObject.getMatchingUniques(UniqueType.Unavailable).any {
-                    it.getModifiers(UniqueType.ConditionalBeforePolicyOrBelief).any { it.params[0] == name }
-                }
-
+        
         val enabledBuildings = ruleset.buildings.values.filter { isEnabledByPolicy(it) }
         val enabledUnits = ruleset.units.values.filter { isEnabledByPolicy(it) }
 
-        if (enabledBuildings.isNotEmpty() || enabledUnits.isNotEmpty()) {
-            lineList += FormattedLine("Enables:")
+        if (enabledBuildings.isNotEmpty()) {
+            lineList += FormattedLine("Buildings Enabled: \n")
             for (building in enabledBuildings)
-                lineList += FormattedLine(building.name, link = building.makeLink(), indent = 1)
+                lineList += FormattedLine(
+                    " • ${building.name.tr()} (${building.getShortDescription()})\n",
+                    link = building.makeLink(),
+                    indent = 1
+                )
+        }
+        if (enabledUnits.isNotEmpty()) {
+            lineList += FormattedLine("Units Enabled: \n")
             for (unit in enabledUnits)
-                lineList += FormattedLine(unit.name, link = unit.makeLink(), indent = 1)
+                lineList += FormattedLine(" • ${unit.name.tr()} (${unit.getShortDescription()})\n", link = unit.makeLink(), indent = 1)
         }
 
 
@@ -164,5 +181,12 @@ open class Policy : RulesetObject() {
 
         return lineList
     }
+    
+    private fun isEnabledByPolicy(rulesetObject: IRulesetObject) =
+        rulesetObject.getMatchingUniques(UniqueType.OnlyAvailable, GameContext.IgnoreConditionals).any {
+            it.getModifiers(UniqueType.ConditionalAfterPolicyOrBelief).any { it.params[0] == name } }
+            || rulesetObject.getMatchingUniques(UniqueType.Unavailable).any {
+            it.getModifiers(UniqueType.ConditionalBeforePolicyOrBelief).any { it.params[0] == name }
+        }
 
 }

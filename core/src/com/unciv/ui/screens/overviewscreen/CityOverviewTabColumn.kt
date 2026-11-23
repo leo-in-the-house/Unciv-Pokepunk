@@ -227,7 +227,8 @@ enum class CityOverviewTabColumn : ISortableGridContentProvider<City, EmpireOver
             val currentConstructionSnapshot = cityView.currentConstructionName()
             var result = currentConstructionSnapshot.tr(true)
             if (currentConstructionSnapshot.isNotEmpty()) {
-                val construction = PerpetualConstruction.perpetualConstructionsMap[currentConstructionSnapshot]
+                val construction = PerpetualConstruction.perpetualStatConstructionsMap[currentConstructionSnapshot] ?: PerpetualConstruction.perpetualResourceConstructionsMap[currentConstructionSnapshot]
+                
                 result += if (construction != null) cityView.getProductionTooltip(construction)
                     else cityView.constructions.getTurnsToConstructionString(currentConstructionSnapshot)
             }

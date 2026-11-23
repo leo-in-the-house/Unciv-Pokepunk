@@ -78,7 +78,8 @@
 			{
 				"name": "Pottery",
 				"row": 10,
-				"uniques": ["Only available <when number of [Owned [Clay] Tiles] is more than [0]>"],
+				//"uniques": ["Only available <when number of [Owned [Clay] Tiles] is more than [0]>"],
+				"uniques": ["Free [Builder] appears"],
 				"quote": "Once the quest for food has been fulfilled, the quest for finer goods began.  Humans started to carve masterful works of clay to show their prowess.",
 				"prerequisites": ["Prehistory"]
 			}
@@ -152,7 +153,7 @@
 				"row": 10,
 				"uniques": ["Enables establishment of embassies"],
 				"quote": "As civilization grows, it becomes necessary to have formal rules in order to manage conflict and maintain diplomatic channels with other nations.",
-				"prerequisites": ["Masonry"]
+				"prerequisites": ["Masonry","Pottery"]
 			}
 		]
 	},
@@ -208,6 +209,7 @@
 			{
 				"name": "Heroism",
 				"row": 8,
+				"uniques": ["Free [Settler] appears"],
 				"quote": "As our civilization faces greater threats from wild Pokémon and from other people, certain exceptional characters may rise up to protect the land and bring glory to the people.",
 				"prerequisites": ["Writing"]
 			},

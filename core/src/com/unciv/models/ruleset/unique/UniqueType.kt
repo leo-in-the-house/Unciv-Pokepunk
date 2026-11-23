@@ -165,7 +165,9 @@ enum class UniqueType(
 
     /// Production to Stat conversion
     EnablesStatProduction("Enables conversion of city production to [stat]", UniqueTarget.Global),
+    EnablesResourceProduction("Enables conversion of city production to [stockpiledResource] resource", UniqueTarget.Global),
     ProductionToStatConversionBonus("Production to [stat] conversion in cities changed by [relativeAmount]%", UniqueTarget.Global),
+    ProductionToResourceConversionBonus("Production to [stockpiledResource] resource conversion in cities changed by [relativeAmount]%", UniqueTarget.Global),
 
     /// Improvements
     // Should be replaced with moddable improvements when roads become moddable

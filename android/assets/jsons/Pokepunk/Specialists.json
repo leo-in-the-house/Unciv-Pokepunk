@@ -1,5 +1,16 @@
 [
 	{
+		"name":"Palace Servant",
+		"science": 1,
+		"color": [200,200,255]
+	},
+	{
+		"name":"Officer",
+		"science": 2,
+		"greatPersonPoints": {"General": 5},
+		"color": [125,25,25]
+	},
+	{
 		"name":"Gladiator",
 		"happiness": 3,
 		"greatPersonPoints": {"General": 3},

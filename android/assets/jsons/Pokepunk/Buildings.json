@@ -11,6 +11,7 @@
 		"gold": 3,
 		"culture": 3,
 		"cityStrength": 10,
+		"specialistSlots": { "Palace Servant": 2 },
 		"cost": 0,
 		"uniques": [
 			"Is shown",
@@ -59,6 +60,7 @@
 		"buildSound": "barracks",
 		"cost": 50,
 		"hurryCostModifier": 25,
+		"specialistSlots": { "Officer": 1 },
 		"maintenance": 2,
 		"requiredTech": "Bronze Working",
 		"uniques": [

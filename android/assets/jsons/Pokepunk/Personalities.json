@@ -105,5 +105,65 @@
       "civilopediaText": [
           {"text": "This is a default personality, and is used for testing."}
       ]
+  },
+   {
+      "name": "Dokuta",
+      // Stats focused personalities
+      "culture": 5,
+      "faith": 5,
+      "food": 5,
+      "gold": 5,
+      "happiness": 5,
+      "production": 5,
+      "science": 5,
+      // Behavour focused personalities
+      "military": 5,
+      "aggressive": 5,
+      "declareWar": 5,
+      "commerce": 5,
+      "diplomacy": 5,
+      "loyal": 5,
+      "expansion": 5,
+      "denounceWillingness": 5,
+
+      "policypriorities": {
+      },
+      "terrainpriorities": {
+      },
+      "resourcepriorities": {
+      },
+      "civilopediaText": [
+          {"text": "This is a default personality, and is used for testing."}
+      ]
+  },
+   {
+      "name": "Sensei",
+      // Stats focused personalities
+      "culture": 5,
+      "faith": 5,
+      "food": 5,
+      "gold": 5,
+      "happiness": 5,
+      "production": 5,
+      "science": 5,
+      // Behavour focused personalities
+      "military": 5,
+      "aggressive": 5,
+      "declareWar": 5,
+      "commerce": 5,
+      "diplomacy": 5,
+      "loyal": 5,
+      "expansion": 5,
+      "denounceWillingness": 5,
+
+      "policypriorities": {
+      },
+      "terrainpriorities": {
+      },
+      "resourcepriorities": {
+      },
+      "civilopediaText": [
+          {"text": "This is a default personality, and is used for testing."}
+      ]
   }
 ]

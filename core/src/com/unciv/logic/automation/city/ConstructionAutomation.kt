@@ -121,15 +121,26 @@ class ConstructionAutomation(val cityConstructions: CityConstructions) {
             addWorkBoatChoice()
             addMilitaryUnitChoice()
         }
+        
+        var chosenResource: String? = null
+        
+        //If there is a resource that we don't have much of, let's make that the resource
+        city.getRuleset().tileResources.filter { it.value.isStockpiled }.forEach { name, resource -> if (PerpetualConstruction.perpetualResourceConstructionsMap[name] != null &&
+            PerpetualConstruction.perpetualResourceConstructionsMap[name]!!.isBuildable(cityConstructions) && city.civ.getResourceAmount(name) < 10) {
+            chosenResource = name
+        }
+        }
 
         val chosenConstruction: IConstruction =
             if (relativeCostEffectiveness.isEmpty()) { // choose one of the special constructions instead
                 // add science!
                 when {
+                    chosenResource != null && PerpetualConstruction.perpetualResourceConstructionsMap[chosenResource] != null -> PerpetualConstruction.perpetualResourceConstructionsMap[chosenResource]!!
                     PerpetualConstruction.Science.isBuildable(cityConstructions) && !allTechsAreResearched -> PerpetualConstruction.Science
                     PerpetualConstruction.Gold.isBuildable(cityConstructions) -> PerpetualConstruction.Gold
                     PerpetualConstruction.Culture.isBuildable(cityConstructions) && !civInfo.policies.allPoliciesAdopted(true) -> PerpetualConstruction.Culture
                     PerpetualConstruction.Faith.isBuildable(cityConstructions) -> PerpetualConstruction.Faith
+                    PerpetualConstruction.Happiness.isBuildable(cityConstructions) -> PerpetualConstruction.Happiness
                     else -> PerpetualConstruction.Idle
                 }
             } else { relativeCostEffectiveness.maxBy { (it.choiceModifier / it.remainingWork.coerceAtLeast(1)).coerceAtLeast(0f) }.choice }

@@ -633,7 +633,7 @@
 		"name": "Cufants",
 		"resourceType": "Bonus",
 		"resourceCategory": "Herdable",
-		"terrainsCanBeFoundOn": ["Desert", "Tropical", "Savannah", "Forest"],
+		"terrainsCanBeFoundOn": ["Desert", "Tropical", "Savannah"],
 		"gold": 1,
 		"science": 1,
 		"improvedBy": ["Pasture"],
@@ -642,9 +642,8 @@
 					"Bonus Pokémon",
 					"Provides a one-time bonus of [+40 Production] to the closest city when removed <(modified by game speed)>",
 					"Generated on every [40] tiles <in [Savannah] tiles>",
-					"Generated on every [50] tiles <in [{Tropical} {Forest}] tiles>",
 					"Generated on every [70] tiles <in [Desert] tiles> <in [Fresh Water] tiles>",
-					"Generated on every [80] tiles <in [Tropical] tiles>",
+					"Generated on every [70] tiles <in [Tropical] tiles>",
 					"Doesn't generate naturally <in tiles without [Desert|Tropical|Savannah]>",
 					"Must be on [1] largest landmasses"
 				],
@@ -677,35 +676,6 @@
             { "separator": true },
             {
                 "text": "Giraffe Pokémon, found all over the world in Savannahs.  Its tall neck allows it to be used as an early ranged weapon platform."
-            }
-        ]
-	},
-	{
-		"name": "Happinys",
-		"resourceType": "Bonus",
-		"resourceCategory": "Herdable",
-		"terrainsCanBeFoundOn": ["Grassland", "Enchanted", "Haunted", "Ashlands", "Tundra", "Tropical", "Forest"],
-		"food": 1,
-		"improvedBy": ["Pasture"],
-		"improvementStats": { "food": 1 },
-		"uniques": [
-					"Bonus Pokémon",
-					"Provides a one-time bonus of [+10 Food] to the closest city when removed <(modified by game speed)>",
-					"Generated on every [45] tiles <in [Enchanted] tiles>",
-					"Generated on every [45] tiles <in [Grassland] tiles>",
-					"Generated on every [50] tiles <in [Ashlands] tiles>",
-					"Generated on every [65] tiles <in [Tundra] tiles>",
-					"Generated on every [75] tiles <in [Haunted] tiles>",
-					"Generated on every [75] tiles <in [Tropical] tiles>",
-					"Doesn't generate naturally <in tiles without [Forest]>"
-				],
-		 "civilopediaText": [
-            {
-                "text": "'It loves round white things. It carries an egg-shaped rock in imitation of Chansey.' - Sinnoh Pokédex"
-             },
-            { "separator": true },
-            {
-                "text": "Egg Pokémon, found most commonly in Enchanted and Grassland forests.  Its eggs can be harvested for food."
             }
         ]
 	},
@@ -926,6 +896,35 @@
             { "separator": true },
             {
                 "text": "Cat Pokémon, found in Fresh Water tiles in temperate and dry biomes.  Can have various health benefits, physical and mental."
+            }
+        ]
+	},
+	{
+		"name": "Happinys",
+		"resourceType": "Bonus",
+		"resourceCategory": "Huntable",
+		"terrainsCanBeFoundOn": ["Grassland", "Enchanted", "Haunted", "Ashlands", "Tundra", "Tropical", "Forest"],
+		"food": 1,
+		"improvedBy": ["Hunting Camp"],
+		"improvementStats": { "food": 1 },
+		"uniques": [
+					"Bonus Pokémon",
+					"Provides a one-time bonus of [+10 Food] to the closest city when removed <(modified by game speed)>",
+					"Generated on every [45] tiles <in [Enchanted] tiles>",
+					"Generated on every [45] tiles <in [Grassland] tiles>",
+					"Generated on every [50] tiles <in [Ashlands] tiles>",
+					"Generated on every [65] tiles <in [Tundra] tiles>",
+					"Generated on every [75] tiles <in [Haunted] tiles>",
+					"Generated on every [75] tiles <in [Tropical] tiles>",
+					"Doesn't generate naturally <in tiles without [Forest]>"
+				],
+		 "civilopediaText": [
+            {
+                "text": "'It loves round white things. It carries an egg-shaped rock in imitation of Chansey.' - Sinnoh Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Egg Pokémon, found most commonly in Enchanted and Grassland forests.  Its eggs can be harvested for food."
             }
         ]
 	},
@@ -1473,7 +1472,6 @@
 		"name": "Apricorn",
 		"resourceType": "Strategic",
 		"resourceCategory": "Fruit",
-		//"revealedBy": "Mining",
 		"terrainsCanBeFoundOn": [
 			"Forest"
 		],
@@ -1505,6 +1503,7 @@
 		"name": "Powder",
 		"resourceType": "Strategic",
 		"resourceCategory": "Geologic",
+		"revealedBy": "Engineering", //TODO: Update this
 		"terrainsCanBeFoundOn": [
 			"Alpine",
 			"Hill",
@@ -1542,7 +1541,7 @@
 		"name": "Coal",
 		"resourceType": "Strategic",
 		"resourceCategory": "Geologic",
-		//"revealedBy": "Mining",
+		"revealedBy": "Printing", //TODO: Update this
 		"terrainsCanBeFoundOn": [
 			"Ashlands",
 			"Tundra",
@@ -1590,7 +1589,7 @@
 		"name": "Rubber",
 		"resourceType": "Strategic",
 		"resourceCategory": "Plant",
-		//"revealedBy": "Mining",
+		"revealedBy": "Engineering", //TODO: Update this
 		"terrainsCanBeFoundOn": [
 			"Tropical",
 			"Ashlands",
@@ -1634,7 +1633,7 @@
 	{
 		"name": "Oil",
 		"resourceType": "Strategic",
-		//"revealedBy": "Mining",
+		"revealedBy": "Steam Engine", //TODO: Update this
 		"terrainsCanBeFoundOn": [
 			"Coast",
 			"Ocean",
@@ -1686,7 +1685,7 @@
 		"name": "Uranium",
 		"resourceType": "Strategic",
 		"resourceCategory": "Metallic",
-		//"revealedBy": "Mining",
+		"revealedBy": "Steam Engine", //TODO: Update this
 		"terrainsCanBeFoundOn": [
 			"Hill",
 			"Crystallic",
@@ -1723,7 +1722,7 @@
 		"name": "Alloys",
 		"resourceType": "Strategic",
 		"resourceCategory": "Metallic",
-		//"revealedBy": "Mining",
+		"revealedBy": "Steam Engine", //TODO: Update this
 		"terrainsCanBeFoundOn": [
 			"Hill",
 			"Crystallic",
@@ -1764,7 +1763,7 @@
 		"name": "Element Zero",
 		"resourceType": "Strategic",
 		"resourceCategory": "Metallic",
-		//"revealedBy": "Mining",
+		"revealedBy": "Electricity", //TODO: Update this
 		"terrainsCanBeFoundOn": [
 			"Crystallic",
 			"Enchanted",

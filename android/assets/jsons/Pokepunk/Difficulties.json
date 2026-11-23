@@ -12,7 +12,7 @@
 		"unhappinessModifier": 1.00,
 		"barbarianBonus": 0.0,
 		"barbarianSpawnDelay": 0,
-		"playerBonusStartingUnits": ["Builder"],
+		"playerBonusStartingUnits": [],
 		"aiCityGrowthModifier": 1.0,
 		"aiUnitCostModifier": 1.0,
 		"aiBuildingCostModifier": 1.0,

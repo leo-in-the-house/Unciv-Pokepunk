@@ -428,6 +428,9 @@ class Ruleset {
 
         val resourcesFile = RulesetFile.TileResources.file()
         if (resourcesFile.exists()) tileResources += createHashmap(json().fromJsonFile(Array<TileResource>::class.java, resourcesFile))
+        
+        //Populate perpetual constructions with resources here
+        PerpetualConstruction.populateResourceConstructions(this)
 
         val improvementsFile = RulesetFile.TileImprovements.file()
         if (improvementsFile.exists()) tileImprovements += createHashmap(json().fromJsonFile(Array<TileImprovement>::class.java, improvementsFile))
