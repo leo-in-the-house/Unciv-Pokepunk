@@ -148,7 +148,7 @@ class TileLayerResource(tileGroup: TileGroup, size: Float) : TileLayer(tileGroup
         if (tileView.resource == null && tileImprovementProvidesResource) {
              tileView.tileImprovement?.getMatchingUniques(UniqueType.ProvidesResources, gameContext)!!.forEach {
                  resourceName = it.params[1]
-                 resourceAmount = it.params[0].toInt()
+                 resourceAmount = it.params[0].toInt() * it.getUniqueMultiplier(gameContext)
              }
         }
 

@@ -898,6 +898,25 @@
             }
         ]
 	},
+	// Magic building improvements
+	{
+		"name": "Altar to Celebi",
+		"terrainsCanBeBuiltOn": ["Forest"],
+		"buildSound": "altar_to_celebi",
+		"uniques": [
+			"Rural Improvement",
+			"Irremovable",
+			"Will not be replaced by automated units",
+			"Pillaging this improvement yields approximately [+50 Faith]",
+			"Provides [1] [Mana] <for every [[Forest] Tiles in this city]>",
+			"Can only be built <in [{Forest} {unimproved} {resourceless}] tiles>"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Rural building that can be built in any unimproved, resourceless Forest.  Tied to a building with the same name in the city.  Provides +1 Mana for each Forest tile in this city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
 	// Wonder improvements
 	// Unbuildable improvements
 	{

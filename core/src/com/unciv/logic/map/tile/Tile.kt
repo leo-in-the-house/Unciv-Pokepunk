@@ -939,6 +939,22 @@ class Tile : IsPartOfGameInfoSerialization {
     }
 
     /**
+     * Sets this tile's [resource] field and its [resourceAmount] fields. If [updateCache] is ``true``
+     * it will also set the [tileResource] transient field
+     */
+    fun setTileResource(newResource: String?, amount: Int, updateCache: Boolean = true) {
+        if (updateCache) {
+            val resource = ruleset.tileResources[newResource]
+            tileResource = resource
+            resourceAmount = amount
+            return
+        } else {
+            resource = newResource
+            resourceAmount = amount
+        }
+    }
+
+    /**
      * Sets this tile's [resource] and, if [newResource] is a Strategic resource, [resourceAmount] fields.
      *
      * [resourceAmount] is determined by [MapParameters.mapResources] and [majorDeposit], and

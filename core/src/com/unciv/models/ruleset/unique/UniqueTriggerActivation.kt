@@ -1489,6 +1489,26 @@ object UniqueTriggerActivation {
                     true
                 }
             }
+            UniqueType.OneTimeAddAmountResource -> {
+                if (tile == null) return null
+                val resourceAmount = unique.params[0].toInt()
+                val resourceName = unique.params[1]
+                val resource = ruleset.tileResources[resourceName] ?: return null
+                if (resource.terrainsCanBeFoundOn.none { it == tile.baseTerrain || tile.terrainFeatures.contains(it) }) return null
+                return {
+                    // Remove the original resources
+                    if (tile.tileResource != null) {
+                        tile.tileResource = null
+                        tile.resourceAmount = 0
+                    }
+
+                    // Same deal as the place resource command
+                    tile.setTileResource(resourceName, resourceAmount, true)
+                    tile.getOwner()?.cache?.updateCivResources()
+                    TileNormalizer.normalizeToRuleset(tile, ruleset)
+                    true
+                }
+            }
 
             UniqueType.OneTimeAddImprovement -> {
                 if (tile == null) return null

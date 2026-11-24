@@ -676,7 +676,7 @@ class AlertPopup(
         }
         
         if (tilex != null && tiley != null)     {
-            tile = viewingCiv.viewableTiles.filter { it.position.x == tilex && it.position.y == tiley }.first()
+            tile = gameInfo.tileMap.tileList.filter { it.position.x == tilex && it.position.y == tiley }.first()
         }
         
         val event = gameInfo.ruleset.events[eventName] ?: return false

@@ -218,6 +218,11 @@ Simple unique parameters are explained by mouseover. Complex parameters are expl
 
 	Applicable to: Triggerable
 
+??? example  "Add [amount] [resource] to this tile"
+	Example: "Add [3] [Iron] to this tile"
+
+	Applicable to: Triggerable
+
 ??? example  "Add [improvementName] improvement to this tile"
 	Example: "Add [Trading Post] improvement to this tile"
 

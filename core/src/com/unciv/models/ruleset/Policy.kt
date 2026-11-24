@@ -64,6 +64,7 @@ open class Policy : RulesetObject() {
         val ruleset = viewingCiv.gameInfo.ruleset
         val enabledBuildings = ruleset.buildings.values.filter { isEnabledByPolicy(it) }
         val enabledUnits = ruleset.units.values.filter { isEnabledByPolicy(it) }
+        val enabledImprovements = ruleset.tileImprovements.values.filter { isEnabledByPolicy(it) }
 
         var lineList = (if (policyBranchType == PolicyBranchType.Member) name.tr() + "\n" else "") +
             uniqueObjects.filterNot {
@@ -81,6 +82,11 @@ open class Policy : RulesetObject() {
             lineList += "Units enabled: \n"
             for (unit in enabledUnits)
                 lineList += " • ${unit.name.tr()} (${unit.getShortDescription()})\n"
+        }
+        if (enabledImprovements.isNotEmpty()) {
+            lineList += "Improvements enabled: \n"
+            for (improvement in enabledImprovements)
+                lineList += " • ${improvement.name.tr()} "
         }
         
         return lineList
@@ -135,6 +141,7 @@ open class Policy : RulesetObject() {
         
         val enabledBuildings = ruleset.buildings.values.filter { isEnabledByPolicy(it) }
         val enabledUnits = ruleset.units.values.filter { isEnabledByPolicy(it) }
+        val enabledImprovements = ruleset.tileImprovements.values.filter { isEnabledByPolicy(it) }
 
         if (enabledBuildings.isNotEmpty()) {
             lineList += FormattedLine("Buildings Enabled: \n")
@@ -149,6 +156,11 @@ open class Policy : RulesetObject() {
             lineList += FormattedLine("Units Enabled: \n")
             for (unit in enabledUnits)
                 lineList += FormattedLine(" • ${unit.name.tr()} (${unit.getShortDescription()})\n", link = unit.makeLink(), indent = 1)
+        }
+        if (enabledImprovements.isNotEmpty()) {
+            lineList += FormattedLine("Improvements Enabled: \n")
+            for (improvement in enabledImprovements)
+                lineList += FormattedLine(" • ${improvement.name.tr()}", link = improvement.makeLink(), indent = 1)
         }
 
 

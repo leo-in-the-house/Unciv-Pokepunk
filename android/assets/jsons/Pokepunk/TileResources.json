@@ -1503,7 +1503,7 @@
 		"name": "Powder",
 		"resourceType": "Strategic",
 		"resourceCategory": "Geologic",
-		"revealedBy": "Engineering", //TODO: Update this
+		"revealedBy": "Engineering", //TODO: Update this and then update Char Powder in UnitPromotions.json
 		"terrainsCanBeFoundOn": [
 			"Alpine",
 			"Hill",

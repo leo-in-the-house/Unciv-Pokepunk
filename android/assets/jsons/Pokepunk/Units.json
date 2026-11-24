@@ -786,6 +786,9 @@
             }
         ]
 	},
+	////////////////////
+	// Magic Units
+	////////////////////
 	{
 		"name": "Pokémon Hunter",
 		"unitType": "Missile Infantry",
@@ -817,6 +820,88 @@
 	////////////////////
 	// Pokémon
 	////////////////////
+	{
+		"name": "Charmander",
+		"unitType": "Charmander-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 20,
+		"defenseStrength": 40,
+        "range": 1,
+		"movement": 1,
+		"cost": 30,
+        "uniques": [
+            "Unevolved",
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Fire-Type] promotion",
+            "Can transform to [Charmeleon] <for units with [Level 1]>"
+        ],
+		"selectSound":"charmander",
+		"attackSound":"charmander",
+        "civilopediaText": [
+            {
+                "text": "'Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.' - Kanto Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Fiery lizard starter Pokémon.  Can upgrade itself to gain strength when wounded."
+            }
+        ]
+	},
+	{
+		"name": "Charmeleon",
+		"unitType": "Charmander-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 20,
+		"defenseStrength": 60,
+        "range": 1,
+		"movement": 1,
+		"cost": 80,
+        "uniques": [
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Fire-Type] promotion",
+            "Can transform to [Charizard] <for units with [Level 3]>"
+        ],
+		"selectSound":"charmeleon",
+		"attackSound":"charmeleon",
+        "civilopediaText": [
+            {
+                "text": "'When it swings its burning tail, it elevates the temperature to unbearably high levels.' - Kanto Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Evolved fiery lizard starter Pokémon.  Can upgrade itself to gain strength when wounded or create Powder on Hills."
+            }
+        ]
+	},
+	{
+		"name": "Charizard",
+		"unitType": "Charmander-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 30,
+		"defenseStrength": 70,
+        "range": 1,
+		"movement": 3,
+		"cost": 160,
+        "uniques": [
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Fire-Type] promotion",
+            "[This Unit] gains the [Flying-Type] promotion"
+        ],
+		"selectSound":"charizard",
+		"attackSound":"charizard",
+        "civilopediaText": [
+            {
+                "text": "'When expelling a blast of super hot fire, the red flame at the tip of its tail burns more intensely. ' - Kanto Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Powerful, airborne fiery dragon-like starter Pokémon.  Can upgrade itself to gain strength when wounded, create Powder on Hills, or gain a powerful, long-range attack that can burn enemies."
+            }
+        ]
+	},
 	{
 		"name": "Caterpie",
 		"unitType": "Caterpie-Line",
@@ -1238,6 +1323,87 @@
         ]
 	},
     {
+		"name": "Treecko",
+		"unitType": "Treecko-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 20,
+		"defenseStrength": 30,
+        "range": 1,
+		"movement": 2,
+		"cost": 30,
+        "uniques": [
+            "Unevolved",
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Grass-Type] promotion",
+            "Can transform to [Grovyle] <for units with [Level 1]>"
+        ],
+		"selectSound":"treecko",
+		"attackSound":"treecko",
+        "civilopediaText": [
+            {
+                "text": "'It makes its nest in a giant tree in the forest. It ferociously guards against anything nearing its territory. It is said to be the protector of the forest's trees.' - Hoenn Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Fast gecko starter Pokémon.  Can upgrade itself to move faster in Forests."
+            }
+        ]
+	},
+    {
+		"name": "Grovyle",
+		"unitType": "Treecko-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 20,
+		"defenseStrength": 50,
+        "range": 1,
+		"movement": 3,
+		"cost": 90,
+        "uniques": [
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Grass-Type] promotion",
+            "Can transform to [Sceptile] <for units with [Level 3]>"
+        ],
+		"selectSound":"grovyle",
+		"attackSound":"grovyle",
+        "civilopediaText": [
+            {
+                "text": "'Leaves grow out of this Pokémon's body. They help obscure a Grovyle from the eyes of its enemies while it is in a thickly overgrown forest.' - Hoenn Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Very fast gecko starter Pokémon.  Can upgrade itself to move faster in Forests or deal bonus damage against Infantry."
+            }
+        ]
+	},
+    {
+		"name": "Sceptile",
+		"unitType": "Treecko-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 30,
+		"defenseStrength": 60,
+        "range": 1,
+		"movement": 3,
+		"cost": 150,
+        "uniques": [
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Grass-Type] promotion"
+        ],
+		"selectSound":"sceptile",
+		"attackSound":"sceptile",
+        "civilopediaText": [
+            {
+                "text": "'In the jungle, its power is without equal. This Pokémon carefully grows trees and plants. It regulates its body temperature by basking in sunlight.' - Hoenn Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Very fast gecko starter Pokémon.  Can upgrade itself to move faster in Forests, deal bonus damage against Infantry, or gain very high strength in Tropical Forests."
+            }
+        ]
+	},
+    {
 		"name": "Snorunt",
 		"unitType": "Snorunt-Line",
 		"secondaryUnitType": "Pokémon",
@@ -1574,6 +1740,85 @@
             { "separator": true },
             {
                 "text": "Pokémon that appears in Wastelands.  Can detect stealth.  Can attack at range, with a minimum range.  When trained, can generate Faith passively when immobile."
+            }
+        ]
+	},
+    {
+		"name": "Froakie",
+		"unitType": "Froakie-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 20,
+		"defenseStrength": 40,
+		"movement": 1,
+		"cost": 30,
+        "uniques": [
+            "Unevolved",
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Water-Type] promotion",
+            "Can transform to [Frogadier] <for units with [Level 1]>"
+        ],
+		"selectSound":"froakie",
+		"attackSound":"froakie",
+        "civilopediaText": [
+            {
+                "text": "'It secretes flexible bubbles from its chest and back. The bubbles reduce the damage it would otherwise take when attacked.' - Kalos Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Amphibious frog starter Pokémon.  Can upgrade itself for more defense in Fresh Water tiles."
+            }
+        ]
+	},
+    {
+		"name": "Frogadier",
+		"unitType": "Froakie-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 20,
+		"defenseStrength": 60,
+		"movement": 1,
+		"cost": 80,
+        "uniques": [
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Water-Type] promotion",
+            "Can transform to [Greninja] <for units with [Level 3]>"
+        ],
+		"selectSound":"frogadier",
+		"attackSound":"frogadier",
+        "civilopediaText": [
+            {
+                "text": "'It can throw bubble-covered pebbles with precise control, hitting empty cans up to a hundred feet away.' - Kalos Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Heavy amphibious frog starter Pokémon.  Can upgrade itself for more defense in Fresh Water tiles or increase combat strength of adjacent Pokémon."
+            }
+        ]
+	},
+    {
+		"name": "Greninja",
+		"unitType": "Froakie-Line",
+		"secondaryUnitType": "Pokémon",
+		"attackStrength": 40,
+		"defenseStrength": 70,
+		"movement": 2,
+		"cost": 160,
+        "uniques": [
+            "Starter",
+            "Unbuildable",
+            "[This Unit] gains the [Water-Type] promotion",
+            "[This Unit] gains the [Dark-Type] promotion"
+        ],
+		"selectSound":"greninja",
+		"attackSound":"greninja",
+        "civilopediaText": [
+            {
+                "text": "'It appears and vanishes with a ninja's grace. It toys with its enemies using swift movements, while slicing them with throwing stars of sharpest water.' - Kalos Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Hard-hitting amphibious frog starter Pokémon.  Can upgrade itself for more defense in Fresh Water tiles, increase combat strength of adjacent Pokémon, and the ability to fire a powerful ranged attack before attacking in fresh water tiles."
             }
         ]
 	},

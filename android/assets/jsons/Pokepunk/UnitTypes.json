@@ -48,6 +48,10 @@
         "movementType": "Other"
     },
     {
+        "name": "Charmander-Line",
+        "movementType": "Land"
+    },
+    {
         "name": "Caterpie-Line",
         "movementType": "Land"
     },
@@ -72,6 +76,10 @@
         "movementType": "Land"
     },
     {
+        "name": "Treecko-Line",
+        "movementType": "Land"
+    },
+    {
         "name": "Snorunt-Line",
         "movementType": "Land"
     },
@@ -90,6 +98,10 @@
     {
         "name": "Silicobra-Line",
         "movementType": "Land"
+    },
+    {
+        "name": "Froakie-Line",
+        "movementType": "Amphibious"
     },
     {
         "name": "Gastly-Line",

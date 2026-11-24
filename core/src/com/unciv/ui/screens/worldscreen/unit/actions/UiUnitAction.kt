@@ -63,6 +63,7 @@ class UiUnitAction(
                     UniqueType.OneTimeConsumeResources, UniqueType.OneTimeProvideResources, UniqueType.OneTimeGainResource -> ImageGetter.getResourcePortrait(associatedUnique.params[1], size)
                     UniqueType.OneTimeChangeTerrain -> ImageGetter.getUnitActionPortrait("Transform", size)
                     UniqueType.OneTimeAddResource -> ImageGetter.getResourcePortrait(associatedUnique.params[0], size)
+                    UniqueType.OneTimeAddAmountResource -> ImageGetter.getResourcePortrait(associatedUnique.params[1], size)
                     UniqueType.OneTimeAddImprovement -> ImageGetter.getImprovementPortrait(associatedUnique.params[0], size)
                     UniqueType.OneTimeReplaceImprovement -> ImageGetter.getImprovementPortrait(associatedUnique.params[0], size)
                     UniqueType.OneTimeRemoveResourcesFromTile, UniqueType.OneTimeRemoveImprovementsFromTile -> ImageGetter.getUnitActionPortrait("Pillage", size)

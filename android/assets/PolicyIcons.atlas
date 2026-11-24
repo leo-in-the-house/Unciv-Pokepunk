@@ -67,6 +67,13 @@ PolicyBranchIcons/Tradition
   orig: 50, 50
   offset: 0, 0
   index: -1
+PolicyBranchIcons/Wood Magic
+  rotate: false
+  xy: 1686, 62
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
 PolicyIcons/Aesthetics
   rotate: false
   xy: 4, 62
@@ -424,9 +431,16 @@ PolicyIcons/Universal Suffrage
   orig: 50, 50
   offset: 0, 0
   index: -1
-PolicyIcons/Warrior Code
+PolicyIcons/Wall of Wood
   rotate: false
   xy: 1628, 62
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+PolicyIcons/Warrior Code
+  rotate: false
+  xy: 1628, 4
   size: 50, 50
   orig: 50, 50
   offset: 0, 0

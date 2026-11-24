@@ -383,6 +383,26 @@
             }
         ]
 	},
+	//Magic Buildings
+	{
+		"name": "Altar to Celebi",
+		"buildSound": "altar_to_celebi",
+		"cost": 100,
+		"hurryCostModifier": 25,
+		"specialistSlots": { "Channeler": 2 },
+		"maintenance": 4,
+		"uniques": [
+            "Only available <after adopting [Wood Magic]>",
+			"Costs [10] [Stone]",
+			"Creates a [Altar to Celebi] improvement on a specific tile",
+			"Comment [Must be built on a Forest tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that can be built anywhere, in flat land.  Provides +1 Mana for each Forest tile in this city.  Provides Masons that can spawn Builders."
+            }
+        ]
+	},
 	//Projects
 	{
 		"name": "Search the Land",

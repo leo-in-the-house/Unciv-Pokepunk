@@ -6,52 +6,77 @@
 			"Neutral": 0
 		},
 		"uniques": [
-			"[+1 Food] from every [Forest]",
+			//Building that provides Mana from Forest tiles in this city
             "Only available <when number of [Owned [Forest] Tiles] is more than [4]>"
 		],
 		"policies": [
 			{
 				"name": "Wall of Wood",
 				"uniques": [
+					//Defensive building that costs a lot of wood and provides a strong defense
 				],
 				"row": 1,
 				"column": 1
 			},
 			{
-				"name": "Forest's Bounty",
+				"name": "Wild Weavers",
 				"uniques": [
+					//Obtain 2 free Sewaddles, which can be upgraded as a source of Fiber
 				],
 				"row": 1,
 				"column": 3
 			},
 			{
-				"name": "Druidism",
+				"name": "Wild Growth",
 				"uniques": [
+					//Terraformer that can spread Forests onto any Fertile terrain easily, costing just water
 				],
 				"row": 1,
 				"column": 5
 			},
 			{
-				"name": "Sacred Groves",
+				"name": "Axes of Bunyon",
 				"uniques": [
+					//Spawns 2 free Lumberjacks
 				],
-				"requires": ["Wall of Wood", "Forest's Bounty"],
+				"requires": ["Wall of Wood"],
+				"row": 2,
+				"column": 0
+			},
+			{
+				"name": "Druidism",
+				"uniques": [
+					//Magical combat unit that costs mana, that can inflict Trapped to enemies on Forest and that can provide Shielded to nearby allies when on Forest costing Mana
+				],
+				"requires": ["Wall of Wood", "Wild Weavers"],
 				"row": 2,
 				"column": 2
 			},
 			{
 				"name": "Hunter's Strength",
 				"uniques": [
+					//Pokemon Hunters
 				],
-				"requires": ["Forest's Bounty", "Druidism"],
+				"requires": ["Wild Weavers", "Wild Growth"],
 				"row": 2,
 				"column": 4
+			},
+			{
+				"name": "Forest's Bounty",
+				"uniques": [
+					//Tile improvement built by Dryads that costs mana, must be built on Forest tiles, turns nearby unimproved resourceless tiles into Forest, and provides +5 Production
+				],
+				"requires": ["Wild Growth"],
+				"row": 2,
+				"column": 6
 			},
 
 			{
 				"name": "Wood Magic Complete",
 				"uniques": [
-                    "[50]% [Wood] resource production"
+					//Allows training Dryads with Faith
+					//Wood production boost, can build Wonder
+                    "[100]% [Wood] resource production"
 				]
 			}
 		]

@@ -1039,6 +1039,7 @@ enum class UniqueType(
 
     OneTimeChangeTerrain("Turn this tile into a [terrainName] tile", UniqueTarget.Triggerable),
     OneTimeAddResource("Add [resource] to this tile", UniqueTarget.Triggerable),
+    OneTimeAddAmountResource("Add [amount] [resource] to this tile", UniqueTarget.Triggerable),
 
     OneTimeAddImprovement("Add [improvementName] improvement to this tile", UniqueTarget.Triggerable),
     OneTimeReplaceImprovement("Add [improvementName] improvement to this tile replacing the existing improvement", UniqueTarget.Triggerable),

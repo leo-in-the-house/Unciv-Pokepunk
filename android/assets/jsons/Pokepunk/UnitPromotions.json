@@ -414,6 +414,62 @@
         "column": 3
 	},
 	////////////////////
+	// Charmander
+	////////////////////
+	{
+		"name": "Rage I",
+		"uniques": ["[20]% Strength <when [Wounded]>"],
+		"unitTypes": ["Charmander-Line"],
+		"row": 0,
+        "column": 4
+	},
+	{
+		"name": "Rage II",
+		"prerequisites": ["Rage I"],
+		"uniques": ["[40]% Strength <when [Wounded]>"],
+		"unitTypes": ["Charmander-Line"],
+		"row": 1,
+        "column": 4
+	},
+	{
+		"name": "Rage III",
+		"prerequisites": ["Rage II"],
+		"uniques": ["[80]% Strength <when [Wounded]>"],
+		"unitTypes": ["Charmander-Line"],
+		"row": 2,
+        "column": 4
+	},
+	{
+		"name": "Char Powder",
+		"uniques": ["Add [2] [Powder] to this tile <in [Hill|Alpine] tiles> <[2] times> <for [1] movement>",
+		"Unavailable <before discovering [Engineering]>",
+		"Unavailable <for [non-[Charmeleon]] units> <for [non-[Charizard]] units>"],
+		"unitTypes": ["Charmander-Line"],
+		"row": 0,
+        "column": 5
+	},
+	{
+		"name": "Flamethrower I",
+		"uniques": ["[20]% Attack Strength","[+1] Range",
+		"Comment [Inflict [Burning] to the target for 2 turn when it attacks with 30% chance.]",
+		"[Target Unit] gains the [Burning] status for [2] turn(s) <with [30]% chance> <when attacking> <upon damaging a [All] unit> <hidden from users>",
+		"Unavailable <for [non-[Charizard]] units>"],
+		"unitTypes": ["Charmander-Line"],
+		"row": 0,
+        "column": 6
+	},
+	{
+		"name": "Flamethrower II",
+		"prerequisites": ["Flamethrower I"],
+		"uniques": ["[50]% Attack Strength","[+2] Range",
+		"Comment [Inflict [Burning] to the target for 3 turn when it attacks with 50% chance.]",
+		"[Target Unit] gains the [Burning] status for [3] turn(s) <with [50]% chance> <when attacking> <upon damaging a [All] unit> <hidden from users>",
+		"Unavailable <for [non-[Charizard]] units>"],
+		"unitTypes": ["Charmander-Line"],
+		"row": 1,
+        "column": 6
+	},
+	////////////////////
 	// Sentret
 	////////////////////
 	{
@@ -706,6 +762,71 @@
         "column": 6
 	},
 	////////////////////
+	// Treecko
+	////////////////////
+	{
+		"name": "Wood Gecko",
+		"uniques": [
+			"Double movement in [Forest]"
+		],
+		"unitTypes": ["Treecko-Line"],
+		"row": 0,
+        "column": 4
+	},
+	{
+		"name": "Leaf Blade I",
+		"uniques": [
+			"[20]% Attack Strength <vs [Infantry] units>",
+			"Unavailable <for [non-[Grovyle]] units> <for [non-[Sceptile]] units>"
+		],
+		"unitTypes": ["Treecko-Line"],
+		"row": 0,
+        "column": 5
+	},
+	{
+		"name": "Leaf Blade II",
+		"prerequisites": ["Leaf Blade I"],
+		"uniques": [
+			"[50]% Attack Strength <vs [Infantry] units>",
+			"Unavailable <for [non-[Grovyle]] units> <for [non-[Sceptile]] units>"
+		],
+		"unitTypes": ["Treecko-Line"],
+		"row": 1,
+        "column": 5
+	},
+	{
+		"name": "Leaf Blade III",
+		"prerequisites": ["Leaf Blade II"],
+		"uniques": [
+			"[100]% Attack Strength <vs [Infantry] units>",
+			"Unavailable <for [non-[Grovyle]] units> <for [non-[Sceptile]] units>"
+		],
+		"unitTypes": ["Treecko-Line"],
+		"row": 2,
+        "column": 5
+	},
+	{
+		"name": "Jungle Guerilla I",
+		"uniques": [
+			"[100]% Strength <in [{Tropical} {Forest}] tiles>",
+			"Unavailable <for [non-[Sceptile]] units>"
+		],
+		"unitTypes": ["Treecko-Line"],
+		"row": 0,
+        "column": 6
+	},
+	{
+		"name": "Jungle Guerilla II",
+		"prerequisites": ["Jungle Guerilla I"],
+		"uniques": [
+			"[200]% Strength <in [{Tropical} {Forest}] tiles>",
+			"Unavailable <for [non-[Sceptile]] units>"
+		],
+		"unitTypes": ["Treecko-Line"],
+		"row": 1,
+        "column": 6
+	},
+	////////////////////
 	// Snorunt
 	////////////////////
 	{
@@ -770,64 +891,6 @@
 		"unitTypes": ["Snorunt-Line"],
 		"row": 0,
         "column": 8
-	},
-	////////////////////
-	// Roggenrola
-	////////////////////
-	{
-		"name": "Stealth Rock I",
-		"uniques": [
-			"Turn this tile into a [Hill] tile <in [unimproved|pillaged] tiles> <in [{non-[Hill]} {Land}] tiles> <[3] times> <for [1] movement>",
-            "Unavailable <for [Barbarians] Civilizations>"
-        ],
-		"unitTypes": ["Roggenrola-Line"],
-		"row": 0,
-        "column": 4
-	},
-	{
-		"name": "Stealth Rock II",
-		"prerequisites": ["Stealth Rock I"],
-		"uniques": [
-			"Turn this tile into a [Hill] tile <in [unimproved|pillaged] tiles> <in [{non-[Hill]} {Land}] tiles> <[6] times> <for [1] movement>",
-            "Unavailable <for [Barbarians] Civilizations>"
-        ],
-		"unitTypes": ["Roggenrola-Line"],
-		"row": 1,
-        "column": 4
-	},
-	{
-		"name": "Crystallize I",
-		"uniques": [
-			"Turn this tile into a [Crystallic] tile <in [unimproved|pillaged] tiles> <in [{Hill} {Land}] tiles> <in tiles adjacent to [Crystallic] tiles> <[3] times> <for [1] movement>",
-            "Unavailable <for [Barbarians] Civilizations>",
-			"Unavailable <for [non-[Boldore]] units> <for [non-[Gigalith]] units>"
-        ],
-		"unitTypes": ["Roggenrola-Line"],
-		"row": 0,
-        "column": 5
-	},
-	{
-		"name": "Crystallize II",
-		"prerequisites": ["Crystallize I"],
-		"uniques": [
-			"Turn this tile into a [Crystallic] tile <in [unimproved|pillaged] tiles> <in [{Hill} {Land}] tiles> <in tiles adjacent to [Crystallic] tiles> <[6] times> <for [1] movement>",
-            "Unavailable <for [Barbarians] Civilizations>",
-			"Unavailable <for [non-[Boldore]] units> <for [non-[Gigalith]] units>"
-        ],
-		"unitTypes": ["Roggenrola-Line"],
-		"row": 1,
-        "column": 5
-	},
-	{
-		"name": "Raise Mountain",
-		"uniques": [
-			"Turn this tile into a [Mountain] tile <in [unimproved|pillaged] tiles> <in [{Hill} {Land}] tiles> <in tiles adjacent to [Mountain] tiles> <for [1] movement>",
-            "Unavailable <for [Barbarians] Civilizations>",
-			"Unavailable <for [non-[Gigalith]] units>"
-        ],
-		"unitTypes": ["Roggenrola-Line"],
-		"row": 0,
-        "column": 6
 	},
 	////////////////////
 	// Shinx
@@ -896,6 +959,64 @@
         "column": 6
 	},
 	////////////////////
+	// Roggenrola
+	////////////////////
+	{
+		"name": "Stealth Rock I",
+		"uniques": [
+			"Turn this tile into a [Hill] tile <in [unimproved|pillaged] tiles> <in [{non-[Hill]} {Land}] tiles> <[3] times> <for [1] movement>",
+            "Unavailable <for [Barbarians] Civilizations>"
+        ],
+		"unitTypes": ["Roggenrola-Line"],
+		"row": 0,
+        "column": 4
+	},
+	{
+		"name": "Stealth Rock II",
+		"prerequisites": ["Stealth Rock I"],
+		"uniques": [
+			"Turn this tile into a [Hill] tile <in [unimproved|pillaged] tiles> <in [{non-[Hill]} {Land}] tiles> <[6] times> <for [1] movement>",
+            "Unavailable <for [Barbarians] Civilizations>"
+        ],
+		"unitTypes": ["Roggenrola-Line"],
+		"row": 1,
+        "column": 4
+	},
+	{
+		"name": "Crystallize I",
+		"uniques": [
+			"Turn this tile into a [Crystallic] tile <in [unimproved|pillaged] tiles> <in [{Hill} {Land}] tiles> <in tiles adjacent to [Crystallic] tiles> <[3] times> <for [1] movement>",
+            "Unavailable <for [Barbarians] Civilizations>",
+			"Unavailable <for [non-[Boldore]] units> <for [non-[Gigalith]] units>"
+        ],
+		"unitTypes": ["Roggenrola-Line"],
+		"row": 0,
+        "column": 5
+	},
+	{
+		"name": "Crystallize II",
+		"prerequisites": ["Crystallize I"],
+		"uniques": [
+			"Turn this tile into a [Crystallic] tile <in [unimproved|pillaged] tiles> <in [{Hill} {Land}] tiles> <in tiles adjacent to [Crystallic] tiles> <[6] times> <for [1] movement>",
+            "Unavailable <for [Barbarians] Civilizations>",
+			"Unavailable <for [non-[Boldore]] units> <for [non-[Gigalith]] units>"
+        ],
+		"unitTypes": ["Roggenrola-Line"],
+		"row": 1,
+        "column": 5
+	},
+	{
+		"name": "Raise Mountain",
+		"uniques": [
+			"Turn this tile into a [Mountain] tile <in [unimproved|pillaged] tiles> <in [{Hill} {Land}] tiles> <in tiles adjacent to [Mountain] tiles> <for [1] movement>",
+            "Unavailable <for [Barbarians] Civilizations>",
+			"Unavailable <for [non-[Gigalith]] units>"
+        ],
+		"unitTypes": ["Roggenrola-Line"],
+		"row": 0,
+        "column": 6
+	},
+	////////////////////
 	// Gothita
 	////////////////////
 	{
@@ -918,6 +1039,70 @@
 		],
 		"unitTypes": ["Gothita-Line"],
 		"row": 0,
+        "column": 6
+	},
+	////////////////////
+	// Froakie
+	////////////////////
+	{
+		"name": "Bubble Guard I",
+		"uniques": [
+			"[30]% Defense Strength <in [Fresh Water] tiles>"
+		],
+		"unitTypes": ["Froakie-Line"],
+		"row": 0,
+        "column": 4
+	},
+	{
+		"name": "Bubble Guard II",
+		"prerequisites": ["Bubble Guard I"],
+		"uniques": [
+			"[60]% Defense Strength <in [Fresh Water] tiles>"
+		],
+		"unitTypes": ["Froakie-Line"],
+		"row": 1,
+        "column": 4
+	},
+	{
+		"name": "Battle Bond",
+		"uniques": [
+			"[20]% Strength bonus for [Pokémon] units within [1] tiles",
+			"Unavailable <for [non-[Frogadier]] units> <for [non-[Greninja]] units>"
+		],
+		"unitTypes": ["Froakie-Line"],
+		"row": 0,
+        "column": 5
+	},
+	{
+		"name": "Water Shuriken I",
+		"uniques": [
+			"Before engaging in combat performs an extra ranged attack with [50]% of melee combat strength <in [Fresh Water] tiles>",
+			"Unavailable <for [non-[Greninja]] units>"
+		],
+		"unitTypes": ["Froakie-Line"],
+		"row": 0,
+        "column": 6
+	},
+	{
+		"name": "Water Shuriken II",
+		"prerequisites": ["Water Shuriken I"],
+		"uniques": [
+			"Before engaging in combat performs an extra ranged attack with [100]% of melee combat strength <in [Fresh Water] tiles>",
+			"Unavailable <for [non-[Greninja]] units>"
+		],
+		"unitTypes": ["Froakie-Line"],
+		"row": 1,
+        "column": 6
+	},
+	{
+		"name": "Water Shuriken III",
+		"prerequisites": ["Water Shuriken II"],
+		"uniques": [
+			"Before engaging in combat performs an extra ranged attack with [200]% of melee combat strength <in [Fresh Water] tiles>",
+			"Unavailable <for [non-[Greninja]] units>"
+		],
+		"unitTypes": ["Froakie-Line"],
+		"row": 2,
         "column": 6
 	},
 	////////////////////
