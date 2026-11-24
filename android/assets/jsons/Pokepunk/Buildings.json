@@ -384,6 +384,7 @@
         ]
 	},
 	//Magic Buildings
+	//Tome of Wood
 	{
 		"name": "Altar to Celebi",
 		"buildSound": "altar_to_celebi",
@@ -392,14 +393,33 @@
 		"specialistSlots": { "Channeler": 2 },
 		"maintenance": 4,
 		"uniques": [
-            "Only available <after adopting [Wood Magic]>",
+            "Only available <after adopting [Tome of Wood]>",
 			"Costs [10] [Stone]",
 			"Creates a [Altar to Celebi] improvement on a specific tile",
 			"Comment [Must be built on a Forest tile.]"
 		],
 		 "civilopediaText": [
             {
-                "text": "Urban building that can be built anywhere, in flat land.  Provides +1 Mana for each Forest tile in this city.  Provides Masons that can spawn Builders."
+                "text": "Tome of Wood Urban building that can be built anywhere, in flat land.  Provides +1 Mana for each Forest tile in this city.  Provides Masons that can spawn Builders."
+            }
+        ]
+	},
+	{
+		"name": "Green Belt",
+		"buildSound": "green_belt",
+		"cityHealth": 200,
+		"faith": 4,
+		"cost": 70,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Costs [35] [Wood]",
+			"Is shown",
+            "Only available <after adopting [Wall of Wood]>",
+			"Destroyed when the city is captured"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Tome of Wood defensive building that costs a large amount of Wood.  Provides a large amount of city health and a passive source of faith."
             }
         ]
 	},

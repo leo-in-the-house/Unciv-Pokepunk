@@ -508,6 +508,27 @@
         ]
 	},
 	{
+		"name": "Wizard's Tower",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 0,
+		"resourceType": "Mana",
+		"resourceAmount": 2,
+		"buildSound": "wizards_tower",
+		"uniques": [
+			"Special",
+			"Wizardry",
+			"Cannot be built within [4] tiles of a [Wizard's Tower] tile",
+			"Will not be replaced by automated units", 
+			"Pillaging this improvement yields approximately [+50 Culture]"
+		],
+		"shortcutKey": "F",
+		 "civilopediaText": [
+            {
+                "text": "Build by Wizards at least 5 tiles away from other Wizards' Towers, these towers generate a magic income when worked.  Wizards can generate a large burst of magic at once over them."
+            }
+        ]
+	},
+	{
 		"name": "Mansion",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"turnsToBuild": 0,

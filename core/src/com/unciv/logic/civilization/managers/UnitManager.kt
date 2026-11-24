@@ -100,8 +100,9 @@ class UnitManager(val civInfo: Civilization) {
      * @param baseUnit [BaseUnit] to create and place
      * @return created [MapUnit] or null if no suitable location was found
      * */
-    fun placeUnitNearTile(location: HexCoord, baseUnit: BaseUnit, unitId: Int? = null, copiedFrom: MapUnit? = null): MapUnit? {
-        val unit = civInfo.gameInfo.tileMap.placeUnitNearTile(location, baseUnit, civInfo, unitId)
+    fun placeUnitNearTile(location: HexCoord, baseUnit: BaseUnit, unitId: Int? = null, copiedFrom: MapUnit? = null, civilization: Civilization? = null): MapUnit? {
+        val targetCiv = civilization ?: civInfo
+        val unit = targetCiv.gameInfo.tileMap.placeUnitNearTile(location, baseUnit, targetCiv, unitId)
 
         if (unit == null) return unit
         
@@ -121,23 +122,23 @@ class UnitManager(val civInfo: Civilization) {
             }
         }
 
-        civInfo.forEachTriggeredUnique(UniqueType.TriggerUponGainingUnit, unit.cache.state,
+        targetCiv.forEachTriggeredUnique(UniqueType.TriggerUponGainingUnit, unit.cache.state,
                 { unit.matchesFilter(it.params[0]) }) { unique ->
             UniqueTriggerActivation.triggerUnique(unique, unit, triggerNotificationText = triggerNotificationText)
         }
 
         if (unit.getResourceRequirementsPerTurn().isNotEmpty())
-            civInfo.cache.updateCivResources()
+            targetCiv.cache.updateCivResources()
 
-        civInfo.forEachMatchingUnique(UniqueType.LandUnitsCrossTerrainAfterUnitGained, unit.cache.state) { unique ->
+        targetCiv.forEachMatchingUnique(UniqueType.LandUnitsCrossTerrainAfterUnitGained, unit.cache.state) { unique ->
             if (unit.matchesFilter(unique.params[1])) {
-                civInfo.passThroughImpassableUnlocked = true    // Update the cached Boolean
-                civInfo.passableImpassables.add(unique.params[0])   // Add to list of passable impassables
+                targetCiv.passThroughImpassableUnlocked = true    // Update the cached Boolean
+                targetCiv.passableImpassables.add(unique.params[0])   // Add to list of passable impassables
             }
         }
 
-        if (unit.hasUnique(UniqueType.ReligiousUnit) && civInfo.gameInfo.isReligionEnabled()) {
-            unit.religion = civInfo.religionManager.religion?.name
+        if (unit.hasUnique(UniqueType.ReligiousUnit) && targetCiv.gameInfo.isReligionEnabled()) {
+            unit.religion = targetCiv.religionManager.religion?.name
         }
         return unit
     }

@@ -441,7 +441,7 @@
 	},
 	{
 		"name": "Char Powder",
-		"uniques": ["Add [2] [Powder] to this tile <in [Hill|Alpine] tiles> <[2] times> <for [1] movement>",
+		"uniques": ["Add [2] [Powder] to this tile <in [Hill|Alpine] tiles> <in [unimproved] tiles> <[2] times> <for [1] movement>",
 		"Unavailable <before discovering [Engineering]>",
 		"Unavailable <for [non-[Charmeleon]] units> <for [non-[Charizard]] units>"],
 		"unitTypes": ["Charmander-Line"],

@@ -356,11 +356,7 @@ object UniqueTriggerActivation {
                 val placementCity = relevantCity ?: civInfo.cities.firstOrNull() ?: return null
 
                 fun placeUnit(): Boolean {
-                    val placedUnit = civInfo.gameInfo.tileMap.placeUnitNearTile(
-                        placementCity.getCenterTile().position,
-                        baseUnit,
-                        barbarians
-                    ) ?: return false
+                    val placedUnit = civInfo.units.placeUnitNearTile(placementCity.getCenterTile().position, baseUnit, civilization = barbarians) ?: return false
 
                     val notificationText = getNotificationText(
                         notification, triggerNotificationText,
@@ -390,11 +386,7 @@ object UniqueTriggerActivation {
                 fun placeUnit(): Boolean {
                     if (tile == null) return false
                     
-                    val placedUnit = civInfo.gameInfo.tileMap.placeUnitNearTile(
-                        tile.position,
-                        baseUnit,
-                        barbarians
-                    ) ?: return false
+                    val placedUnit = civInfo.units.placeUnitNearTile(tile.position, baseUnit, civilization = barbarians) ?: return false
 
                     val notificationText = getNotificationText(
                         notification, triggerNotificationText,
@@ -440,11 +432,7 @@ object UniqueTriggerActivation {
                 fun placeUnits(): Boolean {
                     val placedUnits = mutableListOf<MapUnit>()
                     repeat(actualAmount) {
-                        val placedUnit = civInfo.gameInfo.tileMap.placeUnitNearTile(
-                            placementCity.getCenterTile().position,
-                            baseUnit,
-                            barbarians
-                        )
+                        val placedUnit = civInfo.units.placeUnitNearTile(placementCity.getCenterTile().position, baseUnit, civilization = barbarians)
                         if (placedUnit != null) placedUnits += placedUnit
                     }
                     if (placedUnits.isEmpty()) return false

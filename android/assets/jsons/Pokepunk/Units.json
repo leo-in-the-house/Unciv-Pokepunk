@@ -457,6 +457,29 @@
             }
         ]
 	},
+	{
+		"name": "Wizard",
+		"unitType": "Civilian",
+		"secondaryUnitType": "Human",
+        "charges": 2,
+		"movement": 2,
+		"hurryCostModifier": 20,
+		"selectSound":"wizard",
+		"uniques": [
+			"Unbuildable",
+            "Can build [Wizardry] improvements on tiles",
+            "A [{Unevolved} {Starter} {Pokémon}] rebels on the current tile <costs [20] [Mana]> <by consuming this unit> <AI will always use when number of [Mana] is more than [50]>",
+            "Instantly gain [30] [Mana] <in [Wizardry] tiles> <for [1] charges> <AI will always use when number of [Mana] is less than [30]>",
+            "Is part of Great Person group [Wizard]",
+			"Great Person - [Mage]"
+		],
+		"cost": 300,
+		 "civilopediaText": [
+            {
+                "text": "Magical Great Person that can summon a random wild starter Pokémon, build Wizardry improvements such as Wizard's Towers, and generate mana on said Wizardry improvements."
+            }
+        ]
+	},
     //Other Civilians
     //Military Units
     {

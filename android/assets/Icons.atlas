@@ -139,21 +139,21 @@ EmojiIcons/Happiness
   index: -1
 EmojiIcons/Production
   rotate: false
-  xy: 1300, 53
+  xy: 1624, 43
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 EmojiIcons/Science
   rotate: false
-  xy: 1682, 43
+  xy: 1358, 41
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 EmojiIcons/Turn
   rotate: false
-  xy: 1358, 41
+  xy: 1474, 41
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -830,6 +830,13 @@ ImprovementIcons/Well
   orig: 100, 100
   offset: 0, 0
   index: -1
+ImprovementIcons/Wizard's Tower
+  rotate: false
+  xy: 760, 8
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 NotificationIcons/Bobot
   rotate: false
   xy: 1162, 1578
@@ -1322,7 +1329,7 @@ OtherIcons/NationSwap
   index: -1
 OtherIcons/Nations
   rotate: false
-  xy: 386, 54
+  xy: 1300, 53
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -1350,7 +1357,7 @@ OtherIcons/Options
   index: -1
 OtherIcons/Pause
   rotate: false
-  xy: 444, 54
+  xy: 1840, 48
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -1609,7 +1616,7 @@ OtherIcons/WLTKD
   index: -1
 OtherIcons/Wonders
   rotate: false
-  xy: 4, 5
+  xy: 112, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -2351,21 +2358,21 @@ ResourceIcons/Wine
   index: -1
 ResourceIcons/Wonder Orb
   rotate: false
-  xy: 760, 8
+  xy: 4, 5
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Wood
   rotate: false
-  xy: 112, 4
+  xy: 220, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Wooloos
   rotate: false
-  xy: 220, 4
+  xy: 328, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -2435,7 +2442,7 @@ StatIcons/Malcontent
   index: -1
 StatIcons/MinimumRange
   rotate: false
-  xy: 328, 54
+  xy: 436, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -2456,14 +2463,14 @@ TileIcons/Worked
   index: -1
 StatIcons/Range
   rotate: false
-  xy: 1840, 48
+  xy: 1682, 43
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 StatIcons/RangedStrength
   rotate: false
-  xy: 1624, 43
+  xy: 1740, 43
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -2491,7 +2498,7 @@ StatIcons/Specialist
   index: -1
 StatIcons/Strength
   rotate: false
-  xy: 1740, 43
+  xy: 1416, 41
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
