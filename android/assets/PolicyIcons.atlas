@@ -60,16 +60,16 @@ PolicyBranchIcons/Rationalism
   orig: 50, 50
   offset: 0, 0
   index: -1
-PolicyBranchIcons/Tradition
+PolicyBranchIcons/Tome of Wood
   rotate: false
-  xy: 1512, 4
+  xy: 1454, 4
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-PolicyBranchIcons/Wood Magic
+PolicyBranchIcons/Tradition
   rotate: false
-  xy: 1686, 62
+  xy: 1570, 62
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -405,42 +405,49 @@ PolicyIcons/Theocracy
   index: -1
 PolicyIcons/Total War
   rotate: false
-  xy: 1454, 4
+  xy: 1512, 62
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 PolicyIcons/Trade Unions
   rotate: false
-  xy: 1512, 62
+  xy: 1512, 4
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 PolicyIcons/United Front
   rotate: false
-  xy: 1570, 62
+  xy: 1570, 4
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 PolicyIcons/Universal Suffrage
   rotate: false
-  xy: 1570, 4
+  xy: 1628, 62
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 PolicyIcons/Wall of Wood
   rotate: false
-  xy: 1628, 62
+  xy: 1628, 4
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 PolicyIcons/Warrior Code
   rotate: false
-  xy: 1628, 4
+  xy: 1686, 62
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+PolicyIcons/Wild Weavers
+  rotate: false
+  xy: 1686, 4
   size: 50, 50
   orig: 50, 50
   offset: 0, 0

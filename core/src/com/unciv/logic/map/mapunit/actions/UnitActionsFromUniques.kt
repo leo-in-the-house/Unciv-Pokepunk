@@ -214,7 +214,12 @@ object UnitActionsFromUniques {
             // extends an existing unit action
             if (unique.hasModifier(UniqueType.UnitActionExtraLimitedTimes)) continue
             if (!unique.isTriggerable) continue
-            if (!unique.conditionalsApply(unit.cache.state)) continue
+            if (unique.hasModifier(UniqueType.UnitActionAreaOfEffect) || unique.hasModifier(UniqueType.UnitActionAreaOfEffectMinRange)) {
+                if (UniqueTriggerActivation.getAllTilesInRange(unique, unit).none()) continue
+            } 
+            else {
+                if (!unique.conditionalsApply(unit.cache.state)) continue
+            }
             if (!UnitActionModifiers.canUse(unit, unique)) continue
 
             val baseTitle = when (unique.type) {

@@ -77,6 +77,12 @@
 		"color": [0,125,255]
 	},
 	{
+		"name":"Channeler",
+		"faith": 4,
+		"greatPersonPoints": {"Wizard": 2},
+		"color": [150,150,210]
+	},
+	{
 		"name":"Factory Worker",
 		"production":5,
 		"color": [125,50,25]

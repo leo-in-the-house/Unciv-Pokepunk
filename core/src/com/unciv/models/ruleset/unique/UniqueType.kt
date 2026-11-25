@@ -625,6 +625,11 @@ enum class UniqueType(
     SpaceshipPart("Spaceship part", UniqueTarget.Unit, UniqueTarget.Building), // Should be deprecated in the near future
     TakeReligionOverBirthCity("Takes your religion over the one in their birth city", UniqueTarget.Unit),
 
+    ImmuneToStatuses("Prevents statuses", UniqueTarget.Unit),
+
+    ImmuneToAilments("Prevents negative statuses", UniqueTarget.Unit),
+
+    ImmuneToNonAilments("Prevents positive statuses", UniqueTarget.Unit),
     // Hurried means: sped up using great engineer/scientist ability, so this is in some sense a unit unique that should be here
     CannotBeHurried("Cannot be hurried", UniqueTarget.Building, UniqueTarget.Tech),
     GreatPerson("Great Person - [comment]", UniqueTarget.Unit),

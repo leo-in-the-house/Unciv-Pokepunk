@@ -21,7 +21,7 @@
 			{
 				"name": "Wild Weavers",
 				"uniques": [
-					//Obtain 2 free Sewaddles, which can be upgraded as a source of Fiber
+					"[2] free [Sewaddle] units appear"
 				],
 				"row": 1,
 				"column": 3

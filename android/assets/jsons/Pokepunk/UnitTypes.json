@@ -92,6 +92,10 @@
         "movementType": "Land"
     },
     {
+        "name": "Sewaddle-Line",
+        "movementType": "Land"
+    },
+    {
         "name": "Gothita-Line",
         "movementType": "Land"
     },

@@ -1287,6 +1287,7 @@ object UniqueTriggerActivation {
             }
             UniqueType.OneTimeUnitDamage -> {
                 if (unit == null) return null
+                if (getAllUnitsInRange(unique, unit).none()) return null
                 return {
                     unit.takeDamage(unique.params[1].toInt())
                     if (notification != null)
@@ -1296,6 +1297,7 @@ object UniqueTriggerActivation {
             }
             UniqueType.OneTimeUnitGainXP -> {
                 if (unit == null) return null
+                if (getAllUnitsInRange(unique, unit).none()) return null
                 return {
                     unit.promotions.XP += unique.params[1].toInt()
                     if (notification != null)
@@ -1305,6 +1307,7 @@ object UniqueTriggerActivation {
             }
             UniqueType.OneTimeUnitGainMovement, UniqueType.OneTimeUnitLoseMovement -> {
                 if (unit == null) return null
+                if (getAllUnitsInRange(unique, unit).none()) return null
                 return {
                     val movementToUse =
                         if (unique.type == UniqueType.OneTimeUnitLoseMovement)
@@ -1318,7 +1321,11 @@ object UniqueTriggerActivation {
             }
             UniqueType.OneTimeUnitGainStatus -> {
                 if (unit == null) return null
+                if (getAllUnitsInRange(unique, unit).none()) return null
                 if (unique.params[1] !in unit.civ.gameInfo.ruleset.unitPromotions) return null
+                if (unit.hasUnique(UniqueType.ImmuneToStatuses)) return null
+                if (unit.hasUnique(UniqueType.ImmuneToAilments) && unit.civ.gameInfo.ruleset.unitPromotions[unique.params[1]]!!.isAilment) return null
+                if (unit.hasUnique(UniqueType.ImmuneToNonAilments) && !unit.civ.gameInfo.ruleset.unitPromotions[unique.params[1]]!!.isAilment) return null
                 return {
                     var statusPromotion = unit.civ.gameInfo.ruleset.unitPromotions[unique.params[1]]
                     unit.setStatus(unique.params[1], unique.params[2].toInt(), statusPromotion!!.isAilment)
@@ -1339,6 +1346,7 @@ object UniqueTriggerActivation {
             }
             UniqueType.OneTimeUnitDestroyed -> {
                 if (unit == null) return null
+                if (getAllUnitsInRange(unique, unit).none()) return null
                 return {
                     if (notification != null)
                         unit.civ.addNotification(notification, LocationAction(unit.getTile().position), NotificationCategory.Units, unit.name, "OtherIcons/DisbandUnit")
@@ -1361,6 +1369,7 @@ object UniqueTriggerActivation {
             }
             UniqueType.OneTimeUnitGainPromotion -> {
                 if (unit == null) return null
+                if (getAllUnitsInRange(unique, unit).none()) return null
                 val promotion = unit.civ.gameInfo.ruleset.unitPromotions.keys
                     .firstOrNull { it == unique.params[1] }
                     ?: return null
@@ -1373,6 +1382,7 @@ object UniqueTriggerActivation {
             }
             UniqueType.OneTimeUnitRemovePromotion -> {
                 if (unit == null) return null
+                if (getAllUnitsInRange(unique, unit).none()) return null
                 val promotion = unit.civ.gameInfo.ruleset.unitPromotions.keys
                     .firstOrNull { it == unique.params[1]}
                     ?: return null
@@ -1632,7 +1642,25 @@ object UniqueTriggerActivation {
             else -> return null
         }
     }
-    
+
+    @Readonly
+    private fun getNotificationText(notification: String?, triggerNotificationText: String?, effectNotificationText: String): String? {
+        return if (!notification.isNullOrEmpty()) notification
+        else if (triggerNotificationText != null)
+        {
+            if (UncivGame.Current.translations.triggerNotificationEffectBeforeCause(UncivGame.Current.settings.language))
+                "{$effectNotificationText}{ }{$triggerNotificationText}"
+            else "{$triggerNotificationText}{ }{$effectNotificationText}"
+        }
+        else null
+    }
+
+    private fun getOneTimeChangeRiverTriggerFunction(tile: Tile): (()->Boolean)? {
+        if (tile.neighbors.none { it.isLand && !tile.isConnectedByRiver(it) })
+            return null  // no place for another river
+        return { RiverGenerator.continueRiverOn(tile) }
+    }
+
     fun getAllUnitsInRange (unique: Unique, unit: MapUnit): Sequence<MapUnit> {
         val unitsInRange = mutableListOf(unit)
         var aoemodifier = unique.getModifiers(UniqueType.UnitActionAreaOfEffectMinRange).firstOrNull()
@@ -1674,28 +1702,12 @@ object UniqueTriggerActivation {
 
             unit.getTile().forEachTileInDistanceRange(IntRange(minRadius, maxRadius)) { targetTile ->
                 if (targetTile.matchesFilter(tileFilter) && unique.conditionalsApply(GameContext(unit.civ, unit = unit, tile = targetTile))) {
-                     tilesInRange.add(targetTile)
+                    tilesInRange.add(targetTile)
                 }
             }
         }
         return tilesInRange.asSequence()
     }
 
-    @Readonly
-    private fun getNotificationText(notification: String?, triggerNotificationText: String?, effectNotificationText: String): String? {
-        return if (!notification.isNullOrEmpty()) notification
-        else if (triggerNotificationText != null)
-        {
-            if (UncivGame.Current.translations.triggerNotificationEffectBeforeCause(UncivGame.Current.settings.language))
-                "{$effectNotificationText}{ }{$triggerNotificationText}"
-            else "{$triggerNotificationText}{ }{$effectNotificationText}"
-        }
-        else null
-    }
-
-    private fun getOneTimeChangeRiverTriggerFunction(tile: Tile): (()->Boolean)? {
-        if (tile.neighbors.none { it.isLand && !tile.isConnectedByRiver(it) })
-            return null  // no place for another river
-        return { RiverGenerator.continueRiverOn(tile) }
-    }
 }
+

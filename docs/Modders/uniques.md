@@ -2835,6 +2835,15 @@ Simple unique parameters are explained by mouseover. Complex parameters are expl
 ??? example  "Takes your religion over the one in their birth city"
 	Applicable to: Unit
 
+??? example  "Prevents statuses"
+	Applicable to: Unit
+
+??? example  "Prevents negative statuses"
+	Applicable to: Unit
+
+??? example  "Prevents positive statuses"
+	Applicable to: Unit
+
 ??? example  "Great Person - [comment]"
 	Example: "Great Person - [comment]"
 

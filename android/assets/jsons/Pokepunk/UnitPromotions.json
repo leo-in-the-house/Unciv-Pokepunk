@@ -1017,6 +1017,73 @@
         "column": 6
 	},
 	////////////////////
+	// Sewaddle
+	////////////////////
+	{
+		"name": "Spin Fiber I",
+		"uniques": [
+			"Instantly provides [1] [Fiber] <upon turn end> <when above [0] movement>",
+            "Unavailable <for [Barbarians] Civilizations>"
+        ],
+		"unitTypes": ["Sewaddle-Line"],
+		"row": 0,
+        "column": 4
+	},
+	{
+		"name": "Spin Fiber II",
+		"prerequisites": ["Spin Fiber I"],
+		"uniques": [
+			"Instantly provides [2] [Fiber] <upon turn end> <when above [0] movement>",
+            "Unavailable <for [Barbarians] Civilizations>"
+        ],
+		"unitTypes": ["Sewaddle-Line"],
+		"row": 1,
+        "column": 4
+	},
+	{
+		"name": "Spin Fiber III",
+		"prerequisites": ["Spin Fiber II"],
+		"uniques": [
+			"Instantly provides [3] [Fiber] <upon turn end> <when above [0] movement>",
+            "Unavailable <for [Barbarians] Civilizations>"
+        ],
+		"unitTypes": ["Sewaddle-Line"],
+		"row": 2,
+        "column": 4
+	},
+	{
+		"name": "Leaf Guard",
+		"uniques": [
+			"Prevents negative statuses <in [Grassland] tiles>",
+			"Unavailable <for [non-[Swadloon]] units> <for [non-[Leavanny]] units>"
+        ],
+		"unitTypes": ["Sewaddle-Line"],
+		"row": 0,
+        "column": 5
+	},
+	{
+		"name": "Nurture I",
+		"uniques": [
+			"[This Unit] gains [20] XP <for [{Friendly} {Unevolved}] units> <in all [All] tiles in [1] to [1] radius> <costs [5] [Water]> <for all movement>",
+			"Unavailable <for [non-[Leavanny]] units>"
+        ],
+		"unitTypes": ["Sewaddle-Line"],
+		"row": 0,
+        "column": 6
+	},
+	{
+		"name": "Nurture II",
+		"prerequisites": ["Nurture I"],
+		"uniques": [
+			"[This Unit] gains [40] XP <for [{Friendly} {Unevolved}] units> <in all [All] tiles in [1] to [1] radius> <costs [5] [Water]> <for all movement>",
+			"Unavailable <for [non-[Leavanny]] units>"
+        ],
+		"unitTypes": ["Sewaddle-Line"],
+		"row": 1,
+        "column": 6
+	},
+	
+	////////////////////
 	// Gothita
 	////////////////////
 	{

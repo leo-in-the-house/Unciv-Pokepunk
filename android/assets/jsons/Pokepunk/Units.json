@@ -1682,6 +1682,86 @@
         ]
 	},
     {
+		"name": "Sewaddle",
+		"unitType": "Sewaddle-Line",
+		"secondaryUnitType": "Pokémon",
+        "attackStrength": 10,
+		"defenseStrength": 30,
+		"movement": 1,
+		"cost": 5,
+        "uniques": [
+            "Unevolved",
+            "[This Unit] gains the [Bug-Type] promotion",
+            "[This Unit] gains the [Grass-Type] promotion",
+            "Can only be built <for [Barbarians] Civilizations> <in [Grassland] tiles> <in tiles adjacent to [{Grassland} {Forest}] tiles> <hidden from users>",
+            "Can transform to [Swadloon] <for units with [Level 2]>"
+        ],
+		"selectSound":"sewaddle",
+		"attackSound":"sewaddle",
+        "civilopediaText": [
+            {
+                "text": "'This Pokémon makes clothes for itself. It chews up leaves and sews them with sticky thread extruded from its mouth.' - Unova Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Insect Pokémon that appears in Grassland tiles near Forests.  Can be upgraded to passively generate fiber."
+            }
+        ]
+	},
+    {
+		"name": "Swadloon",
+		"unitType": "Sewaddle-Line",
+		"secondaryUnitType": "Pokémon",
+        "attackStrength": 10,
+		"defenseStrength": 50,
+		"movement": 1,
+		"cost": 60,
+        "uniques": [
+            "[This Unit] gains the [Bug-Type] promotion",
+            "[This Unit] gains the [Grass-Type] promotion",
+            "[This Unit] gains the [Leaf Guard] promotion <for [Barbarians] Civilizations> <hidden from users>",
+            "Can only be built <for [Barbarians] Civilizations> <in [Grassland] tiles> <in tiles adjacent to [{Grassland} {Forest}] tiles> <starting from the [Exploration Age]> <hidden from users>",
+            "Can transform to [Leavanny] <costs [+300 Faith] stats>"
+        ],
+		"selectSound":"swadloon",
+		"attackSound":"swadloon",
+        "civilopediaText": [
+            {
+                "text": "'Preferring dark, damp places, it spends the entire day eating fallen leaves that lie around it.' - Unova Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Insect Pokémon that appears in Grassland tiles near Forests, that are immune to status problems in Grasslands.  Can be upgraded to passively generate fiber."
+            }
+        ]
+	},
+    {
+		"name": "Leavanny",
+		"unitType": "Sewaddle-Line",
+		"secondaryUnitType": "Pokémon",
+        "attackStrength": 20,
+		"defenseStrength": 70,
+		"movement": 1,
+		"cost": 120,
+        "uniques": [
+            "[This Unit] gains the [Bug-Type] promotion",
+            "[This Unit] gains the [Grass-Type] promotion",
+            "[This Unit] gains the [Nurture I] promotion <for [Barbarians] Civilizations> <hidden from users>",
+            "Can only be built <for [Barbarians] Civilizations> <in [Grassland] tiles> <in tiles adjacent to [{Grassland} {Forest}] tiles> <starting from the [Industrial Age]> <hidden from users>"
+        ],
+		"selectSound":"leavanny",
+		"attackSound":"leavanny",
+        "civilopediaText": [
+            {
+                "text": "'Upon finding a small Pokémon, it weaves clothing for it from leaves, using the cutters on its arms and sticky silk.' - Unova Pokédex"
+             },
+            { "separator": true },
+            {
+                "text": "Insect Pokémon that appears in Grassland tiles near Forests that can boost the XP of nearby unevolved Pokémon with Water.  Can be upgraded to passively generate fiber or be immune to status problems in Grasslands."
+            }
+        ]
+	},
+    {
 		"name": "Gothita",
 		"unitType": "Gothita-Line",
 		"secondaryUnitType": "Pokémon",

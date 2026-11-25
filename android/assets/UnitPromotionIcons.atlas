@@ -585,506 +585,527 @@ UnitPromotionIcons/Leaf Blade
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Level 1
+UnitPromotionIcons/Leaf Guard
   rotate: false
   xy: 410, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Level 2
+UnitPromotionIcons/Level 1
   rotate: false
   xy: 468, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Level 3
+UnitPromotionIcons/Level 2
   rotate: false
   xy: 526, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Level 4
+UnitPromotionIcons/Level 3
   rotate: false
   xy: 294, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Level 5
+UnitPromotionIcons/Level 4
   rotate: false
   xy: 352, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Level 6
+UnitPromotionIcons/Level 5
   rotate: false
   xy: 410, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Light Ball
+UnitPromotionIcons/Level 6
   rotate: false
   xy: 468, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Liquid Ooze
+UnitPromotionIcons/Light Ball
   rotate: false
   xy: 526, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Logistics
+UnitPromotionIcons/Liquid Ooze
   rotate: false
   xy: 584, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Magma Armor
+UnitPromotionIcons/Logistics
   rotate: false
   xy: 352, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/March
+UnitPromotionIcons/Magma Armor
   rotate: false
   xy: 410, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Medic
+UnitPromotionIcons/March
   rotate: false
   xy: 468, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Mobility
+UnitPromotionIcons/Medic
   rotate: false
   xy: 526, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Morale
+UnitPromotionIcons/Mobility
   rotate: false
   xy: 584, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Mountaineer
+UnitPromotionIcons/Morale
   rotate: false
   xy: 642, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Normal-Type
+UnitPromotionIcons/Mountaineer
   rotate: false
   xy: 410, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Ocean Swimmer
+UnitPromotionIcons/Normal-Type
   rotate: false
   xy: 468, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Owl-Eyed
+UnitPromotionIcons/Nurture
   rotate: false
   xy: 526, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Paralyzed
+UnitPromotionIcons/Ocean Swimmer
   rotate: false
   xy: 584, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Pictish Courage
+UnitPromotionIcons/Owl-Eyed
   rotate: false
   xy: 642, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Pin Missile
+UnitPromotionIcons/Paralyzed
   rotate: false
   xy: 700, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Plainswalker
+UnitPromotionIcons/Pictish Courage
   rotate: false
   xy: 468, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Poison Sting
+UnitPromotionIcons/Pin Missile
   rotate: false
   xy: 526, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Poison-Type
+UnitPromotionIcons/Plainswalker
   rotate: false
   xy: 584, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Poisoned
+UnitPromotionIcons/Poison Sting
   rotate: false
   xy: 642, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Potion
+UnitPromotionIcons/Poison-Type
   rotate: false
   xy: 700, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Promotion Nullifier
+UnitPromotionIcons/Poisoned
   rotate: false
   xy: 758, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Psychic-Type
+UnitPromotionIcons/Potion
   rotate: false
   xy: 526, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Rage
+UnitPromotionIcons/Promotion Nullifier
   rotate: false
   xy: 584, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Raise Mountain
+UnitPromotionIcons/Psychic-Type
   rotate: false
   xy: 642, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Reflect
+UnitPromotionIcons/Rage
   rotate: false
   xy: 700, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Rejuvenation
+UnitPromotionIcons/Raise Mountain
   rotate: false
   xy: 758, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Rivalry
+UnitPromotionIcons/Reflect
   rotate: false
   xy: 816, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Rock-Type
+UnitPromotionIcons/Rejuvenation
   rotate: false
   xy: 584, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Run Away
+UnitPromotionIcons/Rivalry
   rotate: false
   xy: 642, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sand Spit
+UnitPromotionIcons/Rock-Type
   rotate: false
   xy: 700, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sand Tomb
+UnitPromotionIcons/Run Away
   rotate: false
   xy: 758, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Scouting
+UnitPromotionIcons/Sand Spit
   rotate: false
   xy: 816, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sentry
-  rotate: false
-  xy: 816, 286
-  size: 50, 50
-  orig: 50, 50
-  offset: 0, 0
-  index: -1
-UnitPromotionIcons/Shadow Haunt
+UnitPromotionIcons/Sand Tomb
   rotate: false
   xy: 874, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shielded
+UnitPromotionIcons/Scouting
   rotate: false
   xy: 642, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shock
+UnitPromotionIcons/Sentry
+  rotate: false
+  xy: 642, 54
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Shadow Haunt
   rotate: false
   xy: 700, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sleeping
+UnitPromotionIcons/Shielded
   rotate: false
   xy: 758, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Slinger Withdraw
+UnitPromotionIcons/Shock
   rotate: false
   xy: 816, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Slowed
+UnitPromotionIcons/Sleeping
   rotate: false
   xy: 874, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Snow Cloak
+UnitPromotionIcons/Slinger Withdraw
   rotate: false
   xy: 932, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Snowscape
+UnitPromotionIcons/Slowed
   rotate: false
   xy: 700, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sortie
+UnitPromotionIcons/Snow Cloak
   rotate: false
   xy: 758, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Spark
+UnitPromotionIcons/Snowscape
   rotate: false
   xy: 816, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Stealth Rock
+UnitPromotionIcons/Sortie
   rotate: false
   xy: 874, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Steel-Type
+UnitPromotionIcons/Spark
   rotate: false
   xy: 932, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Strengthened
+UnitPromotionIcons/Spin Fiber
   rotate: false
   xy: 990, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Stunned
+UnitPromotionIcons/Stealth Rock
   rotate: false
   xy: 758, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Super Fang
+UnitPromotionIcons/Steel-Type
   rotate: false
   xy: 816, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Supply
+UnitPromotionIcons/Strengthened
   rotate: false
   xy: 874, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Survivalism
+UnitPromotionIcons/Stunned
   rotate: false
   xy: 932, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Talisman
+UnitPromotionIcons/Super Fang
   rotate: false
   xy: 990, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Tesla Power
+UnitPromotionIcons/Supply
   rotate: false
   xy: 1048, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Thunderbolt
+UnitPromotionIcons/Survivalism
   rotate: false
   xy: 816, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Trapped
+UnitPromotionIcons/Talisman
   rotate: false
   xy: 874, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Treegnawer
+UnitPromotionIcons/Tesla Power
   rotate: false
   xy: 932, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Vigilant
+UnitPromotionIcons/Thunderbolt
   rotate: false
   xy: 990, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Volley
+UnitPromotionIcons/Trapped
   rotate: false
   xy: 1048, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Volt Tackle
+UnitPromotionIcons/Treegnawer
   rotate: false
   xy: 1106, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Vulnerable
+UnitPromotionIcons/Vigilant
   rotate: false
   xy: 874, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Water Shuriken
+UnitPromotionIcons/Volley
   rotate: false
   xy: 932, 112
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Water-Type
+UnitPromotionIcons/Volt Tackle
   rotate: false
   xy: 990, 170
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Weakened
+UnitPromotionIcons/Vulnerable
   rotate: false
   xy: 1048, 228
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wolfpack
+UnitPromotionIcons/Water Shuriken
   rotate: false
   xy: 1106, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wood Gecko
+UnitPromotionIcons/Water-Type
   rotate: false
   xy: 1164, 344
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wood Worm
+UnitPromotionIcons/Weakened
   rotate: false
   xy: 932, 54
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Woodsman
+UnitPromotionIcons/Wolfpack
   rotate: false
   xy: 990, 112
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Wood Gecko
+  rotate: false
+  xy: 1048, 170
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Wood Worm
+  rotate: false
+  xy: 1106, 228
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Woodsman
+  rotate: false
+  xy: 1164, 286
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
