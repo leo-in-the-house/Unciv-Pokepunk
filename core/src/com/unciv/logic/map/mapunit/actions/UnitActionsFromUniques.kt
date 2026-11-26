@@ -215,7 +215,7 @@ object UnitActionsFromUniques {
             if (unique.hasModifier(UniqueType.UnitActionExtraLimitedTimes)) continue
             if (!unique.isTriggerable) continue
             if (unique.hasModifier(UniqueType.UnitActionAreaOfEffect) || unique.hasModifier(UniqueType.UnitActionAreaOfEffectMinRange)) {
-                if (UniqueTriggerActivation.getAllTilesInRange(unique, unit).none()) continue
+                if (UniqueTriggerActivation.getAllTilesInRange(unique, unit.getTile(), unit.civ).none()) continue
             } 
             else {
                 if (!unique.conditionalsApply(unit.cache.state)) continue
@@ -274,7 +274,7 @@ object UnitActionsFromUniques {
                         val isUnitTriggerable = unique.isUnitTriggerable()
 
                         tile.forEachTileInDistanceRange(IntRange(minRadius, maxRadius)) { targetTile ->
-                            if (targetTile.matchesFilter(tileFilter)) {
+                            if (targetTile.matchesFilter(tileFilter, unit.civ)) {
                                 if (isUnitTriggerable) {
                                     //Trigger against each unit
                                     targetTile.getUnits().forEach { tileUnit -> 

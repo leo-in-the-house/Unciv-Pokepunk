@@ -10,7 +10,7 @@
 			"Agricultural",
 			"Cannot be built on [Marsh] tiles",
 			"Cannot be built on [Alpine] tiles",
-			"Cannot be built on [{non-[Rich Soil]}{Arid}] tiles <before discovering [Printing]>"
+			"Cannot be built on [{non-[Rich Soil]} {Arid}] tiles <before discovering [Printing]>"
 		],
 		"shortcutKey": "F",
 		 "civilopediaText": [
@@ -546,6 +546,28 @@
 		 "civilopediaText": [
             {
                 "text": "Build by Aristocrats, these not-so-humble-abodes consume a large amount of Gold, but provide 2 Culture for each Luxury Resource you have in your empire."
+            }
+        ]
+	},
+	{
+		"name": "Tree of Life",
+		"terrainsCanBeBuiltOn": ["Forest","Hill"],
+		"turnsToBuild": 0,
+		"food": 4,
+		"faith": 4,
+		"buildSound": "tree_of_life",
+		"uniques": [
+			"Special",
+			"Natural",
+            "Only available <after adopting [Forest's Bounty]>",
+			"Turn this tile into a [Forest] tile <in all [{Fertile} {Featureless} {unimproved} {resourceless}] tiles in [1] to [1] radius>",
+			"Will not be replaced by automated units", 
+			"Pillaging this improvement yields approximately [+50 Faith]"
+		],
+		"shortcutKey": "F",
+		 "civilopediaText": [
+            {
+                "text": "Build by Dryads, these magical trees can create new forest growth adjacent to them, and generate a large amount of food and faith."
             }
         ]
 	},

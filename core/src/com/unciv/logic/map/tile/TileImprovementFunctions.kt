@@ -323,7 +323,7 @@ class TileImprovementFunctions(val tile: Tile) {
         val gameContext = GameContext(civ, unit = unit, tile = tile)
 
         for (unique in improvement.uniqueObjects) {
-            if (unique.hasTriggerConditional() || !unique.conditionalsApply(gameContext)) continue
+            if (unique.hasTriggerConditional() && !unique.conditionalsApply(gameContext)) continue
             repeat(unique.getUniqueMultiplier(gameContext)) {
                 UniqueTriggerActivation.triggerUnique(unique, civ, unit = unit, tile = tile)
             }

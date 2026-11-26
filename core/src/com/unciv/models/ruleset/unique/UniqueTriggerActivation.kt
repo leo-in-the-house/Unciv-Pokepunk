@@ -86,7 +86,7 @@ object UniqueTriggerActivation {
                 val isUnitTriggerable = unique.isUnitTriggerable()
                 
                 tile.forEachTileInDistanceRange(IntRange(minRadius, maxRadius)) { targetTile ->
-                    if (targetTile.matchesFilter(tileFilter)) {
+                    if (targetTile.matchesFilter(tileFilter, civInfo)) {
                         if (isUnitTriggerable) {
                             //Trigger against each unit
                             targetTile.getUnits().forEach { tileUnit ->
@@ -1396,9 +1396,11 @@ object UniqueTriggerActivation {
 
             UniqueType.OneTimeRemoveResourcesFromTile -> {
                 if (tile == null) return null
-                val resource = tile.tileResource ?: return null
                 val resourceFilter = unique.params[0]
-                if (!resource.matchesFilter(resourceFilter)) return null
+
+                if (getAllTilesInRange(unique, tile, civInfo).filter { currentTile ->
+                        currentTile.tileResource != null && currentTile.tileResource!!.matchesFilter(resourceFilter)
+                    }.none()) return null
                 return {
                     tile.tileResource = null
                     tile.resourceAmount = 0
@@ -1428,9 +1430,10 @@ object UniqueTriggerActivation {
 
             UniqueType.OneTimeRemoveImprovementsFromTile -> {
                 if (tile == null) return null
-                val tileImprovement = tile.tileImprovement ?: return null
                 val improvementFilter = unique.params[0]
-                if (!tileImprovement.matchesFilter(improvementFilter)) return null
+                if (getAllTilesInRange(unique, tile, civInfo).filter { currentTile ->
+                        currentTile.tileImprovement != null && currentTile.tileImprovement!!.matchesFilter(improvementFilter)
+                    }.none()) return null
                 return {
                     // Don't remove the improvement if we're just removing the roads
                     if (improvementFilter != Constants.allRoad) {
@@ -1448,13 +1451,16 @@ object UniqueTriggerActivation {
             UniqueType.OneTimeChangeTerrain -> {
                 if (tile == null) return null
                 val terrain = ruleset.terrains[unique.params[0]] ?: return null
+                //Rivers don't support AoE
                 if (terrain.name == Constants.river)
                     return getOneTimeChangeRiverTriggerFunction(tile)
-                if (terrain.type.isBaseTerrain && tile.baseTerrain == terrain.name) return null
-                if (tile.isCityCenter() && terrain.type != TerrainType.Land) return null
-                if (tile.terrainFeatures.contains(terrain.name)) return null
-                if (terrain.type == TerrainType.TerrainFeature && !terrain.occursOn.contains(tile.lastTerrain.name))
-                    return null
+                if (getAllTilesInRange(unique, tile, civInfo).filter { currentTile ->
+                        !(terrain.type.isBaseTerrain && currentTile.baseTerrain != terrain.name) && 
+                        !(currentTile.isCityCenter() && terrain.type != TerrainType.Land) &&
+                        !(currentTile.terrainFeatures.contains(terrain.name)) &&
+                        !(terrain.type == TerrainType.TerrainFeature && !terrain.occursOn.contains(currentTile.baseTerrain))
+                }.none()) return null
+               
 
                 return {
                     when (terrain.type) {
@@ -1472,7 +1478,10 @@ object UniqueTriggerActivation {
                 if (tile == null) return null
                 val resourceName = unique.params[0]
                 val resource = ruleset.tileResources[resourceName] ?: return null
-                if (resource.terrainsCanBeFoundOn.none { it == tile.baseTerrain || tile.terrainFeatures.contains(it) }) return null
+
+                if (getAllTilesInRange(unique, tile, civInfo).filter { currentTile ->
+                     !(resource.terrainsCanBeFoundOn.none { it == currentTile.baseTerrain || currentTile.terrainFeatures.contains(it) })
+                    }.none()) return null
                 return {
                     // Remove the original resources
                     if (tile.tileResource != null) {
@@ -1492,7 +1501,9 @@ object UniqueTriggerActivation {
                 val resourceAmount = unique.params[0].toInt()
                 val resourceName = unique.params[1]
                 val resource = ruleset.tileResources[resourceName] ?: return null
-                if (resource.terrainsCanBeFoundOn.none { it == tile.baseTerrain || tile.terrainFeatures.contains(it) }) return null
+                if (getAllTilesInRange(unique, tile, civInfo).filter { currentTile ->
+                        !(resource.terrainsCanBeFoundOn.none { it == currentTile.baseTerrain || currentTile.terrainFeatures.contains(it) })
+                    }.none()) return null
                 return {
                     // Remove the original resources
                     if (tile.tileResource != null) {
@@ -1675,7 +1686,7 @@ object UniqueTriggerActivation {
             }
 
             unit.getTile().forEachTileInDistanceRange(IntRange(minRadius, maxRadius)) { targetTile ->
-                if (targetTile.matchesFilter(tileFilter)) {
+                if (targetTile.matchesFilter(tileFilter, unit.civ)) {
                     targetTile.getUnits().forEach { tileUnit ->
                         if (unique.conditionalsApply(GameContext(unit.civ, unit = tileUnit, tile = targetTile))) {
                             unitsInRange.add(tileUnit)
@@ -1687,8 +1698,8 @@ object UniqueTriggerActivation {
         return unitsInRange.asSequence()
     }
 
-    fun getAllTilesInRange (unique: Unique, unit: MapUnit): Sequence<Tile> {
-        val tilesInRange = mutableListOf(unit.getTile())
+    fun getAllTilesInRange (unique: Unique, tile: Tile, civInfo: Civilization): Sequence<Tile> {
+        val tilesInRange = mutableListOf(tile)
         var aoemodifier = unique.getModifiers(UniqueType.UnitActionAreaOfEffectMinRange).firstOrNull()
         if (aoemodifier == null) aoemodifier = unique.getModifiers(UniqueType.UnitActionAreaOfEffect).firstOrNull()
         if (aoemodifier != null) {
@@ -1700,8 +1711,8 @@ object UniqueTriggerActivation {
                 maxRadius = aoemodifier.params[2].toInt()
             }
 
-            unit.getTile().forEachTileInDistanceRange(IntRange(minRadius, maxRadius)) { targetTile ->
-                if (targetTile.matchesFilter(tileFilter) && unique.conditionalsApply(GameContext(unit.civ, unit = unit, tile = targetTile))) {
+            tile.forEachTileInDistanceRange(IntRange(minRadius, maxRadius)) { targetTile ->
+                if (targetTile.matchesFilter(tileFilter, civInfo) && unique.conditionalsApply(GameContext(civInfo, tile = targetTile))) {
                     tilesInRange.add(targetTile)
                 }
             }
