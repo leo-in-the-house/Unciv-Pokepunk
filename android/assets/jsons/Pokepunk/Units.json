@@ -815,6 +815,34 @@
 	// Magic Units
 	////////////////////
 	{
+		"name": "Druid",
+		"unitType": "Spellcaster",
+		"secondaryUnitType": "Elf",
+        "supplyCost": 2,
+		"movement": 1,
+		"hurryCostModifier": 20,
+		"attackStrength": 5,
+		"defenseStrength": 30,
+        "range": 2,
+		"selectSound":"druid",
+		"attackSound": "maiden_nature_attack",
+		"uniques": [
+            "Only available <after adopting [Druidism]>",
+            "Ranged attacks may be performed over obstacles",
+            "Comment [Inflict [Trapped] to the target for 3 turns when it attacks in Forest tiles.]",
+            "[Target Unit] gains the [Trapped] status for [3] turn(s) <when attacking> <in [Forest] tiles> <upon damaging a [All] unit> <hidden from users>",
+            "[This Unit] gains the [Shielded] status for [3] turn(s) <costs [20] [Mana]> <for [Friendly] units> <in all [Forest] tiles in [1] radius>",
+            "Never appears as a Barbarian unit",
+            "No damage penalty for wounded units"
+		],
+		"cost": 100,
+		"civilopediaText": [
+            {
+                "text": "Ranged support mage that can trap enemies hit in Forests for a long period of time, or provide Shielded to adjacent allies in Forests for 3 turns for 20 Mana."
+            }
+        ]
+	},
+	{
 		"name": "Pokémon Hunter",
 		"unitType": "Missile Infantry",
 		"secondaryUnitType": "Human",

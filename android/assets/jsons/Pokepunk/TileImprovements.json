@@ -559,7 +559,9 @@
 		"uniques": [
 			"Special",
 			"Natural",
+			"Costs [25] [Mana]",
             "Only available <after adopting [Forest's Bounty]>",
+			"Unavailable <in tiles adjacent to [Tree of Life] tiles>",
 			"Turn this tile into a [Forest] tile <in all [{Fertile} {Featureless} {unimproved} {resourceless}] tiles in [1] to [1] radius>",
 			"Will not be replaced by automated units", 
 			"Pillaging this improvement yields approximately [+50 Faith]"
@@ -616,7 +618,7 @@
 	// Building improvements
 	{
 		"name": "Monument",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "monument",
 		"uniques": [
 			"Urban Improvement",
@@ -624,7 +626,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+10 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [City center] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [City center] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -634,7 +636,7 @@
 	},
 	{
 		"name": "Barracks",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "barracks",
 		"uniques": [
 			"Urban Improvement",
@@ -642,7 +644,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+20 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -652,7 +654,7 @@
 	},
 	{
 		"name": "Potter",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "potter",
 		"uniques": [
 			"Urban Improvement",
@@ -661,7 +663,7 @@
 			"Turn this tile into a [Urban] tile",
 			"Provides [3] [Pots]",
 			"Pillaging this improvement yields approximately [+20 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -671,7 +673,7 @@
 	},
 	{
 		"name": "Scrollmaker",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "scrollmaker",
 		"uniques": [
 			"Urban Improvement",
@@ -680,7 +682,7 @@
 			"Turn this tile into a [Urban] tile",
 			"Provides [3] [Scrolls]",
 			"Pillaging this improvement yields approximately [+30 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -690,7 +692,7 @@
 	},
 	{
 		"name": "Scriptorium",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "scriptorium",
 		"uniques": [
 			"Urban Improvement",
@@ -701,7 +703,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+50 Culture]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -711,7 +713,7 @@
 	},
 	{
 		"name": "Smokehouse",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "smokehouse",
 		"uniques": [
 			"Urban Improvement",
@@ -719,7 +721,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+25 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -729,7 +731,7 @@
 	},
 	{
 		"name": "Bakery",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "bakery",
 		"uniques": [
 			"Urban Improvement",
@@ -738,7 +740,7 @@
 			"Turn this tile into a [Urban] tile",
 			"Provides [3] [Bread]",
 			"Pillaging this improvement yields approximately [+30 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -748,14 +750,14 @@
 	},
 	{
 		"name": "Shrine",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "shrine",
 		"uniques": [
 			"Rural Improvement",
 			"Irremovable",
 			"Will not be replaced by automated units",
 			"Pillaging this improvement yields approximately [+30 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -765,7 +767,7 @@
 	},
 	{
 		"name": "Pokémon Colosseum",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "pokemon_colosseum",
 		"uniques": [
 			"Urban Improvement",
@@ -773,7 +775,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+100 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -783,7 +785,7 @@
 	},
 	{
 		"name": "Drumcrafter",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "drumcrafter",
 		"uniques": [
 			"Urban Improvement",
@@ -792,7 +794,7 @@
 			"Turn this tile into a [Urban] tile",
 			"Provides [2] [Drums]",
 			"Pillaging this improvement yields approximately [+30 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -802,7 +804,7 @@
 	},
 	{
 		"name": "Weaver",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "weaver",
 		"uniques": [
 			"Urban Improvement",
@@ -818,7 +820,7 @@
 			"Provides [2] [Fiber] <for every [[{improved} {unpillaged} {Scatterbugs}] Tiles in this city]>",
 			"Provides [2] [Fiber] <for every [[{improved} {unpillaged} {Joltiks}] Tiles in this city]>",
 			"Pillaging this improvement yields approximately [+30 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -828,7 +830,7 @@
 	},
 	{
 		"name": "Carpenter",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "carpenter",
 		"uniques": [
 			"Urban Improvement",
@@ -836,7 +838,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+30 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -846,7 +848,7 @@
 	},
 	{
 		"name": "Brickyard",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "brickyard",
 		"uniques": [
 			"Urban Improvement",
@@ -854,7 +856,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+20 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -864,7 +866,7 @@
 	},
 	{
 		"name": "Mirrorsmith",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "mirrorsmith",
 		"uniques": [
 			"Urban Improvement",
@@ -873,7 +875,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+50 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -883,7 +885,7 @@
 	},
 	{
 		"name": "Maskmaker",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "maskmaker",
 		"uniques": [
 			"Urban Improvement",
@@ -892,7 +894,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+50 Gold]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -902,7 +904,7 @@
 	},
 	{
 		"name": "Theatre",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
 		"buildSound": "theatre",
 		"uniques": [
 			"Urban Improvement",
@@ -913,7 +915,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+50 Culture]",
-			"Can only be built <in [{Flat} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -933,7 +935,7 @@
 			"Will not be replaced by automated units",
 			"Turn this tile into a [Urban] tile",
 			"Pillaging this improvement yields approximately [+10 Gold]",
-			"Can only be built <in [{Water} {Featureless} {unimproved} {resourceless}] tiles> <in tiles adjacent to [Land] tiles>"
+			"Can only be built <in [{Water} {resourceless}] tiles> <in tiles adjacent to [Land] tiles>"
 		],
 		 "civilopediaText": [
             {
@@ -943,20 +945,60 @@
 	},
 	// Magic building improvements
 	{
+		"name": "Altar to Mew",
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
+		"buildSound": "altar_to_mew",
+		"uniques": [
+			"Rural Improvement",
+			"Irremovable",
+			"Will not be replaced by automated units",
+			"Pillaging this improvement yields approximately [+50 Faith]",
+			"Remove [Strategic] resources from this tile <hidden from users>",
+			"Provides [1] [Mana] <for every [[Population] in [in this city] Cities]>",
+			"Can only be built <in [{Flat} {resourceless}] tiles>"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Rural building that can be built anywhere, in Flat land.  Tied to a building with the same name in the city.  Provides +1 Mana for each population in this city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
+	{
 		"name": "Altar to Celebi",
-		"terrainsCanBeBuiltOn": ["Forest"],
+		"terrainsCanBeBuiltOn": ["Forest","Hill","Rich Soil"],
 		"buildSound": "altar_to_celebi",
 		"uniques": [
 			"Rural Improvement",
 			"Irremovable",
 			"Will not be replaced by automated units",
 			"Pillaging this improvement yields approximately [+50 Faith]",
+			"Remove [Strategic] resources from this tile <hidden from users>",
 			"Provides [1] [Mana] <for every [[Forest] Tiles in this city]>",
-			"Can only be built <in [{Forest} {unimproved} {resourceless}] tiles>"
+			"Can only be built <in [{Forest} {resourceless}] tiles>"
 		],
 		 "civilopediaText": [
             {
-                "text": "Rural building that can be built in any unimproved, resourceless Forest.  Tied to a building with the same name in the city.  Provides +1 Mana for each Forest tile in this city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+                "text": "Rural building that can be built in any resourceless Forest.  Tied to a building with the same name in the city.  Provides +1 Mana for each Forest tile in this city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
+            }
+        ]
+	},
+	{
+		"name": "Enchanted Axemill",
+		"terrainsCanBeBuiltOn": ["Land","Hill","Rich Soil"],
+		"turnsToBuild": 0,
+		"buildSound": "enchanted_axemill",
+		"uniques": [
+			"Urban Improvement",
+			"Irremovable",
+			"Will not be replaced by automated units",
+			"Turn this tile into a [Urban] tile",
+			"Pillaging this improvement yields approximately [+50 Culture]",
+			"Can only be built <in [{Flat} {resourceless}] tiles> <in tiles adjacent to [Urban] tiles>"
+		],
+		"shortcutKey": "F",
+		 "civilopediaText": [
+            {
+                "text": "Urban building that must be built in flat land.  Tied to a building with the same name in the city.  If pillaged, the building will be disabled until repaired (on the tile improvement by a worker unit)."
             }
         ]
 	},

@@ -1455,7 +1455,7 @@ object UniqueTriggerActivation {
                 if (terrain.name == Constants.river)
                     return getOneTimeChangeRiverTriggerFunction(tile)
                 if (getAllTilesInRange(unique, tile, civInfo).filter { currentTile ->
-                        !(terrain.type.isBaseTerrain && currentTile.baseTerrain != terrain.name) && 
+                        !(terrain.type.isBaseTerrain && currentTile.baseTerrain == terrain.name) && 
                         !(currentTile.isCityCenter() && terrain.type != TerrainType.Land) &&
                         !(currentTile.terrainFeatures.contains(terrain.name)) &&
                         !(terrain.type == TerrainType.TerrainFeature && !terrain.occursOn.contains(currentTile.baseTerrain))

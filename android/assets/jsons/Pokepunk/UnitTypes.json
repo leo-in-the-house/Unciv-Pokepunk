@@ -16,6 +16,10 @@
         "movementType": "Land"
     },
     {
+        "name": "Spellcaster",
+        "movementType": "Land"
+    },
+    {
         "name": "Cavalry",
         "movementType": "Land"
     },

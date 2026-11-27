@@ -71,7 +71,7 @@ open class Policy : RulesetObject() {
                 it.isHiddenToUsers()
                     || it.type == UniqueType.OnlyAvailable
                     || it.type == UniqueType.OneTimeGlobalAlert
-            }.joinToString("\n") { "• ${it.getDisplayText().tr()}" }
+            }.joinToString("\n") { "• ${it.getDisplayText().tr()}\n" }
 
         if (enabledBuildings.isNotEmpty()) {
             lineList += "Buildings enabled: \n"

@@ -1064,7 +1064,7 @@
 	{
 		"name": "Nurture I",
 		"uniques": [
-			"[This Unit] gains [20] XP <for [{Friendly} {Unevolved}] units> <in all [All] tiles in [1] to [1] radius> <costs [5] [Water]> <for all movement>",
+			"[This Unit] gains [20] XP <for [{Friendly} {Unevolved}] units> <in all [All] tiles in [1] to [1] radius> <costs [10] [Mana]> <for all movement>",
 			"Unavailable <for [non-[Leavanny]] units>"
         ],
 		"unitTypes": ["Sewaddle-Line"],
@@ -1075,7 +1075,7 @@
 		"name": "Nurture II",
 		"prerequisites": ["Nurture I"],
 		"uniques": [
-			"[This Unit] gains [40] XP <for [{Friendly} {Unevolved}] units> <in all [All] tiles in [1] to [1] radius> <costs [5] [Water]> <for all movement>",
+			"[This Unit] gains [40] XP <for [{Friendly} {Unevolved}] units> <in all [All] tiles in [1] to [1] radius> <costs [20] [Mana]> <for all movement>",
 			"Unavailable <for [non-[Leavanny]] units>"
         ],
 		"unitTypes": ["Sewaddle-Line"],

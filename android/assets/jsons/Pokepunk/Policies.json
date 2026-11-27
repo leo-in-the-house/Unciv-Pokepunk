@@ -1,4 +1,87 @@
 [
+	 {
+		"name": "Tome of Humanity",
+		"era": "Antiquity Age",
+		"priorities": {
+			"Neutral": 0
+		},
+		"uniques": [
+			//Altar of Mew - Generates +1 Mana for every 2 pop in this city
+			"Comment [Simple tome accessible to anyone, focused on instant bonuses useful for any civilization in the early game.]"
+		],
+		"policies": [
+			{
+				"name": "Tradition",
+				"uniques": [
+					"[2] population [in capital]" 
+				],
+				"row": 1,
+				"column": 2
+			},
+			{
+				"name": "Aesthetics",
+				"uniques": [
+					"Free [Gothita] appears"
+				],
+				"row": 1,
+				"column": 4
+			},
+			{
+				"name": "Piety",
+				"uniques": [
+					"Gain enough Faith for a Pantheon <before founding a Pantheon>",
+					"Free [Priestess] appears <after founding a Pantheon>"
+				],
+				"row": 1,
+				"column": 6
+			},
+			{
+				"name": "Freedom",
+				"uniques": [
+					"Free [Settler] appears"
+				],
+				"requires": ["Wall of Wood"],
+				"row": 2,
+				"column": 1
+			},
+			{
+				"name": "Order",
+				"uniques": [
+					"[2] free [Builder] units appear"	
+				],
+				"requires": ["Wall of Wood", "Wild Weavers"],
+				"row": 2,
+				"column": 3
+			},
+			{
+				"name": "Autocracy",
+				"uniques": [
+					"Provides a [Palisade] in your first [4] cities for free"
+				],
+				"requires": ["Wild Weavers", "Arbomancy"],
+				"row": 2,
+				"column": 5
+			},
+			{
+				"name": "Rationalism",
+				"uniques": [
+					"Free Technology"
+				],
+				"requires": ["Arbomancy"],
+				"row": 2,
+				"column": 7
+			},
+
+			{
+				"name": "Tome of Humanity Complete",
+				"uniques": [
+					//Gains a free Wonder
+					"Free Social Policy",
+                    "Empire enters golden age"
+				]
+			}
+		]
+	},
     {
 		"name": "Tome of Wood",
 		"era": "Antiquity Age",
@@ -7,6 +90,7 @@
 		},
 		"uniques": [
 			//Altar of Celebi - provides Mana from Forest tiles in this city
+			"Comment [Tome accessible to civilizations with lots of Forest tiles, focused on defense, lumber, and production.]",
             "Only available <when number of [Owned [Forest] Tiles] is more than [4]>"
 		],
 		"policies": [
@@ -47,7 +131,7 @@
 			{
 				"name": "Druidism",
 				"uniques": [
-					//Magical combat unit that costs mana, that can inflict Trapped to enemies on Forest and that can provide Shielded to nearby allies when on Forest costing Mana
+					//Druid - Magical combat unit that costs mana, that can inflict Trapped to enemies on Forest and that can provide Shielded to nearby allies when on Forest costing Mana
 				],
 				"requires": ["Wall of Wood", "Wild Weavers"],
 				"row": 2,
@@ -65,7 +149,7 @@
 			{
 				"name": "Magical Axes",
 				"uniques": [
-					//Building that spawns a free Lumberjack when built and give all Lumber Mills +5 Production
+					//Enchanted Axemill - Building that spawns a free Lumberjack when built and give all Lumber Mills +5 Production
 				],
 				"requires": ["Arbomancy"],
 				"row": 2,
@@ -75,11 +159,11 @@
 			{
 				"name": "Tome of Wood Complete",
 				"uniques": [
-					//Allows training Dryads with Faith
-					//Wood production boost, can build Wonder
-                    "[100]% [Wood] resource production"
+					//Can build Wonder
+                    "[100]% [Wood] resource production",
+					"May buy [Dryad] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Antiquity Age]>"
 				]
 			}
 		]
-	},
+	}
 ]

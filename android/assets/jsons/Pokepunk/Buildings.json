@@ -384,23 +384,43 @@
         ]
 	},
 	//Magic Buildings
-	//Tome of Wood
+	{
+		"name": "Altar to Mew",
+		"buildSound": "altar_to_mew",
+		"cost": 200,
+		"hurryCostModifier": 25,
+		"specialistSlots": { "Channeler": 3 },
+		"maintenance": 4,
+		"isNationalWonder": true,
+		"uniques": [
+            "Only available <after adopting [Tome of Humanity]>",
+			"Costs [40] [Stone]",
+			"Creates a [Altar to Mew] improvement on a specific tile",
+			"Comment [Must be built on a flat, featureless land tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Tome of Human National Wonder that can be built anywhere, in flat land, but is more expensive.  Provides +1 Mana for every Population in this city.  Provides Channelers that can spawn Wizards.  Max 1 per nation."
+            }
+        ]
+	},
 	{
 		"name": "Altar to Celebi",
 		"buildSound": "altar_to_celebi",
-		"cost": 100,
+		"cost": 120,
 		"hurryCostModifier": 25,
 		"specialistSlots": { "Channeler": 2 },
 		"maintenance": 4,
+		"isNationalWonder": true,
 		"uniques": [
             "Only available <after adopting [Tome of Wood]>",
-			"Costs [10] [Stone]",
+			"Costs [20] [Stone]",
 			"Creates a [Altar to Celebi] improvement on a specific tile",
 			"Comment [Must be built on a Forest tile.]"
 		],
 		 "civilopediaText": [
             {
-                "text": "Tome of Wood Urban building that can be built anywhere, in flat land.  Provides +1 Mana for each Forest tile in this city.  Provides Masons that can spawn Builders."
+                "text": "Tome of Wood National Wonder that can be built in any resourceless Forest.  Provides +1 Mana for each Forest tile in this city.  Provides Channelers that can spawn Wizards.  Max 1 per nation."
             }
         ]
 	},
@@ -420,6 +440,28 @@
 		 "civilopediaText": [
             {
                 "text": "Tome of Wood defensive building that costs a large amount of Wood.  Provides a large amount of city health and a passive source of faith."
+            }
+        ]
+	},
+	{
+		"name": "Enchanted Axemill",
+		"buildSound": "enchanted_axemill",
+		"cost": 100,
+		"hurryCostModifier": 25,
+		"specialistSlots": { "Lumber Mage": 3 },
+		"maintenance": 4,
+		"uniques": [
+            "Only available <after adopting [Magical Axes]>",
+			"Costs [20] [Wood]",
+			"Free [Lumberjack] appears",
+			"[+5 Production] from [Lumber Mill] tiles [in this city]",
+			"[+50]% Production when constructing [All] buildings [in this city]",
+			"Creates a [Enchanted Axemill] improvement on a specific tile",
+			"Comment [Must be built on a flat, featureless land tile.]"
+		],
+		 "civilopediaText": [
+            {
+                "text": "Urban building that can be built anywhere, in flat land.  Spawns a free Lumberjack.  Lumber Mills in this city provide +5 Production when worked."
             }
         ]
 	},

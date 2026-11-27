@@ -77,10 +77,16 @@
 		"color": [0,125,255]
 	},
 	{
+		"name":"Lumber Mage",
+		"gold": 3,
+		"greatPersonPoints": {"Dryad": 3},
+		"color": [150,100,40]
+	},
+	{
 		"name":"Channeler",
-		"faith": 4,
+		"culture": 4,
 		"greatPersonPoints": {"Wizard": 2},
-		"color": [150,150,210]
+		"color": [240,100,210]
 	},
 	{
 		"name":"Factory Worker",
