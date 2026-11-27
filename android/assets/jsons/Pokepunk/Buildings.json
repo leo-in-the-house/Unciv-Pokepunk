@@ -70,7 +70,7 @@
 			"[+100]% Production when constructing [Infantry] units [in this city]",
 			"[+100]% Production when constructing [Missile Infantry] units [in this city]",
 			"Comment [Unlocks advanced infantry units.]",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -90,7 +90,7 @@
 		"uniques": [
 			"Crafting",
 			"Creates a [Potter] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -110,7 +110,7 @@
 		"uniques": [
 			"Crafting",
 			"Creates a [Scrollmaker] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -132,7 +132,7 @@
 			"Costs [5] [Wood]",
 			"[+2 Food] from [Hunting Camp] tiles [in this city]",
 			"Creates a [Smokehouse] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -152,7 +152,7 @@
 		"uniques": [
 			"Cooking",
 			"Creates a [Bakery] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -171,7 +171,7 @@
 		"uniques": [
 			"Costs [5] [Stone]",
 			"Creates a [Shrine] improvement on a specific tile",
-			"Comment [Must be built on a flat, featureless land tile.]"
+			"Comment [Must be built on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -193,7 +193,7 @@
 			"Costs [15] [Stone]",
 			"Only available <when number of [[Pasture|Hunting Camp|Kennel] Tiles in this city] is more than [2]>",
 			"Creates a [Pokémon Colosseum] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -214,7 +214,7 @@
 			"Crafting",
 			"Costs [5] [Wood]",
 			"Creates a [Weaver] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -255,7 +255,7 @@
 		"uniques": [
 			"Crafting",
 			"Creates a [Mirrorsmith] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -275,7 +275,7 @@
 		"uniques": [
 			"Crafting",
 			"Creates a [Maskmaker] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -294,7 +294,7 @@
 		"uniques": [
 			"Crafting",
 			"Creates a [Scriptorium] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -315,7 +315,7 @@
 			"Costs [5] [Stone]",
 			"Creates a [Theatre] improvement on a specific tile",
 			"Only available <with [Masks]>",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -335,7 +335,7 @@
 		"uniques": [
 			"Crafting",
 			"Creates a [Drumcrafter] improvement on a specific tile",
-			"Comment [Must be built adjacent to Urban on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -355,7 +355,7 @@
 			"Costs [10] [Wood]",
 			"Creates a [Carpenter] improvement on a specific tile",
 			"[+50]% [Wood] resource production <in this city>",
-			"Comment [Must be built on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -375,7 +375,7 @@
 			"Costs [20] [Stone]",
 			"Creates a [Brickyard] improvement on a specific tile",
 			"[+50]% Production when constructing [All] buildings [in this city]",
-			"Comment [Must be built on a flat, featureless land tile.]"
+			"Comment [Must be built adjacent to Urban on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -396,7 +396,7 @@
             "Only available <after adopting [Tome of Humanity]>",
 			"Costs [40] [Stone]",
 			"Creates a [Altar to Mew] improvement on a specific tile",
-			"Comment [Must be built on a flat, featureless land tile.]"
+			"Comment [Must be built on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
@@ -427,12 +427,12 @@
 	{
 		"name": "Green Belt",
 		"buildSound": "green_belt",
-		"cityHealth": 200,
+		"cityHealth": 300,
 		"faith": 4,
 		"cost": 70,
 		"hurryCostModifier": 25,
 		"uniques": [
-			"Costs [35] [Wood]",
+			"Costs [80] [Wood]",
 			"Is shown",
             "Only available <after adopting [Wall of Wood]>",
 			"Destroyed when the city is captured"
@@ -452,12 +452,12 @@
 		"maintenance": 4,
 		"uniques": [
             "Only available <after adopting [Magical Axes]>",
-			"Costs [20] [Wood]",
+			"Costs [70] [Magic]",
 			"Free [Lumberjack] appears",
 			"[+5 Production] from [Lumber Mill] tiles [in this city]",
 			"[+50]% Production when constructing [All] buildings [in this city]",
 			"Creates a [Enchanted Axemill] improvement on a specific tile",
-			"Comment [Must be built on a flat, featureless land tile.]"
+			"Comment [Must be built on a flat, featureless or hilly land tile.]"
 		],
 		 "civilopediaText": [
             {
